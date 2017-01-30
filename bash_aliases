@@ -24,10 +24,10 @@ mvrviz() {
 	mv $1 ~/.rviz
 }
 
-# run different ROS visualization programs
-alias rosrun_rviz='rosrun rviz rviz'
-alias rosrun_rqtgraph='rosrun rqt_graph rqt_graph'
-alias rosrun_rqtconsole='rosrun rqt_console rqt_console'
+# run different ROS visualization programs (eg. rviz, rqt_graph, rqt_console, etc.)
+myrosrun() {
+	rosrun $1 $1
+}
 
 # clear screen and go to home directory
 god() {

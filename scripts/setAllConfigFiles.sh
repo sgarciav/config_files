@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Author: Sergio Garcia-Vergara
 # Setus up all configuration files in the repository.
 
