@@ -9,6 +9,25 @@
 (require 'key-bindings)
 (require 'packages)
 
+;; Enable ido-mode
+(require 'ido)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+
+;; Enable undo-tree-mode
+(require 'undo-tree)
+(global-undo-tree-mode)
+
+;; initialize auto complete
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+;; initialize yasnippet (to create templates for my c and c++ functions)
+(require 'yasnippet)
+(yas-global-mode 1)
+
 ;; make backup to a designated dir, mirroring the full path
 (defun my-backup-file-name (fpath)
   "Return a new file path of a given file path.

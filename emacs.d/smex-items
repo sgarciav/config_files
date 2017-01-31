@@ -1,0 +1,17 @@
+
+;; ----- smex-history -----
+(
+ package-list-packages
+ kill-region
+ cd
+ 5x5
+ arp
+ dbx
+ dig
+)
+
+;; ----- smex-data -----
+(
+ (package-list-packages . 9)
+ (kill-region . 1)
+)

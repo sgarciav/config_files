@@ -2,34 +2,70 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/sgarcia/Downloads/" . "emacs/")
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" . "src/")
+ ("/home/sgarcia/playground/catkin_ws/src/" . "beginner_tutorials/")
+ ("/home/sgarcia/playground/catkin_ws/" . "src/")
+ ("/home/sgarcia/playground/" . "catkin_ws/")
  ("/home/sgarcia/git-repos/config_files/" . "scripts/")
  ("/home/sgarcia/git-repos/" . "config_files/")
  ("/home/sgarcia/.emacs.d/" . "settings/")
- ("/home/sgarcia/" . ".emacs.d/")
+ ("/home/sgarcia/" . "playground/")
  ("/home/" . "sgarcia/")
  ("/" . "home/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/sgarcia/playground/"
  "/home/sgarcia/.emacs.d/settings/"
- "/home/sgarcia/git-repos/config_files/scripts/"
  "/home/sgarcia/.emacs.d/"
+ "/home/sgarcia/Downloads/emacs/"
+ "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/"
+ "/home/sgarcia/git-repos/config_files/scripts/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "HelloWorld.c"
+ "packages.el"
  "key-bindings.el"
+ "init.el"
+ "talker.cpp"
+ "deleteme.txt"
  "get_config.sh"
  "set_config.sh"
- "init.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/sgarcia/.emacs.d/settings/" (22672 46985 813525 344000) "../" "key-bindings.el~" ".#key-bindings.el" "appearance.el" "key-bindings.el" "./" "appearance.el~" "#key-bindings.el#")
+ ("/home/sgarcia/playground/" (22673 7234 693139 559000) "HelloWorld.c" "test_shell.sh" "../" ".index.html.swp" "#HelloWorld.c#" "catkin_ws/" "./")
 
- ("/home/sgarcia/git-repos/config_files/scripts/" (22672 48544 679146 25000) "../" ".#get_config.sh" "set_config.sh" "get_config.sh" "get_config.sh~" "./" "#set_config.sh#")
+ ("/home/sgarcia/.emacs.d/settings/" (22673 7533 138311 828000) "../" "packages.el~" "packages.el" "appearance.el" "key-bindings.el" "./")
+
+ ("/home/sgarcia/.emacs.d/" (22673 7507 194210 221000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "elpa/" "./" "snippets/")
+
+ ("/home/sgarcia/.emacs.d/elpa/" (22673 6973 304103 918000) "gnupg/" "../" "iedit-readme.txt" "archives/" "org-plus-contrib-20170124/" "org-journal-20170126.234/" "undo-tree-20161012.701/" "popup-20160709.729/" "auto-complete-20170124.1845/" "smex-20151212.1409/" "color-theme-sanityinc-tomorrow-20170106.1620/" "color-theme-modern-20161219.344/" "iedit-0.9.9.9/" "yasnippet-readme.txt" "yasnippet-0.11.0/" "./" "switch-window-20160229.334/")
+
+ ("/home/sgarcia/.emacs.d/elpa/iedit-0.9.9.9/" (22673 6978 668125 289000) "../" "iedit-pkg.el" "iedit.elc" "iedit-rect.el" "iedit-lib.el" "iedit-lib.elc" "iedit.el" "iedit-autoloads.el" "iedit-rect.elc" "./")
+
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/" (22673 5563 386626 646000) "../" ".#talker.cpp" "talker.cpp" "#talker.cpp#" "./")
+
+ ("/home/sgarcia/git-repos/config_files/scripts/" (22672 60348 79046 143000) "../" "set_config.sh" "get_config.sh" "README.txt" "./")
+
+ ("/home/sgarcia/Downloads/emacs/site-lisp/" (22527 55748 0 0) "site-start.d/" "matlab-emacs/" "smooth-scroll.el" "journal.el" "../" "cmake-ide.el" "auto-complete-1.3.1/" "fill-column-indicator.el" "scilab.elc" "site-start.el" "template.el" "scilab.el" "demarco/" "auto-complete-pkg.el" "popup.el" "templates/" "magit/" "predictive/" "cpputils-cmake.el" "auto-complete-auctex.el" "auto-complete-config.el" "themes/" "xcscope.el" "rtags.el" "auctex/" "color-theme.el" "cscope-indexer" "yasnippet/" "tex-site.el" "subdirs.el" "scilab-startup.el" "template.elc" "auto-complete.el" "./" "auto-complete-clang.el")
+
+ ("/home/sgarcia/.emacs.d/elpa/undo-tree-20161012.701/" (22672 62479 185563 106000) "../" "undo-tree.el" "undo-tree.elc" "undo-tree-autoloads.el" "undo-tree-pkg.elc" "undo-tree-autoloads.el~" "undo-tree-pkg.el" "./")
+
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" (22667 32466 861697 55000) "package.xml" "../" "launch/" "include/" "src/" "CMakeLists.txt" "./")
+
+ ("/home/sgarcia/playground/catkin_ws/src/" (22672 60177 462409 324000) "../" "CMakeLists.txt" "beginner_tutorials/" "./")
+
+ ("/home/sgarcia/playground/catkin_ws/" (22664 59197 310543 451000) "../" "src/" "build/" "devel/" ".catkin_workspace" "./")
+
+ ("/home/sgarcia/Downloads/" (22672 57283 112205 571000) "../" "catvehicle-1.0.2.tgz" "emacs/" "header_files/" "emacs.tar.gz" "./")
+
+ ("/home/sgarcia/Downloads/emacs/" (22672 58949 601855 659000) "../" "init.el" "packages.el" "emacs" ".emacs" "site-lisp/" "./" "snippets/")
 
  ("/home/sgarcia/git-repos/config_files/" (22671 52733 860112 4000) "../" "README.md" ".git/" "bash_aliases" "scripts/" "emacs.d/" "./" ".gitignore")
 
@@ -38,8 +74,6 @@
  ("/home/" (22655 41303 628365 506000) "../" "sgarcia/" "./")
 
  ("/home/sgarcia/" (22671 48365 828106 281000) ".dmrc" ".xsession-errors" "Public/" "Music/" ".gconf/" "../" "Downloads/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".macromedia/" ".profile" ".viminfo" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".bashrc" "Desktop/" ".ICEauthority" ".sudo_as_admin_successful" ".cache/" "playground/" ".config/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".gnupg/" ".gnome2/" "scrimmage/" ".gnome2_private/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" "nutria/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" ".local/")
-
- ("/home/sgarcia/.emacs.d/" (22671 50088 606309 908000) "../" "auto-save-list/" "init.el~" "settings/" "init.el" "themes/" "elpa/" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
