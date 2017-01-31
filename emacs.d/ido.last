@@ -1,0 +1,46 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/sgarcia/git-repos/config_files/" . "scripts/")
+ ("/home/sgarcia/git-repos/" . "config_files/")
+ ("/home/sgarcia/.emacs.d/" . "settings/")
+ ("/home/sgarcia/" . ".emacs.d/")
+ ("/home/" . "sgarcia/")
+ ("/" . "home/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/sgarcia/.emacs.d/settings/"
+ "/home/sgarcia/git-repos/config_files/scripts/"
+ "/home/sgarcia/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "key-bindings.el"
+ "get_config.sh"
+ "set_config.sh"
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/sgarcia/.emacs.d/settings/" (22672 46985 813525 344000) "../" "key-bindings.el~" ".#key-bindings.el" "appearance.el" "key-bindings.el" "./" "appearance.el~" "#key-bindings.el#")
+
+ ("/home/sgarcia/git-repos/config_files/scripts/" (22672 48544 679146 25000) "../" ".#get_config.sh" "set_config.sh" "get_config.sh" "get_config.sh~" "./" "#set_config.sh#")
+
+ ("/home/sgarcia/git-repos/config_files/" (22671 52733 860112 4000) "../" "README.md" ".git/" "bash_aliases" "scripts/" "emacs.d/" "./" ".gitignore")
+
+ ("/home/sgarcia/git-repos/" (22667 42457 637768 281000) "../" "config_files/" "sicktoolbox_repo_copy/" "velodyne_repo_copy/" "sicktoolbox-wrapper_repo_copy/" "./")
+
+ ("/home/" (22655 41303 628365 506000) "../" "sgarcia/" "./")
+
+ ("/home/sgarcia/" (22671 48365 828106 281000) ".dmrc" ".xsession-errors" "Public/" "Music/" ".gconf/" "../" "Downloads/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".macromedia/" ".profile" ".viminfo" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".bashrc" "Desktop/" ".ICEauthority" ".sudo_as_admin_successful" ".cache/" "playground/" ".config/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".gnupg/" ".gnome2/" "scrimmage/" ".gnome2_private/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" "nutria/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" ".local/")
+
+ ("/home/sgarcia/.emacs.d/" (22671 50088 606309 908000) "../" "auto-save-list/" "init.el~" "settings/" "init.el" "themes/" "elpa/" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,7 +1,13 @@
 ;; search and replace
-(global-set-key [33554451] (quote replace-string))
+(global-set-key (kbd "C-s") 'query-replace)
 
-;; bind backtab
+;; point cursor to beginning of buffer
+(global-set-key (kbd "M-q") 'beginning-of-buffer)
+
+;; access shell
+(global-set-key (kbd "C-z") 'shell)
+
+;; backtab
 ; TODO
 
 ;; end of file
