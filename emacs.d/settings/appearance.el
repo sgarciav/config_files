@@ -1,3 +1,9 @@
+;;; appearance.el --- All information related to emacs's appearance
+
+;;; Commentary:
+
+;;; Code:
+
 ;; put line numbers on all buffers
 (global-linum-mode t)
 
@@ -17,3 +23,4 @@
 
 ;; end of file
 (provide 'appearance)
+;;; appearance.el ends here

@@ -1,8 +1,10 @@
 ;;; init.el --- Global settings
 
+;;; Commentary: 
+
+;;; Code:
 ;; add settings directory to load path
-(setq settings-dir (expand-file-name "settings" user-emacs-directory))
-(add-to-list 'load-path settings-dir)
+(add-to-list 'load-path "~/.emacs.d/settings")
 
 ;; setup extra config files (in settings directory)
 (require 'appearance)
@@ -29,6 +31,12 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+;; initialize flycheck mode
+(require 'flycheck)
+(require 'seq)
+(global-flycheck-mode)
+(setq-default flycheck-emacs-lisp-load-path 'inherit)
+
 ;; autoload bash-completion for shell-mode
 (autoload 'bash-completion-dynamic-complete "bash-completion" "BASH completion hook")
 (add-hook 'shell-dynamic-complete-functions 'bash-completion-dynamic-complete)
@@ -48,3 +56,7 @@ If the new path's directories does not exist, create them."
   )
 
 (setq make-backup-file-name-function 'my-backup-file-name)
+
+;; end of file
+(provide 'init)
+;;; init.el ends here

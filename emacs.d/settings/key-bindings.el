@@ -1,3 +1,9 @@
+;;; key-bindings.el --- All information related to key bindings.
+
+;;; Commentary:
+
+;;; Code:
+
 ;; search and replace
 (global-set-key (kbd "M-s") 'query-replace)
 
@@ -23,8 +29,12 @@
 (global-set-key (kbd "C-x c") 'comment-region)
 (global-set-key (kbd "C-x \S-c") 'uncomment-region)
 
+;; show flycheck error
+(global-set-key (kbd "C-x e") 'flycheck-list-errors)
+
 ;; backtab
 ; TODO
 
 ;; end of file
 (provide 'key-bindings)
+;;; key-bindings.el ends here

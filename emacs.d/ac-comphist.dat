@@ -1,34 +1,54 @@
-((("shell-dynamic-complete-functions" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("add-hook" .
+((("setq-default" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("inherit-process-coding-system" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("In" .
+   [0 1])
+  ("flycheck-emacs-lisp-load-path" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("kbd" .
+   [1 0 0])
+  ("flycheck-list-errors" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("global-set-key" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("key-bindings" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("auto-complete" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("auto-complete-config" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0])
+  ("auto-complete-c-headers" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("auto-complete-c" .
+   [0 0 0 0 0 1 1 0 0 0 0 0 0 0 0])
+  ("require" .
+   [5 0 0 0 0 0 0])
+  ("auto-complete-1" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("include" .
+   [0 0 0 0 1 0 0])
+  ("yas-text" .
+   [0 0 0 0 1 0 0 0])
+  ("yasnippet" .
+   [0 0 0 0 1 0 0 0 0])
+  ("yas-global-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("printf" .
+   [2 0 0 0 0 0])
+  ("BASH" .
+   [0 0 0 1])
+  ("bash-completion" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("autoload" .
    [1 0 0 0 0 0 0 0])
   ("bash-completion-dynamic-complete" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
-  ("autoload" .
+  ("add-hook" .
    [1 0 0 0 0 0 0 0])
-  ("bash-completion" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("BASH" .
-   [0 0 0 1])
-  ("printf" .
-   [2 0 0 0 0 0])
-  ("yas-global-mode" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("yasnippet" .
-   [0 0 0 0 1 0 0 0 0])
-  ("yas-text" .
-   [0 0 0 0 1 0 0 0])
-  ("include" .
-   [0 0 0 0 1 0 0])
-  ("auto-complete-1" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
-  ("require" .
-   [5 0 0 0 0 0 0])
-  ("auto-complete-c" .
-   [0 0 0 0 0 1 1 0 0 0 0 0 0 0 0])
-  ("auto-complete-c-headers" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("auto-complete-config" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0])
-  ("auto-complete" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])))
+  ("shell-dynamic-complete-functions" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("appearance" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("here" .
+   [1 0 0 0])))

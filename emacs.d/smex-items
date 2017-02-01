@@ -1,9 +1,9 @@
 
 ;; ----- smex-history -----
 (
+ package-list-packages
  ansi-term
  uncomment-region
- package-list-packages
  kill-region
  cd
  5x5
@@ -12,7 +12,7 @@
 
 ;; ----- smex-data -----
 (
- (package-list-packages . 9)
+ (package-list-packages . 11)
  (kill-region . 1)
  (uncomment-region . 1)
  (ansi-term . 1)

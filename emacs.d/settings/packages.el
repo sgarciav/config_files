@@ -1,4 +1,9 @@
+;;; package.el --- Contains all information about required packages.
+
+;;; Commentary:
 (require 'package)
+
+;;; Code:
 
 ;;(add-to-list 'package-archives '("elpy" . "http://jorgenschaefer.github.io/packages/"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -9,12 +14,12 @@
 
 ;; list the packages you want
 (setq package-list
-      '(org org-journal smex undo-tree switch-window iedit auto-complete yasnippet))
+      '(seq flycheck org org-journal smex undo-tree switch-window iedit auto-complete yasnippet))
 
 ;; activate all the packages
 (package-initialize)
 
-;; fetch the list of packages available 
+;; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
 
@@ -25,3 +30,4 @@
 
 ;; end of file
 (provide 'packages)
+;;; packages.el ends here

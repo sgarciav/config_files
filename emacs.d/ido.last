@@ -12,43 +12,57 @@
  ("/home/sgarcia/git-repos/config_files/" . "scripts/")
  ("/home/sgarcia/git-repos/" . "config_files/")
  ("/home/sgarcia/.emacs.d/" . "settings/")
- ("/home/sgarcia/" . ".emacs.d/")
+ ("/home/sgarcia/" . "Downloads/")
  ("/home/" . "sgarcia/")
  ("/" . "home/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/sgarcia/.emacs.d/"
  "/home/sgarcia/.emacs.d/settings/"
+ "/home/sgarcia/Downloads/emacs/"
+ "/home/sgarcia/.emacs.d/"
+ "/home/sgarcia/playground/"
+ "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/"
+ "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/"
  "/home/sgarcia/nutria/gtri-car/src/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/"
  "/home/sgarcia/playground/catkin_ws/src/"
- "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/"
- "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/"
  "/home/sgarcia/nutria/gtri-car/"
- "/home/sgarcia/playground/"
- "/home/sgarcia/Downloads/emacs/"
  "/home/sgarcia/git-repos/config_files/scripts/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "init.el"
- "bash-completion.el"
- "CMakeLists.txt"
- "key-bindings.el"
- "listener.cpp"
- "README.md"
- "talker.cpp"
- "HelloWorld.c"
  "packages.el"
- "deleteme.txt"
+ "init.el"
+ "key-bindings.el"
+ "appearance.el"
+ "HelloWorld.c"
+ "talker.cpp"
+ "listener.cpp"
+ "package.xml"
+ "CMakeLists.txt"
+ "bash-completion.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/sgarcia/.emacs.d/settings/" (22674 2043 711860 689000) "../" "bash-completion.el" "packages.el" "appearance.el" "key-bindings.el" "./")
+ ("/home/sgarcia/.emacs.d/settings/" (22674 9068 410694 538000) "../" "bash-completion.el" "packages.el" "appearance.el" "key-bindings.el" "./")
+
+ ("/home/sgarcia/.emacs.d/" (22674 9729 737501 906000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "elpa/" "./" "snippets/")
+
+ ("/home/sgarcia/Downloads/emacs/" (22674 9146 615150 146000) "../" "init.el" "packages.el" "emacs" ".emacs" "site-lisp/" "./" "snippets/")
+
+ ("/home/sgarcia/playground/" (22674 6898 727700 61000) "HelloWorld.c" "test_shell.sh" "../" ".index.html.swp" "#HelloWorld.c#" "catkin_ws/" "./" ".#HelloWorld.c")
+
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/srv/" (22674 5238 640562 100000) "../" "./" "AddTwoInts.srv")
+
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/" (22674 6170 808115 457000) "../" "listener.cpp" "talker.cpp" "./")
+
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" (22674 5800 986705 977000) "package.xml" "../" "msg/" "launch/" "include/" "src/" "CMakeLists.txt" "srv/" "./")
+
+ ("/home/sgarcia/git-repos/config_files/" (22674 2335 269043 181000) "../" "README.md" ".git/" "bash_aliases" "scripts/" "emacs.d/" "./" ".gitignore")
 
  ("/home/sgarcia/" (22674 1825 883060 793000) ".dmrc" ".xsession-errors" "Public/" "Music/" ".gconf/" "../" "Downloads/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".macromedia/" ".profile" ".viminfo" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".bashrc" "Desktop/" ".ICEauthority" ".sudo_as_admin_successful" ".cache/" "playground/" ".config/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".gnupg/" ".gnome2/" "scrimmage/" ".gnome2_private/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" "nutria/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" ".local/")
 
@@ -58,17 +72,9 @@
 
  ("/home/sgarcia/nutria/gtri-car/src/" (22667 41005 587763 195000) "../" "azcar_sim/" "cmdvel2gazebo/" "safeopenloopcircle/" "obstaclestopper/" "hoffmannfollower/" "CMakeLists.txt" "car_nav2d/" "sicktoolbox/" "velodyne/" "sicktoolbox_wrapper/" "./" "simplestateflowmodel/")
 
- ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" (22673 65117 74838 16000) "package.xml" "../" "launch/" "include/" "src/" "CMakeLists.txt" "./")
-
- ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/" (22673 63769 769703 673000) "../" "listener.cpp" "talker.cpp" "./")
-
- ("/home/sgarcia/.emacs.d/" (22673 7583 102507 378000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "elpa/" "./" "snippets/")
-
  ("/home/sgarcia/nutria/gtri-car/" (22667 41081 700018 139000) "../" "src/" "README.md" "build/" ".git/" "devel/" ".gitmodules" ".catkin_workspace" "RELEASE_NOTES.md" "scripts/" "./" ".gitignore")
 
  ("/home/sgarcia/nutria/" (22671 26414 375517 958000) "../" "pictures/" "gtri-car/" "CapabilityToArchitectureMapping-[Sergio and Kevin].xlsx" "Nutria - technical approach - 30 Sept 2016.odt" "CapabilityToArchitectureMapping-[Sergio].xlsx" "./")
-
- ("/home/sgarcia/playground/" (22673 7577 610485 892000) "HelloWorld.c" "test_shell.sh" "../" ".index.html.swp" "#HelloWorld.c#" "catkin_ws/" "./")
 
  ("/home/sgarcia/.emacs.d/elpa/" (22673 6973 304103 918000) "gnupg/" "../" "iedit-readme.txt" "archives/" "org-plus-contrib-20170124/" "org-journal-20170126.234/" "undo-tree-20161012.701/" "popup-20160709.729/" "auto-complete-20170124.1845/" "smex-20151212.1409/" "color-theme-sanityinc-tomorrow-20170106.1620/" "color-theme-modern-20161219.344/" "iedit-0.9.9.9/" "yasnippet-readme.txt" "yasnippet-0.11.0/" "./" "switch-window-20160229.334/")
 
@@ -85,10 +91,6 @@
  ("/home/sgarcia/playground/catkin_ws/" (22664 59197 310543 451000) "../" "src/" "build/" "devel/" ".catkin_workspace" "./")
 
  ("/home/sgarcia/Downloads/" (22672 57283 112205 571000) "../" "catvehicle-1.0.2.tgz" "emacs/" "header_files/" "emacs.tar.gz" "./")
-
- ("/home/sgarcia/Downloads/emacs/" (22672 58949 601855 659000) "../" "init.el" "packages.el" "emacs" ".emacs" "site-lisp/" "./" "snippets/")
-
- ("/home/sgarcia/git-repos/config_files/" (22671 52733 860112 4000) "../" "README.md" ".git/" "bash_aliases" "scripts/" "emacs.d/" "./" ".gitignore")
 
  ("/home/sgarcia/git-repos/" (22667 42457 637768 281000) "../" "config_files/" "sicktoolbox_repo_copy/" "velodyne_repo_copy/" "sicktoolbox-wrapper_repo_copy/" "./")
 
