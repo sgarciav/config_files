@@ -1,4 +1,6 @@
-((("setq-default" .
+((("xml-mode" .
+   [1 0 0 0 0 0 0 0])
+  ("setq-default" .
    [1 0 0 0 0 0 0 0 0 0 0 0])
   ("inherit-process-coding-system" .
    [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
@@ -51,4 +53,8 @@
   ("appearance" .
    [1 0 0 0 0 0 0 0 0 0])
   ("here" .
-   [1 0 0 0])))
+   [1 0 0 0])
+  ("defvar" .
+   [1 0 0 0 0 0])
+  ("package-list" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])))

@@ -12,19 +12,20 @@
  ("/home/sgarcia/git-repos/config_files/" . "scripts/")
  ("/home/sgarcia/git-repos/" . "config_files/")
  ("/home/sgarcia/.emacs.d/" . "settings/")
- ("/home/sgarcia/" . "Downloads/")
+ ("/home/sgarcia/" . ".emacs.d/")
  ("/home/" . "sgarcia/")
  ("/" . "home/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/sgarcia/.emacs.d/settings/"
- "/home/sgarcia/Downloads/emacs/"
  "/home/sgarcia/.emacs.d/"
- "/home/sgarcia/playground/"
  "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/"
  "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/"
+ "/home/sgarcia/.emacs.d/settings/"
+ "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/launch/"
+ "/home/sgarcia/Downloads/emacs/"
+ "/home/sgarcia/playground/"
  "/home/sgarcia/nutria/gtri-car/src/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/"
  "/home/sgarcia/playground/catkin_ws/src/"
@@ -34,33 +35,35 @@
 
 ;; ----- ido-work-file-list -----
 (
- "packages.el"
  "init.el"
- "key-bindings.el"
- "appearance.el"
- "HelloWorld.c"
- "talker.cpp"
  "listener.cpp"
  "package.xml"
  "CMakeLists.txt"
- "bash-completion.el"
+ "key-bindings.el"
+ "init_chatter.launch"
+ "talker.cpp"
+ "packages.el"
+ "appearance.el"
+ "HelloWorld.c"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/sgarcia/.emacs.d/settings/" (22674 9068 410694 538000) "../" "bash-completion.el" "packages.el" "appearance.el" "key-bindings.el" "./")
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/" (22674 12594 658212 318000) "../" "listener.cpp" "talker.cpp" "./")
 
- ("/home/sgarcia/.emacs.d/" (22674 9729 737501 906000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "elpa/" "./" "snippets/")
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/launch/" (22674 11676 730662 463000) "../" "mimicturtle.launch" "init_chatter.launch" "./")
+
+ ("/home/sgarcia/.emacs.d/settings/" (22674 10535 324 313000) "../" "bash-completion.el" "packages.el" "appearance.el" "key-bindings.el" "./")
+
+ ("/home/sgarcia/.emacs.d/" (22674 10606 916981 735000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "elpa/" "./" "snippets/")
+
+ ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" (22674 10154 574618 72000) "package.xml" "../" "msg/" "launch/" "include/" "src/" "CMakeLists.txt" "srv/" "./")
+
+ ("/home/sgarcia/playground/" (22674 8261 939275 363000) "HelloWorld.c" "test_shell.sh" "../" ".index.html.swp" "catkin_ws/" "./")
 
  ("/home/sgarcia/Downloads/emacs/" (22674 9146 615150 146000) "../" "init.el" "packages.el" "emacs" ".emacs" "site-lisp/" "./" "snippets/")
 
- ("/home/sgarcia/playground/" (22674 6898 727700 61000) "HelloWorld.c" "test_shell.sh" "../" ".index.html.swp" "#HelloWorld.c#" "catkin_ws/" "./" ".#HelloWorld.c")
-
  ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/srv/" (22674 5238 640562 100000) "../" "./" "AddTwoInts.srv")
-
- ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/" (22674 6170 808115 457000) "../" "listener.cpp" "talker.cpp" "./")
-
- ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" (22674 5800 986705 977000) "package.xml" "../" "msg/" "launch/" "include/" "src/" "CMakeLists.txt" "srv/" "./")
 
  ("/home/sgarcia/git-repos/config_files/" (22674 2335 269043 181000) "../" "README.md" ".git/" "bash_aliases" "scripts/" "emacs.d/" "./" ".gitignore")
 

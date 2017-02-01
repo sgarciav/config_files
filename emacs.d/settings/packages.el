@@ -13,8 +13,9 @@
 ;;(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
 ;; list the packages you want
+(defvar package-list)
 (setq package-list
-      '(seq flycheck org org-journal smex undo-tree switch-window iedit auto-complete yasnippet))
+      '(flycheck org org-journal smex undo-tree switch-window iedit auto-complete yasnippet))
 
 ;; activate all the packages
 (package-initialize)
