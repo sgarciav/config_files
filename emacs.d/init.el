@@ -8,6 +8,7 @@
 (require 'appearance)
 (require 'key-bindings)
 (require 'packages)
+(require 'bash-completion)
 
 ;; Enable ido-mode
 (require 'ido)
@@ -27,6 +28,10 @@
 ;; initialize yasnippet (to create templates for my c and c++ functions)
 (require 'yasnippet)
 (yas-global-mode 1)
+
+;; autoload bash-completion for shell-mode
+(autoload 'bash-completion-dynamic-complete "bash-completion" "BASH completion hook")
+(add-hook 'shell-dynamic-complete-functions 'bash-completion-dynamic-complete)
 
 ;; make backup to a designated dir, mirroring the full path
 (defun my-backup-file-name (fpath)

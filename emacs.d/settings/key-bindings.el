@@ -19,6 +19,10 @@
 ;; iedit
 (global-set-key (kbd "C-c ;") 'iedit-mode)
 
+;; comment and uncomment region
+(global-set-key (kbd "C-x c") 'comment-region)
+(global-set-key (kbd "C-x \S-c") 'uncomment-region)
+
 ;; backtab
 ; TODO
 
