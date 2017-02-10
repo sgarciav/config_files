@@ -12,7 +12,7 @@
 
 ;; ----- smex-data -----
 (
- (package-list-packages . 11)
+ (package-list-packages . 12)
  (kill-region . 1)
  (uncomment-region . 1)
  (ansi-term . 1)

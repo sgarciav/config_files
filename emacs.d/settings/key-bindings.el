@@ -9,6 +9,7 @@
 
 ;; point cursor to beginning of buffer
 (global-set-key (kbd "M-q") 'beginning-of-buffer)
+(global-set-key (kbd "M-z") 'end-of-buffer)
 
 ;; access shell
 (global-set-key (kbd "C-z") 'shell)
@@ -24,6 +25,10 @@
 
 ;; iedit
 (global-set-key (kbd "C-c ;") 'iedit-mode)
+(global-set-key [double-mouse-1] 'iedit-mode)
+
+;; split window below
+(global-set-key [mouse-3] 'split-window-below)
 
 ;; comment and uncomment region
 (global-set-key (kbd "C-x c") 'comment-region)
@@ -31,6 +36,9 @@
 
 ;; show flycheck error
 (global-set-key (kbd "C-x e") 'flycheck-list-errors)
+
+;; yank / paste
+(global-set-key (kbd "C-v") 'yank)
 
 ;; backtab
 ; TODO

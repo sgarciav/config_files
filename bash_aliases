@@ -19,6 +19,9 @@ alias rmdir='rm -rf'
 # source setup bash for building catkin workspaces
 alias srcSetup='source devel/setup.bash'
 
+# open whatever with gnome
+alias openg='gnome-open'
+
 # move .rviz files to corresponding folder
 mvrviz() {
 	mv $1 ~/.rviz

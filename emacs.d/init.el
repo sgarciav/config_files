@@ -33,8 +33,9 @@
 
 ;; initialize flycheck mode
 (require 'flycheck)
-(require 'seq)
-(global-flycheck-mode)
+;; (require 'seq)
+;; (global-flycheck-mode)
+(add-hook 'after-init-hook #'global-flycheck-mode)
 (setq-default flycheck-emacs-lisp-load-path 'inherit)
 
 ;; autoload bash-completion for shell-mode

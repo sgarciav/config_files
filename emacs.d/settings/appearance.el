@@ -9,8 +9,8 @@
 
 ;; set color theme
 (add-to-list `custom-theme-load-path  "~/.emacs.d/themes/")
-(load-theme 'ld-dark t)
-(enable-theme 'ld-dark)
+(load-theme 'clarity t)
+(enable-theme 'clarity)
 
 ;; Additional changes
 (setq frame-title-format "emacs")
