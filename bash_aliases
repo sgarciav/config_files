@@ -22,11 +22,6 @@ alias srcSetup='source devel/setup.bash'
 # open whatever with gnome
 alias openg='gnome-open'
 
-# move .rviz files to corresponding folder
-mvrviz() {
-	mv $1 ~/.rviz
-}
-
 # run different ROS visualization programs (eg. rviz, rqt_graph, rqt_console, etc.)
 myrosrun() {
 	rosrun $1 $1
