@@ -42,7 +42,11 @@
 (autoload 'bash-completion-dynamic-complete "bash-completion" "BASH completion hook")
 (add-hook 'shell-dynamic-complete-functions 'bash-completion-dynamic-complete)
 
-;; roslaunch highloghting
+;; set tab width
+(setq c-default-style "linux"
+      c-basic-offset 5)
+
+;; roslaunch highlighting
 (add-to-list 'auto-mode-alist '("\\.launch$" . xml-mode))
 
 ;; make backup to a designated dir, mirroring the full path

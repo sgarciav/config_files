@@ -18,10 +18,10 @@
  ("/opt/ros/kinetic/" . "include/")
  ("/opt/ros/" . "kinetic/")
  ("/opt/" . "ros/")
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" . "launch/")
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" . "scripts/")
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" . "src/")
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" . "urdf/")
  ("/home/sgarcia/nutria/gtri-car/" . "src/")
- ("/home/sgarcia/nutria/gtri-car/src/" . "azcar_sim/")
+ ("/home/sgarcia/nutria/gtri-car/src/" . "car_nav2d/")
  ("/home/sgarcia/nutria/" . "gtri-car/")
  ("/home/sgarcia/Downloads/" . "emacs/")
  ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" . "src/")
@@ -39,23 +39,24 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/sgarcia/.emacs.d/"
- "/home/sgarcia/.emacs.d/settings/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/scripts/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/"
- "/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/"
+ "/home/sgarcia/nutria/gtri-car/src/car_nav2d/include/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/"
- "/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/"
- "/home/sgarcia/scrimmage/src/common/"
- "/home/sgarcia/nutria/gtri-car/src/car_nav2d/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/config/"
+ "/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/"
+ "/home/sgarcia/nutria/gtri-car/src/car_nav2d/"
+ "/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/"
+ "/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/"
+ "/home/sgarcia/nutria/gtri-car/"
+ "/home/sgarcia/nutria/gtri-car/src/azcar_sim/scripts/"
+ "/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/"
+ "/home/sgarcia/.emacs.d/settings/"
+ "/home/sgarcia/scrimmage/src/common/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/srv/"
  "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/"
  "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/"
  "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/srv/"
- "/home/sgarcia/nutria/gtri-car/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/src/"
  "/home/sgarcia/nutria/gtri-car/scripts/"
  "/home/sgarcia/nutria/gtri-car/src/sicktoolbox/"
@@ -85,42 +86,54 @@
 ;; ----- ido-work-file-list -----
 (
  "init.el"
- "bash-completion.el"
- "packages.el"
- "cmdvel2gazebo.py"
- "azcar_roads.launch"
- "vel_controller.py"
- "collect_lidar_data.cpp"
- "teleop_with_keyboard.cpp"
- "asphalt.world"
+ "KalmanFilter.cpp"
+ "KalmanFilter.h"
+ "PositionTracker.h"
+ "PositionTracker.cpp"
  "azcar.xacro"
+ "azcar_control.yaml"
+ "rviz.launch"
+ "azcar_roads.launch"
+ "azcar_slipping.gazebo"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/sgarcia/.emacs.d/" (22701 48822 886611 923000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "elpa/" "./" "snippets/")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/" (22701 48837 30760 0) "teleop_with_keyboard.cpp" "../" "collect_lidar_data.cpp" "#KalmanFilter.cpp#" "KalmanFilter.cpp" ".#KalmanFilter.cpp" "PositionTracker.cpp" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/include/" (22701 44553 549613 338000) "../" "./" "KalmanFilter.h" "PositionTracker.h")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" (22701 43940 42668 632000) "package.xml" "../" "maps/" "launch/" "include/" "src/" "config/" "CMakeLists.txt" "srv/" "scripts/" "./")
+
+ ("/home/sgarcia/.rviz/" (22700 43180 677000 659000) "../" "persistent_settings" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/config/" (22699 10252 470158 987000) "local_costmap_params.yaml" "../" "global_costmap_params.yaml" "teb_base_local_planner_params.yaml" "./" "base_local_planner_params.yaml" "costmap_common_params.yaml")
+
+ ("/home/sgarcia/playground/" (22699 15307 401500 199000) "../" ".index.html.swp" "src/" "obj/" "catkin_ws/" "./")
+
+ ("/home/sgarcia/" (22700 45427 76957 915000) ".dmrc" ".xsession-errors" "Public/" "Music/" ".gconf/" "../" "Downloads/" "gtri-car-deleteme/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".macromedia/" ".profile" ".viminfo" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Octave/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".gnuplot_history" ".bashrc" "Desktop/" ".ICEauthority" ".vmware/" ".gksu.lock" ".sudo_as_admin_successful" ".cache/" "playground/" ".config/" ".java/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".ipython/" ".gnupg/" ".pylint.d/" ".gnome2/" ".octave_hist" ".webex/" ".gnome2_private/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" "nutria/" "VirtualBox VMs/" ".ssr/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" ".local/")
+
+ ("/home/sgarcia/nutria/gtri-car/build/CMakeFiles/" (22700 46166 697646 481000) "cmake.check_cache" "CMakeRuleHashes.txt" "feature_tests.cxx" "../" "3.5.1/" "tests.dir/" "download_extra_data.dir/" "Makefile.cmake" "TargetDirectories.txt" "CMakeOutput.log" "Makefile2" "feature_tests.c" "progress.marks" "run_tests.dir/" "CMakeDirectoryInformation.cmake" "CMakeError.log" "clean_test_results.dir/" "CMakeTmp/" "doxygen.dir/" "./" "feature_tests.bin")
+
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/scripts/" (22699 7542 339213 274000) "../" "odom2path.py" "primitiveCmdVel.py" "joy2cmdvel.py" "cmdvel2gazebo.py" "resetSim.sh" "tests/" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/" (22700 31980 751747 322000) "../" "asphalt.world" "skidpan.world" "neighborhood.world" "azcar.world" "roads.world" "canyonview_field.world" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/" (22700 50201 300589 78000) "../" "humancar.xacro" "humancar.gazebo" "azcar.gazebo" "materials.xacro" "./" "azcar_urdf.xml" "azcar.xacro" "azcar_slipping.gazebo")
+
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/" (22700 49234 941600 246000) "humancar_leadercmd.launch" "azcar_follower.launch" "azcar.launch" "azcar_world.launch" "humancar.launch" "azcar_slomo.launch" "../" "azcar_skidpan_slomo.launch" "hectorslam-sicktest.launch" "azcar_neighborhood.launch" "joystick.launch" "rviz.launch" "distanceEstimator.launch" "azcar_skidpan.launch" "hectorslam.launch" "humancar_newspawn.launch" "humancar_spawn_nocmd.launch" "azcar_canyonview.launch" "humancar_followerControl.launch" "distanceEstimator_simulator.launch" "applyVelProfile.launch" "azcar_empty.launch" "distanceEstimator_standalone.launch" "sick_laptop_500k.launch" "sickTest.launch" "applyController.launch" "./" "azcar_roads.launch" "robotviz.launch")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/" (22700 25755 192027 537000) "../" "pub_vel_cmd_server.py" "trajectory_test.py" "vel_controller.py" "speed_test.py" "README.txt" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/" (22699 10252 470158 987000) "../" "create_map.launch" "speed_test.launch" "car_nav2d.launch" "./")
+
  ("/home/sgarcia/.emacs.d/settings/" (22697 63710 422427 988000) "../" "bash-completion.el" "packages.el" "appearance.el" "key-bindings.el" "./")
-
- ("/home/sgarcia/" (22696 61132 130591 967000) ".dmrc" ".xsession-errors" "Public/" "Music/" ".gconf/" "../" "Downloads/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".macromedia/" ".profile" ".viminfo" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".gnuplot_history" ".bashrc" "Desktop/" ".ICEauthority" ".vmware/" ".gksu.lock" ".sudo_as_admin_successful" ".cache/" "playground/" ".config/" ".java/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".ipython/" ".gnupg/" "deleteme.txt" ".gnome2/" "scrimmage/" ".webex/" ".gnome2_private/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" "nutria/" "VirtualBox VMs/" ".ssr/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" ".local/")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/scripts/" (22697 55293 195871 740000) "../" "odom2path.py" "primitiveCmdVel.py" "joy2cmdvel.py" "cmdvel2gazebo.py" "resetSim.sh" "tests/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/" (22695 36081 872544 877000) "teleop_with_keyboard.cpp" "../" "collect_lidar_data.cpp" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/" (22695 33861 654494 660000) "../" "pub_vel_cmd_server.py" "vel_controller.py" "speed_test.py" "vel_controller-works.py" "./")
-
- ("/home/sgarcia/nutria/gtri-car/build/CMakeFiles/" (22695 29021 875416 76000) "cmake.check_cache" "CMakeRuleHashes.txt" "feature_tests.cxx" "../" "3.5.1/" "tests.dir/" "download_extra_data.dir/" "Makefile.cmake" "TargetDirectories.txt" "CMakeOutput.log" "Makefile2" "feature_tests.c" "progress.marks" "run_tests.dir/" "CMakeDirectoryInformation.cmake" "CMakeError.log" "clean_test_results.dir/" "CMakeTmp/" "doxygen.dir/" "./" "feature_tests.bin")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/" (22695 28892 717976 199000) "humancar_leadercmd.launch" "azcar_follower.launch" "azcar.launch" "azcar_world.launch" "humancar.launch" "azcar_slomo.launch" "../" "azcar_skidpan_slomo.launch" "hectorslam-sicktest.launch" "azcar_neighborhood.launch" "joystick.launch" "rviz.launch" "distanceEstimator.launch" "azcar_skidpan.launch" "hectorslam.launch" "humancar_newspawn.launch" "humancar_spawn_nocmd.launch" "azcar_canyonview.launch" "humancar_followerControl.launch" "distanceEstimator_simulator.launch" "applyVelProfile.launch" "azcar_empty.launch" "distanceEstimator_standalone.launch" "sick_laptop_500k.launch" "sickTest.launch" "applyController.launch" "./" "azcar_roads.launch" "robotviz.launch")
 
  ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/" (22694 59522 344029 756000) "../" "listener.cpp" "talker.cpp" "add_two_ints_server.cpp" "add_two_ints_client.cpp" "./")
 
  ("/home/sgarcia/scrimmage/src/common/" (22694 64057 237161 592000) "../" "Utilities.cpp" "RTree.cpp" "FileSearch.cpp" "CMakeLists.txt" "PID.cpp" "Entity.cpp" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/" (22695 28088 444859 458000) "../" "humancar.xacro" "humancar.gazebo" "azcar.gazebo" "materials.xacro" "./" "azcar_urdf.xml" "azcar.xacro" "azcar_slipping.gazebo")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/" (22692 31523 39939 336000) "../" "asphalt.world" "skidpan.world" "neighborhood.world" "azcar.world" "roads.world" "canyonview_field.world" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/" (22695 22133 662089 793000) "../" "create_map.launch" "speed_test.launch" "car_nav2d.launch" "./")
 
  ("/home/sgarcia/scrimmage/src/" (22656 60336 758721 875000) "../" "msg/" "viewer/" "parse/" "metrics/" "simcontrol/" "log/" "CMakeLists.txt" "proto/" "math/" "common/" "py_scrimmage/" "./")
 
@@ -129,8 +142,6 @@
  ("/home/sgarcia/nutria/gtri-car/" (22692 63388 117875 503000) "../" "src/" "README.md" "build/" ".git/" "devel/" ".gitmodules" ".catkin_workspace" "RELEASE_NOTES.md" "scripts/" "./" ".gitignore")
 
  ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/config/" (22693 62450 436866 220000) "../" "azcar_control.yaml" "map.yaml" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" (22693 65260 149179 782000) "package.xml" "../" "maps/" "launch/" "src/" "config/" "CMakeLists.txt" "srv/" "scripts/" "./")
 
  ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/srv/" (22693 1721 553176 523000) "../" "./" "PubVelCmd.srv")
 
@@ -142,17 +153,9 @@
 
  ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" (22692 43116 375737 922000) "package.xml" "../" "simulink/" "rviz/" "urdf/" "launch/" "include/" "src/" "config/" "CMakeLists.txt" "worlds/" "matlab files/" "scripts/" "meshes/" "./" "setup.py")
 
- ("/home/sgarcia/.emacs.d/" (22692 31483 543541 955000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "elpa/" "./" "snippets/")
-
  ("/home/sgarcia/nutria/gtri-car/src/cmdvel2gazebo/" (22692 31523 75939 698000) "cmdvel2gazebo_private.h" "slros_initialize.cpp" "slros_msgconvert_utils.h" "package.xml" "rtwtypes.h" "../" "rtw_continuous.h" "cmdvel2gazebo_data.cpp" "rtmodel.h" "slTestTypes.h" "rt_nonfinite.h" "rtGetInf.h" "MW_custom_RTOS_header.h" "linuxinitialize.h" "slros_busmsg_conversion.cpp" "rtGetNaN.cpp" "rtGetInf.cpp" "ert_main.cpp" "CMakeLists.txt" "slros_generic_param.h" "slros_initialize.h" "slros_generic_pubsub.h" "rt_nonfinite.cpp" "slros_generic.h" "cmdvel2gazebo.h" "slTestResult.h" "rtGetNaN.h" "slros_generic_param.cpp" "linuxinitialize.cpp" "cmdvel2gazebo.cpp" "cmdvel2gazebo_types.h" "slros_busmsg_conversion.h" "rtw_solver.h" "./" "defines.txt")
 
  ("/home/sgarcia/nutria/gtri-car/src/sicktoolbox_wrapper/ros/sicklms/" (22692 32518 374320 244000) "../" "sicklms.cpp" "./")
-
- ("/home/sgarcia/.rviz/" (22692 31860 167317 812000) "../" "persistent_settings" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/config/" (22692 31523 39939 336000) "local_costmap_params.yaml" "../" "global_costmap_params.yaml" "teb_base_local_planner_params.yaml" "./" "base_local_planner_params.yaml" "costmap_common_params.yaml")
-
- ("/home/sgarcia/playground/" (22692 29604 128104 575000) "../" ".index.html.swp" "src/" "obj/" "catkin_ws/" "./")
 
  ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/maps/" (22692 31523 75939 698000) "canyonview_hector.pgm" "../" "canyonview_gmapping.pgm" "canyonview_gmapping.yaml" "./" "canyonview_hector.yaml")
 
