@@ -49,6 +49,11 @@
 ;; roslaunch highlighting
 (add-to-list 'auto-mode-alist '("\\.launch$" . xml-mode))
 
+;; Return key automatically indents cursor on new line in yaml mode
+(add-hook 'yaml-mode-hook
+	  (lambda ()
+            (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
 ;; make backup to a designated dir, mirroring the full path
 (defun my-backup-file-name (fpath)
   "Return a new file path of a given file path.

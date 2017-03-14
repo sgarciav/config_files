@@ -28,7 +28,7 @@ myrosrun() {
 }
 
 # clear screen and go to home directory
-god() {
-	cd
-	clear
-}
+alias god='cd && clear'
+
+# analyze tf tree and show results
+alias runtf='rosrun tf2_tools view_frames.py && rm frames.gv && evince frames.pdf'
