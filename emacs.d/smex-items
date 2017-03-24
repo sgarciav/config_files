@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ set-fill-column
  package-list-packages
  ansi-term
  uncomment-region
  kill-region
  cd
  5x5
- arp
 )
 
 ;; ----- smex-data -----
@@ -16,4 +16,5 @@
  (kill-region . 1)
  (uncomment-region . 1)
  (ansi-term . 1)
+ (set-fill-column . 1)
 )

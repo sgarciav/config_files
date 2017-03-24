@@ -49,6 +49,17 @@
 ;; roslaunch highlighting
 (add-to-list 'auto-mode-alist '("\\.launch$" . xml-mode))
 
+;; ;; highlight characters over 80 characters
+;; (require 'whitespace)
+;; (setq whitespace-line-column 80)
+;; (setq whitespace-style '(face lines-tail))
+;; (add-hook 'prog-mode-hook 'whitespace-mode)
+;; (global-whitespace-mode +1)
+
+;; ;; wrap lines over 80 characters
+;; (add-hook 'text-mode-hook 'turn-on-auto-fill)
+;; (add-hook 'text-mode-hook '(lambda() (set-fill-column 80)))
+
 ;; Return key automatically indents cursor on new line in yaml mode
 (add-hook 'yaml-mode-hook
 	  (lambda ()

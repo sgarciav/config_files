@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/opt/ros/kinetic/share/costmap_2d/" . "cmake/")
  ("/home/sgarcia/playground/catkin_ws/src/learning_tf/" . "src/")
  ("/home/sgarcia/scrimmage/src/" . "common/")
  ("/home/sgarcia/scrimmage/" . "src/")
@@ -10,19 +11,19 @@
  ("/home/sgarcia/playground/catvehicle-1.0.2/" . "src/")
  ("/home/sgarcia/nutria/gtri-car/build/" . "CMakeFiles/")
  ("/home/sgarcia/playground/catkin_ws/src/gazebo_ros_demos/" . "urdf/")
- ("/opt/ros/kinetic/include/" . "sensor_msgs/")
+ ("/opt/ros/kinetic/include/" . "costmap_2d/")
  ("/home/sgarcia/nutria/gtri-car/src/sicktoolbox_wrapper/ros/" . "sicklms/")
  ("/home/sgarcia/nutria/gtri-car/src/sicktoolbox_wrapper/" . "ros/")
  ("/opt/ros/kinetic/share/amcl/" . "examples/")
  ("/opt/ros/kinetic/share/gazebo_ros/" . "launch/")
- ("/opt/ros/kinetic/share/" . "amcl/")
+ ("/opt/ros/kinetic/share/" . "costmap_2d/")
  ("/opt/ros/kinetic/" . "include/")
  ("/opt/ros/" . "kinetic/")
  ("/opt/" . "ros/")
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" . "config/")
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" . "include/")
  ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" . "urdf/")
  ("/home/sgarcia/nutria/gtri-car/" . "src/")
- ("/home/sgarcia/nutria/gtri-car/src/" . "azcar_sim/")
+ ("/home/sgarcia/nutria/gtri-car/src/" . "car_nav2d/")
  ("/home/sgarcia/nutria/" . "gtri-car/")
  ("/home/sgarcia/Downloads/" . "emacs/")
  ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" . "src/")
@@ -32,26 +33,29 @@
  ("/home/sgarcia/git-repos/config_files/" . "scripts/")
  ("/home/sgarcia/git-repos/" . "config_files/")
  ("/home/sgarcia/.emacs.d/" . "settings/")
- ("/home/sgarcia/" . ".emacs.d/")
+ ("/home/sgarcia/" . "nutria/")
  ("/home/" . "sgarcia/")
- ("/" . "home/")
+ ("/" . "opt/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/sgarcia/.emacs.d/"
+ "/home/sgarcia/nutria/gtri-car/src/car_nav2d/include/"
+ "/opt/ros/kinetic/include/costmap_2d/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/config/"
+ "/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/"
+ "/home/sgarcia/.emacs.d/"
+ "/opt/ros/kinetic/share/costmap_2d/"
+ "/home/sgarcia/nutria/gtri-car/src/azcar_sim/"
+ "/home/sgarcia/nutria/gtri-car/src/car_nav2d/lib/"
+ "/home/sgarcia/nutria/gtri-car/scripts/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/"
+ "/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/"
- "/home/sgarcia/nutria/gtri-car/scripts/"
  "/home/sgarcia/nutria/gtri-car/src/azcar_sim/scripts/"
- "/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/"
- "/home/sgarcia/nutria/gtri-car/src/car_nav2d/include/"
  "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/"
  "/home/sgarcia/nutria/gtri-car/"
  "/home/sgarcia/playground/catkin_ws/src/learning_tf/src/"
@@ -90,61 +94,77 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "lanemarker_observation_buffer.h"
+ "lanemarker_observation.h"
+ "observation_buffer.h"
+ "CMakeLists.txt"
+ "local_costmap_params.yaml"
+ "lane_follower_layer.cpp"
  "init.el"
- "package.xml"
- "global_costmap_params.yaml"
- "azcar_slipping.gazebo"
- "teb_base_local_planner_params.yaml"
- "teb_base_local_planner_params-template.yaml"
- "azcar.xacro"
- "base_local_planner_params.yaml"
- "azcar.launch"
- "costmap_common_params.yaml"
+ "lane_following_controller.cpp"
+ "lane_position_tracker.cpp"
+ "lane_follower_layer-original.cpp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/sgarcia/" (22728 2090 614741 549000) ".dmrc" ".xsession-errors" "Public/" "Music/" ".gconf/" "../" "Downloads/" "gtri-car-deleteme/" ".fltk/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".macromedia/" ".profile" ".wget-hsts" ".viminfo" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Octave/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".gnuplot_history" ".bashrc" "Desktop/" ".ICEauthority" ".vmware/" ".gksu.lock" ".sudo_as_admin_successful" ".compiz/" ".cache/" "playground/" ".config/" ".java/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".ipython/" ".gnupg/" ".pylint.d/" ".gnome2/" ".octave_hist" ".webex/" ".gnome2_private/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" "nutria/" "VirtualBox VMs/" ".ssr/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" ".local/" "frames.pdf")
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/include/" (22738 53252 980931 577000) "../" "lane_follower_layer-original.h" "lanemarker_observation.h" "lane_follower_layer-withObservationBuffers.cpp" "./" "lanemarker_observation_buffer.h" "KalmanFilter.h" "lane_follower_layer.h" "PositionTracker.h")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/config/" (22728 6214 854975 151000) "teb_base_local_planner_params-template.yaml" "local_costmap_params.yaml" "../" "global_costmap_params.yaml" "teb_base_local_planner_params.yaml" "./" "base_local_planner_params.yaml" "costmap_common_params.yaml")
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" (22737 19808 2705 867000) "package.xml" "../" "msg/" "maps/" "launch/" "include/" "src/" "costmap_plugins.xml" "config/" "CMakeLists.txt" "srv/" "scripts/" "./")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" (22728 1925 291969 992000) "package.xml" "../" "msg/" "maps/" "launch/" "include/" "src/" "config/" "CMakeLists.txt" "srv/" "scripts/" "./")
+ ("/home/sgarcia/nutria/gtri-car/" (22737 19316 579163 948000) "../" "src/" "README.md" "build/" ".git/" "devel/" ".gitmodules" ".catkin_workspace" "RELEASE_NOTES.md" "scripts/" "./" ".gitignore")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/" (22728 2492 93423 666000) "../" "create_map.launch" "lane_follower.launch" "speed_test.launch" "move_base.launch" "car_nav2d.launch" "./")
+ ("/home/sgarcia/" (22737 36721 460920 446000) ".dmrc" ".xsession-errors" "Public/" "Music/" ".gconf/" "../" "Downloads/" "gtri-car-deleteme/" ".fltk/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".macromedia/" ".profile" ".wget-hsts" ".viminfo" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Octave/" "Gimp/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".gnuplot_history" ".bashrc" "Desktop/" ".ICEauthority" ".vmware/" ".gksu.lock" ".sudo_as_admin_successful" ".compiz/" ".cache/" "playground/" ".config/" ".java/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".ipython/" ".gnupg/" ".pylint.d/" ".gnome2/" ".octave_hist" ".webex/" ".gnome2_private/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" "nutria/" "VirtualBox VMs/" ".ssr/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" ".local/" "frames.pdf")
 
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/" (22728 1590 46821 867000) "../" "#azcar_slipping.gazebo#" "humancar.xacro" "humancar.gazebo" "azcar.gazebo" "materials.xacro" "./" "azcar_urdf.xml" "azcar.xacro" "azcar_slipping.gazebo")
+ ("/opt/ros/kinetic/include/costmap_2d/" (22711 12258 184056 917000) "voxel_layer.h" "ObstaclePluginConfig.h" "testing_helper.h" "../" "static_layer.h" "layer.h" "footprint.h" "observation.h" "observation_buffer.h" "Costmap2DConfig.h" "array_parser.h" "cost_values.h" "InflationPluginConfig.h" "costmap_2d_ros.h" "costmap_2d.h" "costmap_math.h" "costmap_layer.h" "GenericPluginConfig.h" "obstacle_layer.h" "VoxelGrid.h" "VoxelPluginConfig.h" "costmap_2d_publisher.h" "./" "inflation_layer.h" "layered_costmap.h")
 
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/" (22726 57784 90535 362000) "humancar_leadercmd.launch" "azcar_follower.launch" "azcar.launch" "azcar_world.launch" "humancar.launch" "azcar_slomo.launch" "../" "azcar_skidpan_slomo.launch" "hectorslam-sicktest.launch" "azcar_neighborhood.launch" "joystick.launch" "rviz.launch" "distanceEstimator.launch" "azcar_skidpan.launch" "hectorslam.launch" "humancar_newspawn.launch" "azcar_squiggle.launch" "humancar_spawn_nocmd.launch" "azcar_canyonview.launch" "humancar_followerControl.launch" "distanceEstimator_simulator.launch" "applyVelProfile.launch" "azcar_empty.launch" "distanceEstimator_standalone.launch" "sick_laptop_500k.launch" "sickTest.launch" "applyController.launch" "./" "azcar_roads.launch" "robotviz.launch")
+ ("/opt/ros/kinetic/include/" (22711 11897 314410 277000) "dynamic_reconfigure/" "move_base_msgs/" "rospy_tutorials/" "self_test/" "compressed_depth_image_transport/" "diagnostic_updater/" "theora_image_transport/" "shape_msgs/" "rosconsole_bridge/" "diagnostic_msgs/" "nodelet/" "g2o/" "eigen_stl_containers/" "uuid_msgs/" "rqt_image_view/" "../" "imu_sensor_controller/" "image_transport/" "depth_image_proc/" "std_msgs/" "velodyne_gazebo_plugins/" "XmlRpcDispatch.h" "controller_interface/" "collada_parser/" "actionlib/" "resource_retriever/" "class_loader/" "rospack/" "nav_msgs/" "combined_robot_hw/" "clear_costmap_recovery/" "tf2_eigen/" "interactive_markers/" "velocity_controllers/" "carrot_planner/" "cv_bridge/" "rviz/" "urdf/" "turtlesim/" "roscpp/" "image_proc/" "move_slow_and_clear/" "nodelet_topic_tools/" "pluginlib/" "XmlRpcDecl.h" "laser_geometry/" "message_filters/" "XmlRpcServerMethod.h" "pluginlib_tutorials/" "hector_marker_drawing/" "angles/" "tf2_kdl/" "gmapping/" "XmlRpc.h" "hector_map_tools/" "actionlib_tutorials/" "nav_core/" "control_msgs/" "rqt_rviz/" "XmlRpcServer.h" "robot_pose_ekf/" "controller_manager/" "polled_camera/" "laser_assembler/" "rostest/" "joint_trajectory_controller/" "teb_local_planner/" "ecl/" "map_msgs/" "geometry_msgs/" "forward_command_controller/" "pcl_ros/" "Stage-4.1/" "geometric_shapes/" "map_server/" "move_base/" "roslz4/" "gazebo_ros/" "camera_calibration_parsers/" "random_numbers/" "global_planner/" "rosbag/" "tf/" "XmlRpcException.h" "base_local_planner/" "base64.h" "rosconsole/" "tf2_ros/" "stereo_image_proc/" "eigen_conversions/" "sensor_msgs/" "laser_filters/" "kdl_parser/" "rqt_gui_cpp/" "std_srvs/" "bondcpp/" "XmlRpcServerConnection.h" "position_controllers/" "bond/" "yocs_msgs/" "stereo_msgs/" "trajectory_interface/" "hardware_interface/" "pid/" "urdf_parser_plugin/" "hector_mapping/" "voxel_grid/" "gazebo_ros_control/" "compressed_image_transport/" "trajectory_msgs/" "robot_state_publisher/" "XmlRpcSocket.h" "roscpp_tutorials/" "image_view/" "force_torque_sensor_controller/" "pcl_msgs/" "diagnostic_aggregator/" "gripper_action_controller/" "filters/" "wiimote/" "joint_limits_interface/" "controller_manager_msgs/" "sophus/" "opencv-3.1.0-dev/" "XmlRpcValue.h" "geographic_msgs/" "kdl/" "tf2/" "tf_conversions/" "bfl/" "transmission_interface/" "controller_manager_tests/" "tf2_msgs/" "amcl/" "hector_nav_msgs/" "combined_robot_hw_tests/" "yocs_math_toolkit/" "XmlRpcSource.h" "camera_info_manager/" "XmlRpcClient.h" "costmap_converter/" "turtle_actionlib/" "dwa_local_planner/" "slam_parser/" "realtime_tools/" "collada_urdf/" "smach_msgs/" "ros/" "actionlib_msgs/" "topic_tools/" "pcl_conversions/" "gazebo_msgs/" "visualization_msgs/" "costmap_2d/" "qt_gui_cpp/" "./" "effort_controllers/" "navfn/" "smclib/" "tf2_geometry_msgs/" "hector_geotiff/" "image_rotate/" "EXTERNAL/" "XmlRpcUtil.h" "image_geometry/" "joint_state_controller/" "control_toolbox/" "kdl_conversions/" "rosgraph_msgs/" "octomap/" "gazebo_plugins/")
 
- ("/home/sgarcia/nutria/gtri-car/build/CMakeFiles/" (22726 51858 107954 285000) "cmake.check_cache" "CMakeRuleHashes.txt" "feature_tests.cxx" "../" "3.5.1/" "tests.dir/" "download_extra_data.dir/" "Makefile.cmake" "TargetDirectories.txt" "CMakeOutput.log" "Makefile2" "feature_tests.c" "progress.marks" "run_tests.dir/" "CMakeDirectoryInformation.cmake" "CMakeError.log" "clean_test_results.dir/" "CMakeTmp/" "doxygen.dir/" "./" "feature_tests.bin")
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/" (22737 19847 531310 763000) "teleop_with_keyboard.cpp" "lane_position_tracker.cpp" "../" "collect_lidar_data.cpp" "lane_following_controller.cpp" "ls2pc.cpp" "KalmanFilter.cpp" "PositionTracker.cpp" "lane_follower_layer.cpp" "./" "lane_follower_layer-original.cpp")
 
- ("/home/sgarcia/.emacs.d/" (22722 61076 734255 482000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "url/" "elpa/" "./" "snippets/")
+ ("/home/sgarcia/.emacs.d/" (22737 16879 917231 79000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "url/" "elpa/" "./" "snippets/")
 
- ("/home/sgarcia/nutria/gtri-car/scripts/" (22722 61788 386936 726000) "../" "installDependencies.sh" "manageOSRM.sh" "setupMaster.sh" "README.txt" "./")
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/config/" (22732 2448 592939 951000) "teb_base_local_planner_params-template.yaml" "local_costmap_params.yaml" "../" "global_costmap_params.yaml" "teb_base_local_planner_params.yaml" "./" "base_local_planner_params.yaml" "costmap_common_params.yaml")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/" (22722 63983 207236 494000) "../" "pub_vel_cmd_server.py" "trajectory_test.py" "osm_router_server.py" "vel_controller.py" "speed_test.py" "README.txt" "send_trajectory.py" "osm_router_test.py" "./")
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" (22732 4511 30047 629000) "package.xml" "../" "simulink/" "rviz/" "urdf/" "launch/" "include/" "src/" "config/" "CMakeLists.txt" "worlds/" "matlab files/" "scripts/" "meshes/" "./" "setup.py")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/maps/" (22721 57572 699037 438000) "canyonview_hector.pgm" "../" "squiggle.pgm" "canyonview_field.pgm" "squiggle.yaml" "./" "canyonview_field.yaml" "canyonview_hector.yaml")
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/" (22735 58459 805910 913000) "humancar_leadercmd.launch" "azcar_follower.launch" "azcar.launch" "azcar_world.launch" "humancar.launch" "azcar_slomo.launch" "../" "azcar_skidpan_slomo.launch" "hectorslam-sicktest.launch" "azcar_neighborhood.launch" "joystick.launch" "rviz.launch" "distanceEstimator.launch" "azcar_skidpan.launch" "hectorslam.launch" "humancar_newspawn.launch" "azcar_squiggle.launch" "humancar_spawn_nocmd.launch" "azcar_canyonview.launch" "humancar_followerControl.launch" "distanceEstimator_simulator.launch" "applyVelProfile.launch" "azcar_empty.launch" "distanceEstimator_standalone.launch" "sick_laptop_500k.launch" "sickTest.launch" "applyController.launch" "./" "azcar_roads.launch" "robotviz.launch")
+
+ ("/opt/ros/kinetic/share/costmap_2d/cmake/" (22711 12258 188056 964000) "costmap_2dConfig.cmake" "../" "costmap_2d-msg-extras.cmake" "costmap_2dConfig-version.cmake" "costmap_2d-msg-paths.cmake" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/lib/" (22731 64081 36429 105000) "../" "costmap_plugins.xml" "./")
+
+ ("/home/sgarcia/playground/" (22731 5850 446439 183000) "../" ".index.html.swp" "src/" "obj/" "deleteme/" "catkin_ws/" "scripts/" "georgia-latest.osm.pbf" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/maps/" (22729 41011 416605 694000) "squiggle-improved.pgm" "canyonview_hector.pgm" "../" "squiggle.pgm" "canyonview_field.pgm" "squiggle.yaml" "./" "canyonview_field.yaml" "squiggle-original.pgm" "canyonview_hector.yaml")
+
+ ("/home/sgarcia/nutria/gtri-car/build/CMakeFiles/" (22730 57680 256994 765000) "cmake.check_cache" "CMakeRuleHashes.txt" "feature_tests.cxx" "../" "3.5.1/" "tests.dir/" "download_extra_data.dir/" "Makefile.cmake" "TargetDirectories.txt" "CMakeOutput.log" "Makefile2" "feature_tests.c" "progress.marks" "run_tests.dir/" "CMakeDirectoryInformation.cmake" "CMakeError.log" "clean_test_results.dir/" "CMakeTmp/" "doxygen.dir/" "./" "feature_tests.bin")
+
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/scripts/" (22729 23125 857206 183000) "../" "odom2path.py" "primitiveCmdVel.py" "joy2cmdvel.py" "cmdvel2gazebo.py" "resetSim.sh" "tests/" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/" (22729 23125 985208 112000) "../" "pub_vel_cmd_server.py" "trajectory_test.py" "osm_router_server.py" "vel_controller.py" "speed_test.py" "README.txt" "send_trajectory.py" "osm_router_test.py" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/" (22729 23125 857206 183000) "../" "asphalt.world" "skidpan.world" "neighborhood.world" "hills.world" "azcar.world" "squiggle.world" "roads.world" "canyonview_field.world" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/" (22730 61640 788952 955000) "../" "create_map.launch" "lane_follower.launch" "speed_test.launch" "move_base.launch" "car_nav2d.launch" "./")
+
+ ("/opt/ros/kinetic/share/costmap_2d/" (22711 12258 188056 964000) "package.xml" "../" "msg/" "costmap_plugins.xml" "cmake/" "./")
+
+ ("/opt/ros/kinetic/share/" (22713 59032 907802 382000) "rosnode/" "dynamic_reconfigure/" "roslisp/" "ros_tutorials/" "gencpp/" "move_base_msgs/" "rotate_recovery/" "rospy_tutorials/" "self_test/" "hector_trajectory_server/" "ps3joy/" "compressed_depth_image_transport/" "interactive_marker_tutorials/" "hector_geotiff_plugins/" "nodelet_core/" "diagnostic_updater/" "theora_image_transport/" "rqt_publisher/" "shape_msgs/" "rosconsole_bridge/" "diagnostic_msgs/" "nodelet/" "eigen_stl_containers/" "bondpy/" "perception/" "message_runtime/" "uuid_msgs/" "rqt_image_view/" "imu_sensor_controller/" "image_transport/" "common-lisp/" "rqt_robot_dashboard/" "roslib/" "ecl_type_traits/" "rqt_common_plugins/" "diagnostic_analysis/" "spacenav_node/" "rqt_moveit/" "depth_image_proc/" "ecl_linear_algebra/" "stage/" "nodelet_tutorial_math/" "roswtf/" "std_msgs/" "velodyne_gazebo_plugins/" "xacro/" "rviz_plugin_tutorials/" "genmsg/" "rosbag_migration_rule/" "rosmake/" "controller_interface/" "collada_parser/" "genpy/" "actionlib/" "geometry_tutorials/" "resource_retriever/" "class_loader/" "catkin/" "rospack/" "nav_msgs/" "combined_robot_hw/" "clear_costmap_recovery/" "gennodejs/" "tf2_eigen/" "rqt_action/" "interactive_markers/" "velocity_controllers/" "carrot_planner/" "rosbuild/" "geneus/" "cv_bridge/" "cpp_common/" "geometry/" "rviz/" "urdf/" "navigation/" "hector_imu_attitude_to_tf/" "turtlesim/" "rqt_robot_plugins/" "qt_gui_py_common/" "common_msgs/" "rviz_python_tutorial/" "roscpp/" "image_proc/" "move_slow_and_clear/" "rqt_joint_trajectory_controller/" "nodelet_topic_tools/" "rqt_srv/" "smach/" "qwt_dependency/" "pluginlib/" "roslint/" "media_export/" "laser_geometry/" "tf2_py/" "message_filters/" "pluginlib_tutorials/" "hector_marker_drawing/" "teb_local_planner_tutorials/" "rqt_console/" "camera_calibration/" "angles/" "python_qt_binding/" "fake_localization/" "cmake_modules/" "tf2_kdl/" "rqt_graph/" "ecl_exceptions/" "gmapping/" "hector_map_tools/" "rosunit/" "actionlib_tutorials/" "nav_core/" "control_msgs/" "rosclean/" "rqt_rviz/" "viz/" "ecl_formatters/" "gazebo_ros_pkgs/" "robot_pose_ekf/" "controller_manager/" "polled_camera/" "laser_pipeline/" "ros_core/" "rosbash/" "smach_ros/" "executive_smach/" "rqt_robot_monitor/" "laser_assembler/" "hector_map_server/" "rostest/" "stage_ros/" "joint_trajectory_controller/" "teb_local_planner/" "rqt_topic/" "desktop/" "map_msgs/" "bond_core/" "rqt_logger_level/" "geometry_msgs/" "ros_comm/" "forward_command_controller/" "pcl_ros/" "geometric_shapes/" "map_server/" "rosmsg/" "robot/" "move_base/" "roslz4/" "gazebo_ros/" "libg2o/" "ecl_config/" "camera_calibration_parsers/" "random_numbers/" "rqt_runtime_monitor/" "global_planner/" "rqt_tf_tree/" "common_tutorials/" "rosbag/" "rqt_gui/" "roseus/" "turtle_tf/" "tf/" "base_local_planner/" "robot_model/" "rosout/" "rosconsole/" "rqt/" "tf2_ros/" "ros_controllers/" "stereo_image_proc/" "rospy/" "visualization_marker_tutorials/" "rosmaster/" "eigen_conversions/" "sensor_msgs/" "visualization_tutorials/" "rostime/" "laser_filters/" "kdl_parser/" "ros_control/" "hector_compressed_map_transport/" "rqt_gui_cpp/" "opencv3/" "ecl_build/" "std_srvs/" "bondcpp/" "rqt_nav_view/" "orocos_kdl/" "joint_state_publisher/" "rqt_reconfigure/" "librviz_tutorial/" "image_transport_plugins/" "position_controllers/" "bond/" "yocs_msgs/" "stereo_msgs/" "hardware_interface/" "pid/" "urdf_parser_plugin/" "hector_mapping/" "voxel_grid/" "rqt_py_common/" "roscpp_core/" "diff_drive_controller/" "gazebo_ros_control/" "openslam_gmapping/" "compressed_image_transport/" "rqt_msg/" "pr2_description/" "roslang/" "rqt_web/" "trajectory_msgs/" "rqt_shell/" "robot_state_publisher/" "ecl_converters/" "ecl_errors/" "hector_slam/" "hector_slam_launch/" "roscpp_tutorials/" "diagnostics/" "image_view/" "genlisp/" "force_torque_sensor_controller/" "yocs_waypoints_navi/" "gl_dependency/" "tf2_tools/" "pcl_msgs/" "diagnostic_aggregator/" "gripper_action_controller/" "rqt_bag_plugins/" "filters/" "wiimote/" "rosgraph/" "python_orocos_kdl/" "vision_opencv/" "perception_pcl/" "mk/" "joint_limits_interface/" "controller_manager_msgs/" "sophus/" "rqt_robot_steering/" "qt_dotgraph/" "geographic_msgs/" "tf2/" "tf_conversions/" "rqt_service_caller/" "bfl/" "transmission_interface/" "joy/" "controller_manager_tests/" "roscreate/" "OpenCV-3.1.0-dev/" "tf2_msgs/" "amcl/" "rqt_pose_view/" "rqt_top/" "roscpp_serialization/" "hector_nav_msgs/" "combined_robot_hw_tests/" "yocs_math_toolkit/" "rosparam/" "roscpp_traits/" "ecl_license/" "camera_info_manager/" "ecl_concepts/" "simulators/" "costmap_converter/" "ros_base/" "xmlrpcpp/" "turtle_actionlib/" "dwa_local_planner/" "realtime_tools/" "collada_urdf/" "rqt_plot/" "ecl_mpl/" "doc/" "desktop_full/" "smach_msgs/" "ros/" "rosbag_storage/" "actionlib_msgs/" "joystick_drivers/" "topic_tools/" "qt_gui/" "pcl_conversions/" "gazebo_msgs/" "visualization_msgs/" "costmap_2d/" "ecl_eigen/" "qt_gui_cpp/" "effort_controllers/" "rqt_bag/" "turtle_tf2/" "rosservice/" "navfn/" "rosboost_cfg/" "diagnostic_common_diagnostics/" "roslaunch/" "smclib/" "tf2_geometry_msgs/" "hector_geotiff/" "image_rotate/" "image_geometry/" "rqt_gui_py/" "rqt_dep/" "joint_state_controller/" "urdf_tutorial/" "control_toolbox/" "image_common/" "message_generation/" "kdl_conversions/" "image_pipeline/" "rqt_launch/" "ecl_math/" "rosgraph_msgs/" "octomap/" "rostopic/" "gazebo_plugins/" "rqt_py_console/" "../" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/scripts/" (22729 23139 237407 901000) "../" "installDependencies.sh" "manageOSRM.sh" "setupMaster.sh" "README.txt" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/" (22729 23125 857206 183000) "../" "humancar.xacro" "humancar.gazebo" "azcar.gazebo" "materials.xacro" "./" "azcar_urdf.xml" "azcar.xacro" "azcar_slipping.gazebo")
+
+ ("/home/sgarcia/git-repos/config_files/scripts/" (22728 7049 279445 352000) "../" "set_config.sh" "get_config.sh" "README.txt" "./")
 
  ("/opt/ros/kinetic/share/gazebo_ros/launch/" (22711 12339 477128 421000) "../" "empty_world.launch" "shapes_world.launch" "rubble_world.launch" "elevator_world.launch" "mud_world.launch" "willowgarage_world.launch" "range_world.launch" "./")
 
  ("/opt/ros/kinetic/share/amcl/examples/" (22711 11879 790168 273000) "amcl_omni.launch" "../" "amcl_diff.launch" "./")
 
- ("/home/sgarcia/playground/" (22713 40307 785333 645000) "../" ".index.html.swp" "src/" "obj/" "catkin_ws/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/" (22720 34210 529264 196000) "../" "asphalt.world" "skidpan.world" "neighborhood.world" "azcar.world" "squiggle.world" "roads.world" "canyonview_field.world" "./")
-
  ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/config/" (22720 34316 454445 601000) "../" "azcar_control.yaml" "map.yaml" "./")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/include/" (22710 5710 154699 940000) "../" "./" "KalmanFilter.h" "PositionTracker.h")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/scripts/" (22721 31413 654158 59000) "../" "odom2path.py" "primitiveCmdVel.py" "joy2cmdvel.py" "cmdvel2gazebo.py" "resetSim.sh" "tests/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/" (22720 38091 458993 225000) "teleop_with_keyboard.cpp" "lane_position_tracker.cpp" "../" "collect_lidar_data.cpp" "lane_following_controller.cpp" "ls2pc.cpp" "KalmanFilter.cpp" "PositionTracker.cpp" "./")
-
  ("/home/sgarcia/nutria/gtri-car/src/" (22713 39301 982331 902000) "../" "azcar_sim/" "cmdvel2gazebo/" "safeopenloopcircle/" "obstaclestopper/" "osrm-backend/" "hoffmannfollower/" "CMakeLists.txt" "car_nav2d/" "sicktoolbox/" "velodyne/" "sicktoolbox_wrapper/" "./" "simplestateflowmodel/")
-
- ("/home/sgarcia/nutria/gtri-car/" (22712 38964 657423 861000) "../" "src/" "README.md" "build/" ".git/" "devel/" ".gitmodules" ".catkin_workspace" "RELEASE_NOTES.md" "scripts/" "./" ".gitignore")
 
  ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/src/" (22708 36121 779848 968000) "leadercmd.cc" "../" "cont.cc" "cont_lead.cc" "distanceEstimator.cpp" "firstOrderController.cc" "./")
 
@@ -155,8 +175,6 @@
  ("/home/sgarcia/playground/catkin_ws/src/learning_tf/" (22703 3582 860185 156000) "package.xml" "../" "launch/" "include/" "src/" "CMakeLists.txt" "./")
 
  ("/home/sgarcia/playground/catkin_ws/src/learning_tf/src/" (22703 9417 668640 339000) "../" "frame_tf_broadcaster.cpp" "turtle_tf_listener.cpp" "./" "turtle_tf_broadcaster.cpp")
-
- ("/home/sgarcia/git-repos/config_files/scripts/" (22702 3382 66453 132000) "../" "set_config.sh" "get_config.sh" "README.txt" "./")
 
  ("/home/sgarcia/playground/catkin_ws/src/" (22702 64208 481780 58000) "../" "CMakeLists.txt" "beginner_tutorials/" "learning_tf/" "./")
 
@@ -175,8 +193,6 @@
  ("/home/sgarcia/scrimmage/src/" (22656 60336 758721 875000) "../" "msg/" "viewer/" "parse/" "metrics/" "simcontrol/" "log/" "CMakeLists.txt" "proto/" "math/" "common/" "py_scrimmage/" "./")
 
  ("/home/sgarcia/scrimmage/" (22656 60894 408266 932000) "../" "plugins/" "plugin_libs/" "ci/" "lib/" "AUTHORS" "include/" "src/" "config/" "bin/" "missions/" "README.md" "tools/" "CMakeLists.txt" "share/" "build/" ".git/" "doxyfile" "cmake/" "setup/" "scripts/" "notes/" "test/" "LICENSE" "data/" "./" "msg_libs/" ".gitignore")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" (22692 43116 375737 922000) "package.xml" "../" "simulink/" "rviz/" "urdf/" "launch/" "include/" "src/" "config/" "CMakeLists.txt" "worlds/" "matlab files/" "scripts/" "meshes/" "./" "setup.py")
 
  ("/home/sgarcia/nutria/gtri-car/src/cmdvel2gazebo/" (22692 31523 75939 698000) "cmdvel2gazebo_private.h" "slros_initialize.cpp" "slros_msgconvert_utils.h" "package.xml" "rtwtypes.h" "../" "rtw_continuous.h" "cmdvel2gazebo_data.cpp" "rtmodel.h" "slTestTypes.h" "rt_nonfinite.h" "rtGetInf.h" "MW_custom_RTOS_header.h" "linuxinitialize.h" "slros_busmsg_conversion.cpp" "rtGetNaN.cpp" "rtGetInf.cpp" "ert_main.cpp" "CMakeLists.txt" "slros_generic_param.h" "slros_initialize.h" "slros_generic_pubsub.h" "rt_nonfinite.cpp" "slros_generic.h" "cmdvel2gazebo.h" "slTestResult.h" "rtGetNaN.h" "slros_generic_param.cpp" "linuxinitialize.cpp" "cmdvel2gazebo.cpp" "cmdvel2gazebo_types.h" "slros_busmsg_conversion.h" "rtw_solver.h" "./" "defines.txt")
 
@@ -210,8 +226,6 @@
 
  ("/opt/ros/kinetic/include/sensor_msgs/" (22655 62606 274376 638000) "LaserEcho.h" "Range.h" "SetCameraInfo.h" "point_field_conversion.h" "../" "point_cloud2_iterator.h" "PointCloud.h" "CompressedImage.h" "Imu.h" "MultiDOFJointState.h" "NavSatFix.h" "ChannelFloat32.h" "SetCameraInfoResponse.h" "distortion_models.h" "CameraInfo.h" "MultiEchoLaserScan.h" "JoyFeedbackArray.h" "MagneticField.h" "PointCloud2.h" "Joy.h" "point_cloud_conversion.h" "impl/" "Temperature.h" "SetCameraInfoRequest.h" "fill_image.h" "BatteryState.h" "RegionOfInterest.h" "LaserScan.h" "TimeReference.h" "Image.h" "JoyFeedback.h" "PointField.h" "Illuminance.h" "JointState.h" "image_encodings.h" "NavSatStatus.h" "FluidPressure.h" "./" "RelativeHumidity.h")
 
- ("/opt/ros/kinetic/include/" (22683 28653 366440 442000) "dynamic_reconfigure/" "move_base_msgs/" "rospy_tutorials/" "diagnostic_updater/" "rosconsole_bridge/" "diagnostic_msgs/" "nodelet/" "rqt_image_view/" "../" "imu_sensor_controller/" "image_transport/" "std_msgs/" "XmlRpcDispatch.h" "controller_interface/" "actionlib/" "resource_retriever/" "class_loader/" "rospack/" "nav_msgs/" "combined_robot_hw/" "clear_costmap_recovery/" "tf2_eigen/" "interactive_markers/" "velocity_controllers/" "cv_bridge/" "rviz/" "urdf/" "turtlesim/" "roscpp/" "nodelet_topic_tools/" "pluginlib/" "XmlRpcDecl.h" "laser_geometry/" "message_filters/" "XmlRpcServerMethod.h" "hector_marker_drawing/" "angles/" "XmlRpc.h" "hector_map_tools/" "nav_core/" "control_msgs/" "XmlRpcServer.h" "controller_manager/" "polled_camera/" "rostest/" "joint_trajectory_controller/" "map_msgs/" "geometry_msgs/" "forward_command_controller/" "pcl_ros/" "map_server/" "move_base/" "roslz4/" "gazebo_ros/" "camera_calibration_parsers/" "rosbag/" "tf/" "XmlRpcException.h" "base_local_planner/" "base64.h" "rosconsole/" "tf2_ros/" "sensor_msgs/" "rqt_gui_cpp/" "std_srvs/" "bondcpp/" "XmlRpcServerConnection.h" "position_controllers/" "bond/" "trajectory_interface/" "hardware_interface/" "urdf_parser_plugin/" "hector_mapping/" "voxel_grid/" "gazebo_ros_control/" "trajectory_msgs/" "XmlRpcSocket.h" "roscpp_tutorials/" "force_torque_sensor_controller/" "pcl_msgs/" "gripper_action_controller/" "wiimote/" "joint_limits_interface/" "controller_manager_msgs/" "opencv-3.1.0-dev/" "XmlRpcValue.h" "kdl/" "tf2/" "tf_conversions/" "transmission_interface/" "controller_manager_tests/" "tf2_msgs/" "amcl/" "hector_nav_msgs/" "combined_robot_hw_tests/" "XmlRpcSource.h" "camera_info_manager/" "XmlRpcClient.h" "realtime_tools/" "ros/" "actionlib_msgs/" "topic_tools/" "pcl_conversions/" "gazebo_msgs/" "visualization_msgs/" "costmap_2d/" "qt_gui_cpp/" "./" "effort_controllers/" "navfn/" "smclib/" "hector_geotiff/" "XmlRpcUtil.h" "joint_state_controller/" "control_toolbox/" "kdl_conversions/" "rosgraph_msgs/" "gazebo_plugins/")
-
  ("/home/sgarcia/nutria/gtri-car/src/sicktoolbox_wrapper/ros/" (22667 41061 391950 76000) "sicklms/" "sickld/" "../" "./")
 
  ("/home/sgarcia/nutria/gtri-car/src/sicktoolbox_wrapper/" (22667 41061 391950 76000) "standalone/" "package.xml" "../" "CMakeLists.txt" ".git" "ros/" "./" "sick_test.vcg")
@@ -225,8 +239,6 @@
  ("/opt/ros/kinetic/share/gazebo_ros_control/" (22658 30671 763921 787000) "package.xml" "../" "cmake/" "robot_hw_sim_plugins.xml" "./")
 
  ("/opt/ros/kinetic/share/gazebo_ros/" (22655 62701 698874 771000) "package.xml" "../" "launch/" "cmake/" "./")
-
- ("/opt/ros/kinetic/share/" (22664 51974 112535 573000) "rosnode/" "dynamic_reconfigure/" "roslisp/" "ros_tutorials/" "gencpp/" "move_base_msgs/" "rotate_recovery/" "rospy_tutorials/" "self_test/" "hector_trajectory_server/" "ps3joy/" "interactive_marker_tutorials/" "hector_geotiff_plugins/" "nodelet_core/" "diagnostic_updater/" "rqt_publisher/" "shape_msgs/" "rosconsole_bridge/" "diagnostic_msgs/" "nodelet/" "eigen_stl_containers/" "bondpy/" "message_runtime/" "rqt_image_view/" "imu_sensor_controller/" "image_transport/" "common-lisp/" "rqt_robot_dashboard/" "roslib/" "rqt_common_plugins/" "diagnostic_analysis/" "spacenav_node/" "rqt_moveit/" "stage/" "nodelet_tutorial_math/" "roswtf/" "std_msgs/" "xacro/" "rviz_plugin_tutorials/" "genmsg/" "rosbag_migration_rule/" "rosmake/" "controller_interface/" "collada_parser/" "genpy/" "actionlib/" "geometry_tutorials/" "resource_retriever/" "class_loader/" "catkin/" "rospack/" "nav_msgs/" "combined_robot_hw/" "clear_costmap_recovery/" "gennodejs/" "tf2_eigen/" "rqt_action/" "interactive_markers/" "velocity_controllers/" "rosbuild/" "geneus/" "cv_bridge/" "cpp_common/" "geometry/" "rviz/" "urdf/" "hector_imu_attitude_to_tf/" "turtlesim/" "rqt_robot_plugins/" "qt_gui_py_common/" "common_msgs/" "rviz_python_tutorial/" "roscpp/" "rqt_joint_trajectory_controller/" "nodelet_topic_tools/" "rqt_srv/" "smach/" "qwt_dependency/" "pluginlib/" "roslint/" "media_export/" "laser_geometry/" "tf2_py/" "message_filters/" "pluginlib_tutorials/" "hector_marker_drawing/" "rqt_console/" "angles/" "python_qt_binding/" "cmake_modules/" "tf2_kdl/" "rqt_graph/" "hector_map_tools/" "rosunit/" "actionlib_tutorials/" "nav_core/" "control_msgs/" "rosclean/" "rqt_rviz/" "controller_manager/" "polled_camera/" "laser_pipeline/" "ros_core/" "rosbash/" "smach_ros/" "executive_smach/" "rqt_robot_monitor/" "laser_assembler/" "hector_map_server/" "rostest/" "stage_ros/" "joint_trajectory_controller/" "rqt_topic/" "map_msgs/" "bond_core/" "rqt_logger_level/" "geometry_msgs/" "ros_comm/" "forward_command_controller/" "pcl_ros/" "geometric_shapes/" "map_server/" "rosmsg/" "robot/" "move_base/" "roslz4/" "gazebo_ros/" "camera_calibration_parsers/" "random_numbers/" "rqt_runtime_monitor/" "rqt_tf_tree/" "common_tutorials/" "rosbag/" "rqt_gui/" "roseus/" "turtle_tf/" "tf/" "base_local_planner/" "robot_model/" "rosout/" "rosconsole/" "rqt/" "tf2_ros/" "ros_controllers/" "rospy/" "visualization_marker_tutorials/" "rosmaster/" "eigen_conversions/" "sensor_msgs/" "visualization_tutorials/" "rostime/" "laser_filters/" "kdl_parser/" "ros_control/" "hector_compressed_map_transport/" "rqt_gui_cpp/" "opencv3/" "std_srvs/" "bondcpp/" "rqt_nav_view/" "orocos_kdl/" "joint_state_publisher/" "rqt_reconfigure/" "librviz_tutorial/" "position_controllers/" "bond/" "stereo_msgs/" "hardware_interface/" "urdf_parser_plugin/" "hector_mapping/" "voxel_grid/" "rqt_py_common/" "roscpp_core/" "diff_drive_controller/" "gazebo_ros_control/" "rqt_msg/" "pr2_description/" "roslang/" "rqt_web/" "trajectory_msgs/" "rqt_shell/" "robot_state_publisher/" "hector_slam/" "hector_slam_launch/" "roscpp_tutorials/" "diagnostics/" "genlisp/" "force_torque_sensor_controller/" "gl_dependency/" "pcl_msgs/" "diagnostic_aggregator/" "gripper_action_controller/" "rqt_bag_plugins/" "filters/" "wiimote/" "rosgraph/" "python_orocos_kdl/" "mk/" "joint_limits_interface/" "controller_manager_msgs/" "rqt_robot_steering/" "qt_dotgraph/" "tf2/" "tf_conversions/" "rqt_service_caller/" "transmission_interface/" "joy/" "controller_manager_tests/" "roscreate/" "OpenCV-3.1.0-dev/" "tf2_msgs/" "amcl/" "rqt_pose_view/" "rqt_top/" "roscpp_serialization/" "hector_nav_msgs/" "combined_robot_hw_tests/" "rosparam/" "roscpp_traits/" "camera_info_manager/" "ros_base/" "xmlrpcpp/" "turtle_actionlib/" "realtime_tools/" "collada_urdf/" "rqt_plot/" "doc/" "smach_msgs/" "ros/" "rosbag_storage/" "actionlib_msgs/" "joystick_drivers/" "topic_tools/" "qt_gui/" "pcl_conversions/" "gazebo_msgs/" "visualization_msgs/" "costmap_2d/" "qt_gui_cpp/" "effort_controllers/" "rqt_bag/" "turtle_tf2/" "rosservice/" "navfn/" "rosboost_cfg/" "diagnostic_common_diagnostics/" "roslaunch/" "smclib/" "tf2_geometry_msgs/" "hector_geotiff/" "rqt_gui_py/" "rqt_dep/" "joint_state_controller/" "urdf_tutorial/" "control_toolbox/" "image_common/" "message_generation/" "kdl_conversions/" "rqt_launch/" "rosgraph_msgs/" "octomap/" "rostopic/" "rqt_py_console/" "../" "./")
 
  ("/opt/ros/kinetic/" (22655 62584 966265 415000) "_setup_util.py" ".catkin" "../" "etc/" "setup.zsh" ".rosinstall" "lib/" "setup.bash" "include/" "bin/" "env.sh" "share/" "setup.sh" "./")
 
