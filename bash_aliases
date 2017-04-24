@@ -32,5 +32,5 @@ alias runtf='rosrun tf2_tools view_frames.py && rm frames.gv && evince frames.pd
 
 # open document using locate
 doc_open() {
-	gedit $(echo $(locate $1))
+	gedit $(echo $(locate $1)) &
 }
