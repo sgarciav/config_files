@@ -49,18 +49,18 @@
 ;; roslaunch highlighting
 (add-to-list 'auto-mode-alist '("\\.launch$" . xml-mode))
 
-;; highlight characters over 80 characters
-(require 'whitespace)
-(setq whitespace-line-column 80)
-(setq whitespace-style '(face lines-tail))
-(add-hook 'prog-mode-hook 'whitespace-mode)
-(global-whitespace-mode +1)
+;; ;; highlight characters over 80 characters
+;; (require 'whitespace)
+;; (setq whitespace-line-column 80)
+;; (setq whitespace-style '(face lines-tail))
+;; (add-hook 'prog-mode-hook 'whitespace-mode)
+;; (global-whitespace-mode +1)
 
 ;; display ruler at the 80 character mark
 (require 'fill-column-indicator)
 (setq fci-rule-width 2)
 (setq fci-rule-column 80)
-(setq fci-rule-color "violet")
+(setq fci-rule-color "lightgreen")
 (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
 (global-fci-mode 1)
 

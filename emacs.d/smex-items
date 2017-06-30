@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ recover-file
  list-packages
  set-fill-column
  package-list-packages
  ansi-term
  uncomment-region
  kill-region
- cd
 )
 
 ;; ----- smex-data -----
@@ -18,4 +18,5 @@
  (ansi-term . 1)
  (set-fill-column . 1)
  (list-packages . 1)
+ (recover-file . 1)
 )
