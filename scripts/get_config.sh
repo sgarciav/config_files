@@ -53,6 +53,9 @@ function get_emacs
     else
 	progress_msg 0 $1
     fi
+
+    # delete 'emacs_backup' directory
+    rm -rf ../emacs.d/emacs-backup/
 }
 
 function get_all
