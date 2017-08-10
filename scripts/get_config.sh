@@ -47,6 +47,7 @@ function printNames()
 {
     echo "~/.bash_aliases"
     echo "~/.emacs.d/"
+    echo "~/.bashrc"
     echo ""
 }
 
