@@ -1,83 +1,97 @@
 #!/bin/bash
 
 # Author: Sergio Garcia-Vergara
-# set_config.sh
+#
 # Apply config files on this machine.
 
-function usage
+function usage()
 {
-    echo ""
-    echo "usage: source set_config.sh <directory or filename>"
-    echo "Apply config files -taken from repo-  on this machine."
-    echo ""
+    cat << EOF
+
+usage: ./set_config.sh -s SERVICE
+
+Apply config files from repository to the current machine. Running this script
+will delete current files in machine.
+
+SERVICE (default = all): file or directory to be updated.
+   emacs: files and directories to set EMACS configuration.
+   aliases: aliases to be set.
+
+EOF
 }
 
-function progress_msg
-{
-    if [ $1 == "copy" ]; then
-	echo "Copying $2 from repo to machine... Complete"
-    elif [ $1 == "delete" ]; then
-	echo "Deleting existing $2 in machine... Complete"
-    fi
-    echo ""
-}
+# variables
+SERVICE=all
 
-function printNames
+# update variables if there are user inputs
+while getopts s: flag; do
+    case $flag in
+	s)
+	    SERVICE=$OPTARG
+	    ;;
+	?)
+	usage;
+	exit;
+	;;
+    esac
+done
+
+
+# user-defined functions
+# -------------------------------------
+
+# --------------------
+function printNames()
 {
     echo "~/.bash_aliases"
     echo "~/.emacs.d/"
     echo ""
 }
 
-function set_bashaliases
+# --------------------
+function set_bashaliases()
 {
     # remove file if if exists
     if [ -f ~/.bash_aliases ]; then
 	rm ~/.bash_aliases
-	progress_msg "delete" $1
+	echo "Deleting ~/.bash_aliases from machine... Complete"
     fi
 
     # copy repo version to home directory
     cp ../bash_aliases ~/.bash_aliases
-    progress_msg "copy" $1
+    echo "Copying ~/.bash_aliases to machine... Complete"
 }
 
-function set_emacs
+# --------------------
+function set_emacs()
 {
     # delete existing repository
     if [ -d ~/.emacs.d ]; then
 	rm -r ~/.emacs.d
-	progress_msg "delete" $1
+	echo "Deleting ~/.emacs.d from machine... Complete"
     fi
 
     # add copy from repo
     cp -r ../emacs.d ~/.emacs.d
-    progress_msg "copy" $1
+    echo "Copying ~/.emacs.d to machine... Complete"
 }
 
-function set_all
-{
-    echo "Updating all config files..."
+
+
+# main function
+# -------------------------------------
+
+if [ $SERVICE = "all" ]; then
+    echo "Copying files from:"
     printNames
-    set_bashaliases "~/.bash_aliases"
-    set_emacs "~/.emacs.d/"
-    echo "Updating all config files... Complete"
-    echo ""
-}
-
-# -----------------------------------------------
-
-# make sure that there is an input
-if [ $# -ne 1 ] ||  [ $1 == "-u" ] || [ $1 == "-usage" ]; then
-    usage
-elif [ $1 == "bash_aliases" ]; then
-    set_bashaliases $1
-elif [ $1 == "emacs" ]; then
-    set_emacs $1
-elif [ $1 == "all" ]; then
-    set_all
+    set_emacs
+    set_bashaliases
+elif [ $SERVICE = "emacs" ]; then
+    set_emacs
+elif [ $SERVICE = "aliases" ]; then
+    set_bashaliases
 else
-    echo "$1: Not handling this file just yet. Only:"
+    echo "$SERVICE: Not handling this service just yet. Only:"
     printNames
 fi
 
