@@ -75,6 +75,12 @@
 (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
 (global-fci-mode 1)
 
+;; add syntax highlighting for Dockerfiles and the ability to build the image
+;; directly (C-c C-b) from the buffer
+(add-to-list 'load-path "/your/path/to/dockerfile-mode/")
+(require 'dockerfile-mode)
+(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+
 ;; Return key automatically indents cursor on new line in yaml mode
 (add-hook 'yaml-mode-hook
 	  (lambda ()

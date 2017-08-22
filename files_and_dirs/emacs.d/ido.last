@@ -2,6 +2,25 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/sgarcia/cuas/gtri-uav/uav_build/" . "dependency_scripts/")
+ ("/home/sgarcia/cuas/gtri-uav/ci/" . "dockerfiles/")
+ ("/home/sgarcia/cuas/gtri-uav/" . "ci/")
+ ("/home/sgarcia/cuas/" . "gtri-uav/")
+ ("/home/sgarcia/git-repos/gtri-uav-aerial-robotics/" . "gtri-uav/")
+ ("/home/sgarcia/git-repos/gtri-uav-simulation/" . "ArduPilot/")
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node_forked/xsens_driver/" . "src/")
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node_forked/" . "xsens_driver/")
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node/src/xsens_driver/" . "src/")
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node/src/" . "xsens_driver/")
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node/" . "src/")
+ ("/home/sgarcia/nutria/pioneer_navigation/src/xsens_mti_ros_node/src/xsens_driver/" . "src/")
+ ("/home/sgarcia/nutria/pioneer_navigation/src/xsens_mti_ros_node/src/" . "xsens_driver/")
+ ("/home/sgarcia/nutria/pioneer_navigation/src/xsens_mti_ros_node/" . "src/")
+ ("/home/sgarcia/playground/catkin_ws/src/xsens_driver/" . "src/")
+ ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/" . "launch/")
+ ("/home/sgarcia/nutria/pioneer_navigation/src/" . "pioneer_autonomy/")
+ ("/home/sgarcia/nutria/pioneer_navigation/" . "src/")
+ ("/home/sgarcia/git-repos/scrimmage/" . "plugin_libs/")
  ("/home/sgarcia/nutria/gtri-car/src/osrf_prius/car_demo/" . "nodes/")
  ("/home/sgarcia/nutria/gtri-car/src/osrf_prius/" . "car_demo/")
  ("/home/sgarcia/nutria/gtri-car/src/car_demo/car_demo/" . "nodes/")
@@ -19,7 +38,7 @@
  ("/home/sgarcia/playground/catkin_ws/src/python_pkg/src/" . "python_pkg/")
  ("/home/sgarcia/playground/catkin_ws/src/python_pkg/" . "bin/")
  ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/include/" . "gtri_pkg/")
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/" . "scripts/")
+ ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/" . "src/")
  ("/home/sgarcia/playground/catkin_ws/src/smach_tutorials/" . "scripts/")
  ("/home/sgarcia/gtri-car-deleteme/car_nav2d/" . "src/")
  ("/home/sgarcia/gtri-car-deleteme/" . "velodyne_plugin/")
@@ -42,26 +61,55 @@
  ("/opt/ros/" . "kinetic/")
  ("/opt/" . "ros/")
  ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" . "scripts/")
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" . "config/")
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" . "urdf/")
  ("/home/sgarcia/nutria/gtri-car/" . "src/")
  ("/home/sgarcia/nutria/gtri-car/src/" . "car_nav2d/")
- ("/home/sgarcia/nutria/" . "gtri-car/")
+ ("/home/sgarcia/nutria/" . "pioneer_navigation/")
  ("/home/sgarcia/Downloads/" . "emacs/")
  ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" . "src/")
- ("/home/sgarcia/playground/catkin_ws/src/" . "beginner_tutorials/")
+ ("/home/sgarcia/playground/catkin_ws/src/" . "mtig_driver/")
  ("/home/sgarcia/playground/catkin_ws/" . "src/")
- ("/home/sgarcia/playground/" . "scripts/")
+ ("/home/sgarcia/playground/" . "catkin_ws/")
  ("/home/sgarcia/git-repos/config_files/" . "scripts/")
- ("/home/sgarcia/git-repos/" . "scrimmage-gtri-share/")
+ ("/home/sgarcia/git-repos/" . "gtri-uav-simulation/")
  ("/home/sgarcia/.emacs.d/" . "settings/")
- ("/home/sgarcia/" . "nutria/")
+ ("/home/sgarcia/" . "cuas/")
  ("/home/" . "sgarcia/")
  ("/" . "etc/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/sgarcia/.emacs.d/settings/"
+ "/home/sgarcia/cuas/gtri-uav/"
+ "/home/sgarcia/cuas/gtri-uav/ci/dockerfiles/"
+ "/home/sgarcia/cuas/gtri-uav/uav_build/"
+ "/home/sgarcia/cuas/gtri-uav/uav_build/dependency_scripts/"
+ "/home/sgarcia/git-repos/gtri-uav-simulation/ArduPilot/"
+ "/home/sgarcia/"
+ "/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/launch/"
+ "/home/sgarcia/git-repos/gtri-uav-aerial-robotics/gtri-uav/"
+ "/home/sgarcia/nutria/pioneer_navigation/scripts/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/"
+ "/home/sgarcia/git-repos/config_files/scripts/"
+ "/home/sgarcia/git-repos/gtri-uav/"
+ "/home/sgarcia/git-repos/gtri-uav-simulation/docs/"
+ "/home/sgarcia/git-repos/gtri-uav-simulation/"
+ "/home/sgarcia/nutria/gtri-car/src/osrf_prius/car_demo/"
+ "/home/sgarcia/git-repos/xsens_mti_ros_node_forked/xsens_driver/src/"
+ "/home/sgarcia/nutria/pioneer_navigation/src/xsens_mti_ros_node/src/xsens_driver/src/"
+ "/home/sgarcia/git-repos/xsens_mti_ros_node/src/xsens_driver/src/"
+ "/home/sgarcia/playground/catkin_ws/src/xsens_driver/src/"
+ "/home/sgarcia/playground/scripts/"
+ "/home/sgarcia/nutria/gtri-car/scripts/"
+ "/home/sgarcia/nutria/pioneer_navigation/"
+ "/home/sgarcia/nutria/gtri-car/src/car_nav2d/urdf/"
+ "/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/"
+ "/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/urdf/"
+ "/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/"
+ "/home/sgarcia/git-repos/scrimmage/plugin_libs/"
+ "/home/sgarcia/git-repos/scrimmage/missions/"
+ "/home/sgarcia/git-repos/scrimmage/"
  "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/scripts/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/config/"
@@ -72,128 +120,197 @@
  "/home/sgarcia/nutria/gtri-car/"
  "/home/sgarcia/nutria/scrimmage-nutria-plugins/"
  "/home/sgarcia/git-repos/scrimmage-gtri-share/"
- "/home/sgarcia/git-repos/scrimmage/"
  "/home/sgarcia/nutria/gtri-car/src/osrf_prius/car_demo/nodes/"
- "/home/sgarcia/nutria/gtri-car/src/osrf_prius/car_demo/"
  "/home/sgarcia/nutria/gtri-car/src/car_demo/car_demo/nodes/"
  "/home/sgarcia/nutria/gtri-car/src/car_demo/car_demo/"
  "/home/sgarcia/git-repos/prius_demo/src/prius_msgs/"
  "/home/sgarcia/git-repos/prius_demo/src/car_demo/"
- "/home/sgarcia/nutria/gtri-car/src/car_nav2d/urdf/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/behaviors/"
  "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/src/"
  "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/include/gtri_pkg/"
  "/home/sgarcia/git-repos/prius_demo/src/prius_description/urdf/"
- "/home/sgarcia/"
  "/home/sgarcia/git-repos/prius_demo/src/car_demo/launch/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/"
- "/home/sgarcia/git-repos/prius_demo/src/car_demo/plugins/"
- "/home/sgarcia/git-repos/prius_demo/src/car_demo/worlds/"
- "/home/sgarcia/git-repos/prius_demo/src/car_demo/nodes/"
- "/home/sgarcia/nutria/gtri-car/src/my_prius_description/"
- "/home/sgarcia/Gimp/"
- "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/scripts/gtri_pkg/"
- "/home/sgarcia/playground/scripts/"
- "/home/sgarcia/nutria/gtri-car/scripts/"
- "/etc/"
- "/home/sgarcia/nutria/scrimmage-nutria-plugins/python/probing/motor_schemas/"
- "/home/sgarcia/GTRI/"
- "/home/sgarcia/.emacs.d/"
- "/home/sgarcia/.emacs.d/settings/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/"
- "/home/sgarcia/playground/src/"
- "/home/sgarcia/playground/"
- "/home/sgarcia/gtri-car-deleteme/"
- "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/"
- "/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/rviz/"
- "/home/sgarcia/nutria/gtri-car/src/car_nav2d/msg/"
- "/home/sgarcia/playground/obj/"
- "/home/sgarcia/nutria/gtri-car/src/azcar_sim/src/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "probing_fsm.py"
- "state_machine_velocity_control.py"
- "matplotlib_template.py"
- "car_nav2d.launch"
- "teb_base_local_planner_params.yaml"
- "CMakeLists.txt"
- "speed_test.launch"
- "infer_fw_col.py"
+ "dockerfile-mode.el"
+ "README.md"
+ "ubuntu-16.04-64-developer"
+ "install_dependencies"
+ "install_ros"
+ "LICENSE.txt"
+ ".bashrc"
+ "run_autonomy.launch"
+ "setup.sh"
  "get_yocs_waypoints.sh"
- "collision_detection.cpp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/" (22904 62591 615471 83000) "../" "pub_vel_cmd_server.py" "trajectory_test.py" "get_yocs_waypoints.sh" "probing_fsm.py" "osm_router_server.py" "vel_controller.py" "speed_test.py" "plot_estimated_lane_markers.py" "README.txt" "intersection_controller.py" "send_trajectory.py" "osm_router_test.py" "infer_fw_col.py" "contact_manager.py" "state_machine_velocity_control.py" "./")
+ ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/" (22848 19973 891239 103000) "package.xml" "../" "include/" "src/" "CMakeLists.txt" "scripts/" "./" "setup.py")
 
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/scripts/" (22904 61965 152075 332000) "../" "matplotlib_template.py" "gtri_pkg/" "./")
+ ("/home/sgarcia/cuas/gtri-uav/ci/dockerfiles/" (22940 17288 714292 325000) "../" "ubuntu-16.04-64-developer" "ubuntu-16.04-64-complete" "./")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/" (22904 60998 262537 235000) "../" "create_map.launch" "speed_test.launch" "init_controllers.launch" "spawn_robot.launch" "move_base.launch" "car_nav2d.launch" "./" "behaviors/")
+ ("/home/sgarcia/cuas/gtri-uav/" (22940 17371 186290 151000) "docs/" "LICENSE.txt" "utilities/" "../" "dc_setup.bash" "ci/" "srcx/" "dependencies.txt" "uav_deploy/" "uav_resources/" "src/" "uav_license/" "matlab/" "README.md" ".git/" "uav_build/" "gtri-uav-scrimmage/" ".dockerignore" "uav_setup/" "bringup/" "uav_pysoi/" "test/" "./" ".gitignore")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/config/" (22904 61307 623528 781000) "teb_base_local_planner_params-template.yaml" "local_costmap_params.yaml" "../" "global_costmap_params.yaml" "teb_base_local_planner_params.yaml" "./" "base_local_planner_params.yaml" "costmap_common_params.yaml")
+ ("/home/sgarcia/.emacs.d/settings/" (22940 21852 962172 18000) "../" "fill-column-indicator.el" "markdown-mode.el" "bash-completion.el" "packages.el" "appearance.el" "key-bindings.el" "./")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" (22904 60998 262537 235000) "package.xml" "../" "msg/" "maps/" "launch/" "action/" "include/" "src/" "costmap_plugins.xml" "config/" "CMakeLists.txt" "srv/" "scripts/" "./")
+ ("/home/sgarcia/.emacs.d/" (22940 21829 518172 636000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "url/" "ido.last~" "elpa/" "./" "snippets/")
 
- ("/home/sgarcia/nutria/gtri-car/src/" (22904 61030 939065 43000) "ompl-1.3.0-Source/" "../" "azcar_sim/" "cmdvel2gazebo/" "safeopenloopcircle/" "obstaclestopper/" "osrm-backend/" "hoffmannfollower/" "install-ompl-ubuntu.sh" "CMakeLists.txt" "car_nav2d/" "sicktoolbox/" "velodyne/" "sicktoolbox_wrapper/" "gtri_pkg/" "./" "simplestateflowmodel/")
+ ("/home/sgarcia/" (22940 21104 658191 742000) ".dmrc" ".xsession-errors" ".keras/" ".ccache/" "Public/" "Music/" ".gconf/" "../" "Downloads/" ".mavproxy/" "gtri-car-deleteme/" ".fltk/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".tilecache/" ".macromedia/" ".profile" ".wget-hsts" ".viminfo" ".apport-ignore.xml" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Octave/" "Gimp/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".lesshst" ".gnuplot_history" ".bashrc" "Desktop/" ".ICEauthority" ".vmware/" ".gksu.lock" ".sudo_as_admin_successful" "GTRI-docs/" ".compiz/" ".cache/" ".config/" ".java/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".ipython/" "cuas/" ".gnupg/" ".cmake/" ".pylint.d/" ".gnome2/" ".octave_hist" ".webex/" ".gnome2_private/" ".git-credential-cache/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" ".gvfs/" "nutria/" ".scrimmage/" "VirtualBox VMs/" ".ssr/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" ".local/")
 
- ("/home/sgarcia/nutria/gtri-car/" (22904 61034 755126 670000) "../" "src/" "README.md" "build/" ".git/" "devel/" ".gitmodules" ".catkin_workspace" "RELEASE_NOTES.md" "scripts/" "./" ".gitignore")
+ ("/home/sgarcia/cuas/gtri-uav/uav_build/dependency_scripts/" (22935 17329 610928 395000) "install_yaml_cpp" "install_uuid" "../" "install_poco" "install_eigen" "install_lz4" "install_rrt" "install_console_bridge" "install_jsbsim" "prepare_git" "install_ros-wet.rosinstall" "install_boost" "install_geographiclib" "install_preamble.bash" "install_python" "install_piccolo_gtri_only" "install_scrimmage" "prepare_file" "prepare_hg" "install_dubins" "install_gtri_tactics" "install_tinyxml" "install_bzip2" "install_gtri_tactics_data" "install_ros" "install_python_2.7.3_xcompile.patch" "install_protobuf" "./" "install_scrimmage_gtri_share")
 
- ("/home/sgarcia/nutria/gtri-car/src/osrf_prius/" (22904 60278 558841 852000) "../" "./")
+ ("/home/sgarcia/cuas/gtri-uav/uav_build/" (22934 59761 53233 171000) "uav_dependency_paths.bash" "../" "build_srcx.py" "dependency_scripts/" "build" "install_dependencies" "build_resources.py" "build_cmake.py" "cmake/" "build_gtri-uav-scrimmage.py" "./")
 
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/" (22904 42785 511563 930000) "teleop_with_keyboard.cpp" "lane_position_tracker.cpp" "../" "collect_lidar_data.cpp" "waypoint_follower.cpp" "lane_following_controller.cpp" "ls2pc.cpp" "my_waypoints_navi.cpp" "collision_detection.cpp" "lane_follower_layer.cpp" "./")
+ ("/home/sgarcia/cuas/gtri-uav/ci/" (22935 7501 203187 457000) "../" "dockerfiles/" "scripts/" "./")
 
- ("/home/sgarcia/nutria/scrimmage-nutria-plugins/" (22904 38022 717450 667000) "../" "plugins/" "plugin_libs/" "ci/" "Jenkinsfile" "AUTHORS" "missions/" "README.md" "CMakeLists.txt" "build/" ".git/" "cmake/" "setup/" "python/" "scripts/" "LICENSE" "data/" "./" ".gitignore")
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/" (22933 54385 245034 336000) "../" "asphalt.world" "skidpan.world" "neighborhood.world" "hills.world" "azcar.world" "squiggle.world" "roads.world" "squiggle_noLinesAtIntersection.world" "canyonview_field.world" "./")
 
- ("/home/sgarcia/" (22904 39043 550589 565000) ".dmrc" ".xsession-errors" ".keras/" ".ccache/" "Public/" "Music/" ".gconf/" "../" "Downloads/" "gtri-car-deleteme/" ".fltk/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".macromedia/" ".profile" ".wget-hsts" ".viminfo" ".apport-ignore.xml" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Octave/" "Gimp/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".lesshst" ".gnuplot_history" ".bashrc" "Desktop/" ".ICEauthority" ".vmware/" ".gksu.lock" ".sudo_as_admin_successful" "GTRI/" ".compiz/" ".cache/" "playground/" ".config/" ".java/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".ipython/" ".gnupg/" ".cmake/" ".pylint.d/" ".gnome2/" ".octave_hist" ".webex/" ".gnome2_private/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" "nutria/" ".scrimmage/" "VirtualBox VMs/" ".ssr/" ".gimp-2.8/" "./" "examples.desktop" ".mozilla/" "prius_tf.pdf" ".local/" "frames.pdf")
+ ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/include/gtri_pkg/" (22933 54385 177030 373000) "../" "my_waypoints_navi.hpp" "my_observation.h" "my_gazebo_ros_block_laser.h" "angle_functions.h" "my_observation_buffer.h" "./" "KalmanFilter.h" "PositionTracker.h")
 
- ("/home/sgarcia/git-repos/scrimmage-gtri-share/" (22903 46936 823643 820000) "../" "plugins/" "ci/" "Jenkinsfile" "AUTHORS" "include/" "src/" "missions/" "README.md" "CMakeLists.txt" ".git/" "doxyfile" "msgs/" "cmake/" "setup/" "LICENSE" "./" ".gitignore")
+ ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/src/" (22933 54385 177030 373000) "my_gazebo_ros_block_laser.cpp" "../" "KalmanFilter.cpp" "my_waypoints_navi.cpp" "PositionTracker.cpp" "my_observation_buffer.cpp" "./")
 
- ("/home/sgarcia/git-repos/" (22903 46929 715509 353000) "../" "prius_demo/" "config_files/" "teb_local_planner/" "sicktoolbox_repo_copy/" "scrimmage/" "scrimmage-gtri-share/" "velodyne_repo_copy/" "sicktoolbox-wrapper_repo_copy/" "./")
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/behaviors/" (22933 54385 165029 674000) "lane_follower_wCostmaps.launch" "../" "self_driving_car.launch" "lane_follower_wController.launch" "./" "probing.launch")
+
+ ("/home/sgarcia/git-repos/prius_demo/src/car_demo/" (22915 10441 297371 501000) "package.xml" "../" "rviz/" "launch/" "plugins/" "CMakeLists.txt" "models/" "worlds/" "./" "nodes/")
+
+ ("/home/sgarcia/nutria/gtri-car/" (22933 54385 197031 539000) "../" "src/" "README.md" ".git/" ".gitmodules" ".catkin_workspace" "RELEASE_NOTES.md" "scripts/" "./" ".gitignore")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/" (22933 54385 345040 164000) "teleop_with_keyboard.cpp" "lane_position_tracker.cpp" "../" "collect_lidar_data.cpp" "waypoint_follower.cpp" "lane_following_controller.cpp" "ls2pc.cpp" "my_waypoints_navi.cpp" "collision_detection.cpp" "lane_follower_layer.cpp" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/" (22933 54385 313038 299000) "package.xml" "../" "msg/" "maps/" "launch/" "action/" "include/" "src/" "costmap_plugins.xml" "config/" "CMakeLists.txt" "srv/" "scripts/" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/" (22933 54400 813947 962000) "ompl-1.3.0-Source/" "../" "azcar_sim/" "cmdvel2gazebo/" "safeopenloopcircle/" "obstaclestopper/" "osrm-backend/" "hoffmannfollower/" "install-ompl-ubuntu.sh" "CMakeLists.txt" "car_nav2d/" "sicktoolbox/" "velodyne/" "sicktoolbox_wrapper/" "gtri_pkg/" "./" "simplestateflowmodel/")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/config/" (22915 9763 496547 966000) "teb_base_local_planner_params-template.yaml" "local_costmap_params.yaml" "../" "global_costmap_params.yaml" "teb_base_local_planner_params.yaml" "./" "base_local_planner_params.yaml" "costmap_common_params.yaml")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/" (22933 54385 309038 66000) "../" "create_map.launch" "speed_test.launch" "init_controllers.launch" "spawn_robot.launch" "move_base.launch" "car_nav2d.launch" "./" "behaviors/")
+
+ ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/scripts/" (22915 9763 496547 966000) "../" "matplotlib_template.py" "gtri_pkg/" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/urdf/" (22923 29979 467492 517000) "../" "pioneer3at.xacro" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/" (22912 58048 470546 987000) "../" "humancar.xacro" "humancar.gazebo" "azcar.gazebo" "materials.xacro" "./" "azcar_urdf.xml" "azcar.xacro" "azcar_slipping.gazebo")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/" (22934 59644 600577 812000) "../" "src/" "README.md" "build/" ".git/" "devel/" ".gitmodules" ".catkin_workspace" "scripts/" "./" ".gitignore")
+
+ ("/home/sgarcia/nutria/gtri-car/scripts/" (22933 54385 209032 238000) "../" "installDependencies.sh" "turning_radius.py" "manageOSRM.sh" "setupMaster.sh" "README.txt" "./")
+
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node/src/xsens_driver/src/" (22915 8648 872888 34000) "../" "mtdef.pyc" "mtdef.py" "mtnode.py" "mtdevice.py" "mtdevice.pyc" "./")
+
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node_forked/xsens_driver/src/" (22915 26708 818957 691000) "../" "mtdef.py" "mtnode.py" "mtdevice.py" "./")
+
+ ("/home/sgarcia/git-repos/config_files/scripts/" (22924 54668 664823 994000) "../" "set_config.sh" "get_config.sh" "README.txt" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/" (22933 54385 341039 931000) "../" "pub_vel_cmd_server.py" "trajectory_test.py" "get_yocs_waypoints.sh" "probing_fsm.py" "osm_router_server.py" "vel_controller.py" "speed_test.py" "plot_estimated_lane_markers.py" "README.txt" "intersection_controller.py" "send_trajectory.py" "osm_router_test.py" "infer_fw_col.py" "contact_manager.py" "state_machine_velocity_control.py" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/scripts/" (22929 64448 509540 511000) "../" "99-usb-serial.rules" "setup.sh" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/launch/" (22934 59614 240406 807000) "../" "robot.launch" "control_wJoystick.launch" "create_map.launch" "run_autonomy.launch" "move_base.launch" "./")
+
+ ("/home/sgarcia/cuas/" (22934 59750 829175 666000) "../" "./" "gtri-uav/")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/" (22929 64448 509540 511000) "package.xml" "../" "maps/" "rviz/" "urdf/" "launch/" "include/" "src/" "config/" "CMakeLists.txt" "scripts/" "meshes/" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/" (22915 26812 183748 316000) "../" "urg_node/" "pioneer_autonomy/" "CMakeLists.txt" "xsens_mt/" "rosaria/" "xsens_mti_ros_node/" "./")
+
+ ("/home/sgarcia/nutria/" (22929 64414 61158 880000) "docs/" "../" "gtri-car/" "pics and vids/" "scrimmage-nutria-plugins/" "pioneer_navigation/" "./")
+
+ ("/home/sgarcia/git-repos/" (22925 63638 643952 91000) "../" "xsens_mti_ros_node_forked/" "gtri-uav-simulation/" "prius_demo/" "config_files/" "teb_local_planner/" "sicktoolbox_repo_copy/" "scrimmage/" "scrimmage-gtri-share/" "velodyne_repo_copy/" "sicktoolbox-wrapper_repo_copy/" "xsens_mti_ros_node/" "./")
+
+ ("/home/sgarcia/git-repos/gtri-uav-aerial-robotics/gtri-uav/" (22925 52711 258056 722000) "build_dependencies/" "docs/" "gtri-uav_toolchain.cmake" "LICENSE.txt" "utilities/" "../" "#README.md#" "dc_setup.bash" "build_srcx/" ".#README.md" "srcx/" "dependencies.txt" "build_gtri-uav-scrimmage/" "uav_deploy/" "uav_resources/" "src/" "uav_license/" "matlab/" "README.md" "build/" "gtri-uav_common_variables.cmake" ".git/" "uav_build/" "gtri-uav-scrimmage/" "devel/" ".catkin_workspace" "common/" "build_resources/" "uav_setup/" "bringup/" "uav_pysoi/" "test/" "./" ".gitignore")
+
+ ("/home/sgarcia/gtri-car-deleteme/" (22921 64596 550642 13000) "lane_position_tracker.cpp" "../" "lane_following_controller.cpp" "contact_manager.py" "velodyne_plugin/" "./")
+
+ ("/home/sgarcia/git-repos/config_files/" (22915 15407 76024 810000) "../" "README.md" ".git/" "bash_aliases" "scripts/" "emacs.d/" "./" ".gitignore")
+
+ ("/home/sgarcia/git-repos/gtri-uav-aerial-robotics/" (22923 31747 83150 384000) "../" "devcore_rc_v0.7/" "gtri-uav-resources-mavlink/" "yujin_ocs/" "./" "gtri-uav/")
+
+ ("/home/sgarcia/git-repos/gtri-uav/" (22923 31489 980244 484000) "docs/" "LICENSE.txt" "utilities/" "../" "dc_setup.bash" "srcx/" "dependencies.txt" "uav_deploy/" "uav_resources/" "src/" "uav_license/" "matlab/" "README.md" ".git/" "uav_build/" "gtri-uav-scrimmage/" "uav_setup/" "bringup/" "uav_pysoi/" "test/" "./" ".gitignore")
+
+ ("/home/sgarcia/git-repos/gtri-uav-simulation/ArduPilot/" (22921 65475 924727 352000) "ltmain.sh" "../" "install.sh" "ardupilot_install_log.txt" "README.md" "jsbsim/" "scripts/" "ardupilot/" "MAVProxy/" "data/" "./" "execute-installer.sh")
+
+ ("/home/sgarcia/git-repos/gtri-uav-simulation/" (22922 151 75117 81000) "docs/" "../" "prep_environment" "ArduPilot/" "README.md" "PiccoloModels/" ".git/" ".gitmodules" "simulation/" "QGroundControl/" "common/" "docs.txt" "scripts/" "PiccoloSILSavedeeproms/" "prep_environment_config.bash" "./" ".gitignore")
+
+ ("/home/sgarcia/git-repos/gtri-uav-simulation/docs/" (22921 64872 201837 879000) "../" "VirtualMachineSIL.md" "README.md" "PiccoloSIL.md" "docs.txt" "./" "QGroundControl.md" ".gitignore")
+
+ ("/home/sgarcia/nutria/gtri-car/src/osrf_prius/car_demo/" (22915 9947 529838 702000) "package.xml" "../" "rviz/" "launch/" "plugins/" "CMakeLists.txt" "models/" "worlds/" "./" "nodes/")
+
+ ("/home/sgarcia/nutria/gtri-car/src/osrf_prius/" (22915 9947 545838 816000) "../" "prius_description/" "Dockerfile" "car_demo/" "prius_msgs/" "README.md" "run_demo.bash" "build_demo.bash" ".git" "./" ".gitignore")
+
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node_forked/xsens_driver/" (22915 26489 621280 873000) "package.xml" "../" "src/" "CMakeLists.txt" "./")
+
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node_forked/" (22915 26614 738238 31000) "../" "CHANGELOG.md" "custom_msgs/" "xsens_driver/" "README.md" ".git/" "./" "mainpage.dox" ".gitignore")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/xsens_mti_ros_node/src/xsens_driver/src/" (22915 9557 207130 223000) "../" "mtdef.py" "mtnode.py" "mtdevice.py" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/xsens_mti_ros_node/src/xsens_driver/" (22915 9557 207130 223000) "package.xml" "../" "src/" "CMakeLists.txt" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/xsens_mti_ros_node/src/" (22915 9557 207130 223000) "../" "custom_msgs/" "xsens_driver/" "CMakeLists.txt" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/xsens_mti_ros_node/" (22915 9557 207130 223000) "../" "CHANGELOG.md" "src/" "README.md" ".git" "./" "mainpage.dox" ".gitignore")
+
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node/src/xsens_driver/" (22914 17899 290204 439000) "package.xml" "../" "src/" "CMakeLists.txt" "./")
+
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node/src/" (22914 17908 142275 981000) "../" "custom_msgs/" "xsens_driver/" "CMakeLists.txt" "./")
+
+ ("/home/sgarcia/git-repos/xsens_mti_ros_node/" (22914 17934 350487 747000) "../" "CHANGELOG.md" "src/" "README.md" "build/" ".git/" "devel/" ".catkin_workspace" "./" "mainpage.dox" ".gitignore")
+
+ ("/home/sgarcia/git-repos/xsens_mt/" (22914 12605 99668 348000) "xsens_mt.mod.c" "xsens_mt.c" "../" "xsens_mt.mod.o" ".tmp_versions/" "xsens_mt.ko" "Makefile" "modules.order" ".xsens_mt.mod.o.cmd" ".git/" "xsens_mt.o" "Module.symvers" ".xsens_mt.o.cmd" "./" ".xsens_mt.ko.cmd")
+
+ ("/home/sgarcia/playground/catkin_ws/src/mtig_driver/" (22914 16165 320226 307000) ".gitattributes" "package.xml" "../" "msg/" "Doxyfile.config" "launch/" "include/" "src/" "CMakeLists.txt" "README" ".git/" "doc/" "./" ".gitignore")
+
+ ("/home/sgarcia/playground/catkin_ws/src/" (22914 16164 868222 681000) "../" "python_pkg/" "smach_tutorials/" "CMakeLists.txt" "beginner_tutorials/" "learning_tf/" "./" "mtig_driver/")
+
+ ("/home/sgarcia/playground/catkin_ws/" (22914 16259 768983 822000) "../" "src/" "build/" "devel/" ".catkin_workspace" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/src/" (22912 51438 957700 277000) "teleop_with_keyboard.cpp" "../" "./")
+
+ ("/home/sgarcia/playground/catkin_ws/src/xsens_driver/src/" (22914 1493 87464 886000) "../" "mtdef.pyc" "mtdef.py" "mtnode.py" "mtdevice.py" "mtdevice.pyc" "./")
+
+ ("/home/sgarcia/playground/catkin_ws/src/xsens_driver/" (22913 62579 113175 225000) "package.xml" "../" "src/" "CMakeLists.txt" "./")
+
+ ("/home/sgarcia/playground/scripts/" (22913 56518 267295 655000) "open_four_terminals.sh" "test_shell.sh" "../" "Bezier_curves.py" "template_script.py" "test_matplotlib.py" "send_trajectory_test.py" "create_url.py" "./")
+
+ ("/home/sgarcia/nutria/pics and vids/" (22907 18473 614223 661000) "lane follower_two cars-[2mph].mp4" "fsm_2cars_intersection-[x4].mp4" "../" "speed_full_world.mp4" "move base arquitecture.png" "fsm_3cars_intersection2-[4x].mp4" "fsm_3cars_intersection-[x4].mp4" "free_space_teb_planner_demo1.mp4" "lane follower_two cars-[5mph].mp4" "free_space_teb_planner_demo2.mp4" "lane follower wCostmap-[fast car fail].mp4" "car_nav2d-slow_car.mp4" "lane follower wCostmap-[multiple scan lidar - 5mph].mp4" "lane follower wCostmap-[working until fail].mp4" "full_city_scene.png" "fsm_old.png" "lane follower wCostmap2.mp4" "squiggle_world.png" "./" "lane follower-[controller].mp4" "lane follower wCostmap3.mp4" "lane follower wCostmap1.mp4")
+
+ ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/urdf/" (22912 57947 397751 418000) "../" "prius.xacro" "./" "prius_slipping.gazebo")
+
+ ("/etc/" (22912 54409 976662 914000) "selinux/" "openal/" "dictionaries-common/" "bash_completion" "thermald/" "ifplugd/" "rpc" "default/" "sudoers.d/" "usb_modeswitch.conf" "sysctl.d/" "doc-base/" "sysctl.conf" "inittab" "iftab" "vtrgb" "speech-dispatcher/" "python3.5/" "tmpfiles.d/" "mercurial/" "anacrontab" "hosts" "brltty.conf" "python3/" "adduser.conf" "pm/" "issue" "fwupd.conf" "libpaper.d/" "gshadow-" "rc5.d/" "xml/" "update-motd.d/" "sound/" "logrotate.conf" "update-manager/" "rsyslog.conf" "profile" "wgetrc" "localtime" "updatedb.conf" "skel/" "gnome-app-install/" "bash.bashrc" ".pwd.lock" "gai.conf" "xdg/" "rc.local" "apt/" "udev/" "resolvconf/" "magic" "openni/" "Aria" "shadow" "rc1.d/" "ssl/" "cron.monthly/" "hosts.deny" "insserv.conf.d/" "rcS.d/" "timidity/" "ldap/" "hdparm.conf" "gtk-3.0/" "cron.hourly/" "hosts.allow" "signond.conf" "os-release" "brlapi.key" "sensors3.conf" "wodim.conf" "ltrace.conf" "ssh/" "kerneloops.conf" "texmf/" "manpath.config" "wildmidi/" "cron.d/" "vdpau_wrapper.cfg" "popularity-contest.conf" "environment" "modules" "newt/" "lsb-release" "UPower/" "rc2.d/" "debconf.conf" "gss/" "dpkg/" "dbus-1/" "kernel-img.conf" "lightdm/" "group" "vim/" "gnome/" "fonts/" "apache2/" "odbcinst.ini" "insserv.conf" "magic.mime" "hp/" "hostname" "bluetooth/" "rmt" "grub.d/" "issue.net" "terminfo/" "subgid-" "ImageMagick-6/" "init.d/" "signon-ui/" "profile.d/" "console-setup/" "parallel/" "inputrc" "apparmor/" "resolv.conf" "cupshelpers/" "java-8-openjdk/" "passwd" "shells" "thunderbird/" "pcmcia/" "crontab" "passwd-" "security/" "libreoffice/" "rc6.d/" "libaudit.conf" "bindresvport.blacklist" "cups/" "docker/" "initramfs-tools/" "bash_completion.d/" "ghostscript/" "shadow-" "dhcp/" "sane.d/" ".java/" "octave.conf" "calendar/" "NetworkManager/" "networks" "pam.conf" "sensors.d/" "sudoers" "emacs/" "locale.gen" "sgml/" "modules-load.d/" "cracklib/" "dconf/" "securetty" "alternatives/" "ucf.conf" "python2.7/" "dkms/" "cron.daily/" "modprobe.d/" "ufw/" "ca-certificates.conf" "gdb/" "legal" "update-notifier/" "apm/" "wpa_supplicant/" "subversion/" "appstream.conf" "mtools.conf" "mysql/" "odbc.ini" "insserv/" "gitweb.conf" "opt/" "libnl-3/" "guest-session/" "ld.so.conf" "host.conf" "lighttpd/" "machine-id" "login.defs" "subuid-" "lintianrc" "polkit-1/" "ffserver.conf" "group-" "upstart-xsessions" "python/" "icedtea-web/" "mke2fs.conf" "ca-certificates/" "ODBCDataSources/" "init/" "emacs24/" "nsswitch.conf" "gnome-vfs-2.0/" "logrotate.d/" "pam.d/" "mime.types" "usb_modeswitch.d/" "aptdaemon/" "deluser.conf" "acpi/" "brltty/" "ppp/" "mailcap.order" "netscsid.conf" "rc0.d/" "locale.alias" "perl/" "network/" "rc4.d/" "openmpi/" "logcheck/" "firefox/" "sysstat/" "rc3.d/" "timezone" "services" "rsyslog.d/" "pulse/" "drirc" "debian_version" "nanorc" "depmod.d/" "bonobo-activation/" "fuse.conf" "avahi/" "pnm2ppa.conf" "compizconfig/" "dnsmasq.d/" "X11/" "udisks2/" "cron.weekly/" "mailcap" "ld.so.conf.d/" "gconf/" "ros/" "apport/" "mtab" "kernel/" "fstab" "gimp/" "papersize" "apg.conf" "matplotlibrc" "pki/" "sbcl.rc" "libao.conf" "ld.so.cache" "iproute2/" "hddtemp.db" "apparmor.d/" "kbd/" "protocols" "gtk-2.0/" "subgid" "chatscripts/" "groff/" "at-spi2/" "binfmt.d/" "subuid" "systemd/" "zsh_command_not_found" "gshadow" "../" "./")
+
+ ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/scripts/gtri_pkg/" (22904 61367 660496 351000) "__init__.py" "../" "angle_fncts.pyc" "angle_fncts.py" "PID.py" "__pycache__/" "PID.pyc" "./")
+
+ ("/home/sgarcia/git-repos/prius_demo/src/car_demo/nodes/" (22896 46918 246948 69000) "../" "joystick_translator" "./")
+
+ ("/home/sgarcia/git-repos/prius_demo/src/car_demo/plugins/" (22902 14679 370065 827000) "../" "gazebo_ros_block_laser.cpp" "PriusHybridPlugin.hh" "gazebo_ros_block_laser.h" "PriusHybridPlugin.cc" "./")
+
+ ("/home/sgarcia/git-repos/prius_demo/src/prius_msgs/" (22903 26602 838612 432000) "package.xml" "../" "msg/" "CMakeLists.txt" "./")
+
+ ("/home/sgarcia/git-repos/scrimmage-gtri-share/" (22903 46978 418 840000) "../" "plugins/" "plugin_libs/" "ci/" "Jenkinsfile" "lib/" "AUTHORS" "include/" "src/" "missions/" "README.md" "CMakeLists.txt" "build/" ".git/" "doxyfile" "msgs/" "cmake/" "setup/" "LICENSE" "./" ".gitignore")
+
+ ("/home/sgarcia/nutria/scrimmage-nutria-plugins/" (22905 59561 22822 161000) "../" "plugins/" "plugin_libs/" "ci/" "Jenkinsfile" "AUTHORS" "missions/" "README.md" "CMakeLists.txt" "build/" ".git/" "cmake/" "setup/" "python/" "scripts/" "LICENSE" "data/" "./" ".gitignore")
+
+ ("/home/sgarcia/git-repos/scrimmage/plugin_libs/" (22905 59635 480005 129000) "libSimpleQuadrotor_plugin.so" "libfollow_plugin.so" "libRigidBody6DOF_plugin.so" "libSingleIntegrator_plugin.so.0.0.1" "libSimpleAircraftControllerPID_plugin.so.0" "libBulletCollision_plugin.so" "libDoubleIntegratorControllerWaypoint_plugin.so.0" "libUnicycleControllerPoint_plugin.so.0" "libPyAutonomy_plugin.so" "libUnicycleControllerDirect_plugin.so" "libJSBSimControlControllerHeadingPID_plugin.so" "libUnitDisk_plugin.so.0.0.1" "libSingleIntegratorControllerSimple_plugin.so" "libSimpleCarControllerHeading_plugin.so" "libStraight_plugin.so.0.0.1" "libUnicycleControllerDirect_plugin.so.0" "libUnicycle_plugin.so.0" "libUnicycleControllerDirect_plugin.so.0.0.1" "libSingleIntegrator_plugin.so.0" "libQuadTest_plugin.so" "libSimpleQuadrotorControllerLQR_plugin.so.0" "libSimpleQuadrotor_plugin.so.0" "libNoisyState_plugin.so.0.0.1" "libAircraftToSingleIntegratorController_plugin.so.0.0.1" "libFixedWing6DOFControllerPID_plugin.so.0" "libSimpleAircraftControllerPID_plugin.so" "libfollow_plugin.so.0" "libSimpleCollisionMetrics_plugin.so.0" "libBoids_plugin.so.0" "libSimpleCollision_plugin.so" "libBulletCollision_plugin.so.0" "libfollow_plugin.so.0.0.1" "libSimpleCamera_plugin.so" "libSingleIntegratorControllerWaypoint_plugin.so.0" "libSimpleAircraft_plugin.so.0.0.1" "libContactBlobCamera_plugin.so.0" "libJSBSimControl_plugin.so.0.0.1" "libDoubleIntegrator_plugin.so.0" "libJSBSimModelControllerDirect_plugin.so" "libBoids_plugin.so" "libJSBSimControlControllerHeadingPID_plugin.so.0" "libBoids_plugin.so.0.0.1" "libRigidBody6DOFControllerPID_plugin.so" "libAuctionAssign_plugin.so.0.0.1" "libJSBSimModel_plugin.so.0.0.1" "libBulletCollision_plugin.so.0.0.1" "libFixedWing6DOFControllerPID_plugin.so" "libContactBlobCamera_plugin.so.0.0.1" "libSimpleCollisionMetrics_plugin.so" "libJSBSimControl_plugin.so.0" "libSimpleQuadrotor_plugin.so.0.0.1" "libSimpleQuadrotorControllerLQR_plugin.so.0.0.1" "libUnicycleControllerPoint_plugin.so.0.0.1" "libSingleIntegratorControllerSimple_plugin.so.0" "libSimpleCar_plugin.so.0.0.1" "libNoisyState_plugin.so" "libNoisyContacts_plugin.so" "libJSBSimControlControllerHeadingPID_plugin.so.0.0.1" "libStraight_plugin.so.0" "libFixedWing6DOF_plugin.so.0" "libJSBSimModelControllerDirect_plugin.so.0.0.1" "libJSBSimControl_plugin.so" "libDoubleIntegrator_plugin.so" "libUnicycleControllerPoint_plugin.so" "libSimpleAircraft_plugin.so.0" "libAuctionAssign_plugin.so" "libNoisyContacts_plugin.so.0" "libAuctionAssign_plugin.so.0" "libSimpleCarControllerHeading_plugin.so.0" "libUnitDisk_plugin.so.0" "libRigidBody6DOF_plugin.so.0" "libGroundCollision_plugin.so" "libSimpleCamera_plugin.so.0" "libAircraftToSingleIntegratorController_plugin.so" "libSimpleCollisionMetrics_plugin.so.0.0.1" "libJSBSimModel_plugin.so.0" "libStraight_plugin.so" "libSingleIntegratorControllerWaypoint_plugin.so" "libSimpleCamera_plugin.so.0.0.1" "libUnicycle_plugin.so" "libSimpleCarControllerHeading_plugin.so.0.0.1" "libSimpleCollision_plugin.so.0.0.1" "libDoubleIntegratorControllerWaypoint_plugin.so" "libFixedWing6DOF_plugin.so" "libDoubleIntegratorControllerWaypoint_plugin.so.0.0.1" "libRigidBody6DOF_plugin.so.0.0.1" "libMotorSchemas_plugin.so" "libQuadTest_plugin.so.0" "libSimpleAircraftControllerPID_plugin.so.0.0.1" "libUnicycle_plugin.so.0.0.1" "libDoubleIntegrator_plugin.so.0.0.1" "libJSBSimModelControllerHeadingPID_plugin.so.0.0.1" "libSimpleCar_plugin.so.0" "libSingleIntegratorControllerSimple_plugin.so.0.0.1" "libAircraftToSingleIntegratorController_plugin.so.0" "libPyAutonomy_plugin.so.0" "libUnitDisk_plugin.so" "libSimpleQuadrotorControllerLQR_plugin.so" "libFixedWing6DOF_plugin.so.0.0.1" "libFixedWing6DOFControllerPID_plugin.so.0.0.1" "libSimpleCar_plugin.so" "libMotorSchemas_plugin.so.0" "libControl3D_plugin.so.0" "libGroundCollision_plugin.so.0" "libJSBSimModelControllerDirect_plugin.so.0" "libSimpleCollision_plugin.so.0" "libGroundCollision_plugin.so.0.0.1" "libSimpleAircraft_plugin.so" "libRigidBody6DOFControllerPID_plugin.so.0.0.1" "libControl3D_plugin.so.0.0.1" "libJSBSimModel_plugin.so" "libNoisyContacts_plugin.so.0.0.1" "libJSBSimModelControllerHeadingPID_plugin.so" "libControl3D_plugin.so" "libMotorSchemas_plugin.so.0.0.1" "libSingleIntegratorControllerWaypoint_plugin.so.0.0.1" "libQuadTest_plugin.so.0.0.1" "libPyAutonomy_plugin.so.0.0.1" "libRigidBody6DOFControllerPID_plugin.so.0" "libSingleIntegrator_plugin.so" "libNoisyState_plugin.so.0" "libJSBSimModelControllerHeadingPID_plugin.so.0" "libContactBlobCamera_plugin.so" "../" "./")
+
+ ("/home/sgarcia/git-repos/scrimmage/missions/" (22911 50993 768436 240000) "../" "moos-ex1.xml" "straight.xml" "rigid_body_6dof.xml" "fixed_wing_6dof.xml" "colliding_spheres.xml" "straight_jsbsim.xml" "auction_assign.xml" "straight-no-gui.xml" "straight-vs-motorschemas.xml" "straight_cars.xml" "cars.xml" "./" "moos-ex2.xml")
+
+ ("/home/sgarcia/git-repos/scrimmage/" (22911 50993 756436 146000) "docs/" "../" "#README.md#" "3rd-party/" "COPYING" "plugin_libs/" "ci/" "Jenkinsfile" "lib/" "AUTHORS" "include/" "src/" "config/" "bin/" "missions/" "README.md" "tools/" "CMakeLists.txt" "share/" "build/" ".git/" "msgs/" "cmake/" "COPYING.LESSER" "setup/" "python/" "scripts/" "notes/" "test/" "LICENSE" "data/" "./" ".gitignore")
 
  ("/home/sgarcia/nutria/gtri-car/src/osrf_prius/car_demo/nodes/" (22903 34757 79781 201000) "../" "joystick_translator" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/osrf_prius/car_demo/" (22903 34848 377236 79000) "package.xml" "../" "rviz/" "launch/" "plugins/" "CMakeLists.txt" "models/" "worlds/" "./" "nodes/")
 
  ("/home/sgarcia/nutria/gtri-car/src/car_demo/car_demo/nodes/" (22903 24879 222833 319000) "../" "joystick_translator" "./")
 
  ("/home/sgarcia/nutria/gtri-car/src/car_demo/car_demo/" (22903 26634 27139 443000) "package.xml" "../" "rviz/" "launch/" "plugins/" "CMakeLists.txt" "models/" "worlds/" "./" "nodes/")
 
- ("/home/sgarcia/git-repos/prius_demo/src/prius_msgs/" (22903 26313 853641 723000) "package.xml" "../" "msg/" "CMakeLists.txt" "./")
-
- ("/home/sgarcia/git-repos/prius_demo/src/car_demo/" (22903 25815 649649 382000) "package.xml" "../" "rviz/" "launch/" "plugins/" "CMakeLists.txt" "models/" "worlds/" "./" "nodes/")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/urdf/" (22903 25515 640887 575000) "../" "prius.xacro" "./" "prius_slipping.gazebo")
-
  ("/home/sgarcia/nutria/gtri-car/src/car_demo/" (22902 25026 83443 754000) "../" "prius_description/" "Dockerfile" "car_demo/" "prius_msgs/" "README.md" "run_demo.bash" "build_demo.bash" ".git" "./" ".gitignore")
-
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/src/" (22902 25126 664607 490000) "my_gazebo_ros_block_laser.cpp" "../" "myPriusHybridPlugin.cc" "KalmanFilter.cpp" "my_waypoints_navi.cpp" "PositionTracker.cpp" "my_observation_buffer.cpp" "./")
-
- ("/home/sgarcia/gtri-car-deleteme/" (22894 33139 465392 520000) "lane_position_tracker.cpp" "../" "get_yocs_waypoints.sh" "lane_following_controller.cpp" "contact_manager.py" "velodyne_plugin/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/include/gtri_pkg/" (22902 24050 492325 838000) "../" "my_waypoints_navi.hpp" "my_observation.h" "my_gazebo_ros_block_laser.h" "angle_functions.h" "myPriusHybridPlugin.hh" "my_observation_buffer.h" "./" "KalmanFilter.h" "PositionTracker.h")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/behaviors/" (22902 20692 96992 59000) "lane_follower_wCostmaps.launch" "../" "self_driving_car.launch" "lane_follower_wController.launch" "joystick_controller.launch" "./" "probing.launch")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/urdf/" (22902 1020 120868 436000) "../" "humancar.xacro" "humancar.gazebo" "azcar.gazebo" "materials.xacro" "./" "azcar_urdf.xml" "azcar.xacro" "azcar_slipping.gazebo")
-
- ("/home/sgarcia/git-repos/scrimmage/" (22898 11347 647167 796000) "docs/" "../" "#README.md#" "3rd-party/" "plugin_libs/" "ci/" "Jenkinsfile" "lib/" "AUTHORS" "include/" "src/" "config/" "bin/" "missions/" "README.md" "tools/" "CMakeLists.txt" "share/" "build/" ".git/" "msgs/" "cmake/" "setup/" "python/" "scripts/" "notes/" "test/" "LICENSE" "data/" "./" ".gitignore")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/" (22897 6851 532637 103000) "../" "asphalt.world" "skidpan.world" "neighborhood.world" "hills.world" "original.world" "azcar.world" "squiggle.world" "roads.world" "squiggle_noLinesAtIntersection.world" "canyonview_field.world" "./")
-
- ("/home/sgarcia/git-repos/prius_demo/src/car_demo/plugins/" (22896 62649 45996 608000) "../" "gazebo_ros_block_laser.cpp" "PriusHybridPlugin.hh" "gazebo_ros_block_laser.h" "PriusHybridPlugin.cc" "./")
 
  ("/home/sgarcia/git-repos/prius_demo/src/car_demo/worlds/" (22897 2445 465291 777000) "../" "mcity.world" "./")
 
  ("/home/sgarcia/git-repos/prius_demo/" (22896 53958 741454 915000) "../" "Dockerfile" "src/" "README.md" "run_demo.bash" "build/" "build_demo.bash" ".git/" "devel/" ".catkin_workspace" "./" ".gitignore")
 
  ("/home/sgarcia/git-repos/prius_demo/src/car_demo/launch/" (22896 51048 728325 7000) "demo.launch" "../" "./")
-
- ("/home/sgarcia/git-repos/prius_demo/src/car_demo/nodes/" (22896 46186 626774 186000) "../" "joystick_translator" "./")
 
  ("/home/sgarcia/git-repos/prius_demo/src/prius_description/urdf/" (22895 54231 239819 993000) "../" "prius.urdf" "./")
 
@@ -203,15 +320,7 @@
 
  ("/home/sgarcia/Gimp/" (22729 48763 283901 533000) "../" "squiggle-improvement in progress.xcf" "squiggle-improvement in progress-simple.xcf" "./")
 
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/scripts/gtri_pkg/" (22895 23354 889849 937000) "__init__.py" "../" "angle_fncts.pyc" "angle_fncts.py" "PID.py" "__pycache__/" "PID.pyc" "./")
-
  ("/home/sgarcia/git-repos/prius_demo/src/" (22894 11908 104733 689000) "../" "prius_description/" "car_demo/" "prius_msgs/" "CMakeLists.txt" "./")
-
- ("/home/sgarcia/playground/scripts/" (22886 34370 851116 668000) "open_four_terminals.sh" "test_shell.sh" "../" "Bezier_curves.py" "template_script.py" "test_matplotlib.py" "send_trajectory_test.py" "create_url.py" "./")
-
- ("/home/sgarcia/nutria/gtri-car/scripts/" (22894 29178 160342 475000) "../" "installDependencies.sh" "turning_radius.py" "manageOSRM.sh" "setupMaster.sh" "README.txt" "./")
-
- ("/etc/" (22894 21407 418694 570000) "selinux/" "openal/" "dictionaries-common/" "bash_completion" "thermald/" "ifplugd/" "rpc" "default/" "sudoers.d/" "usb_modeswitch.conf" "sysctl.d/" "doc-base/" "sysctl.conf" "inittab" "iftab" "vtrgb" "speech-dispatcher/" "python3.5/" "tmpfiles.d/" "mercurial/" "anacrontab" "hosts" "brltty.conf" "python3/" "adduser.conf" "pm/" "issue" "fwupd.conf" "libpaper.d/" "gshadow-" "rc5.d/" "xml/" "update-motd.d/" "sound/" "logrotate.conf" "update-manager/" "rsyslog.conf" "profile" "wgetrc" "localtime" "updatedb.conf" "skel/" "gnome-app-install/" "bash.bashrc" ".pwd.lock" "gai.conf" "xdg/" "rc.local" "apt/" "udev/" "resolvconf/" "magic" "openni/" "shadow" "rc1.d/" "ssl/" "cron.monthly/" "hosts.deny" "insserv.conf.d/" "rcS.d/" "timidity/" "ldap/" "hdparm.conf" "gtk-3.0/" "cron.hourly/" "hosts.allow" "signond.conf" "os-release" "brlapi.key" "sensors3.conf" "wodim.conf" "ltrace.conf" "ssh/" "kerneloops.conf" "texmf/" "manpath.config" "wildmidi/" "cron.d/" "vdpau_wrapper.cfg" "popularity-contest.conf" "environment" "modules" "newt/" "lsb-release" "UPower/" "rc2.d/" "debconf.conf" "gss/" "dpkg/" "dbus-1/" "kernel-img.conf" "lightdm/" "group" "vim/" "gnome/" "fonts/" "apache2/" "odbcinst.ini" "insserv.conf" "magic.mime" "hp/" "hostname" "bluetooth/" "rmt" "grub.d/" "issue.net" "terminfo/" "subgid-" "ImageMagick-6/" "init.d/" "signon-ui/" "profile.d/" "console-setup/" "parallel/" "inputrc" "apparmor/" "resolv.conf" "cupshelpers/" "java-8-openjdk/" "passwd" "shells" "thunderbird/" "pcmcia/" "crontab" "passwd-" "security/" "libreoffice/" "rc6.d/" "libaudit.conf" "bindresvport.blacklist" "cups/" "docker/" "initramfs-tools/" "bash_completion.d/" "ghostscript/" "shadow-" "dhcp/" "sane.d/" ".java/" "octave.conf" "calendar/" "NetworkManager/" "networks" "pam.conf" "sensors.d/" "sudoers" "emacs/" "locale.gen" "sgml/" "modules-load.d/" "cracklib/" "dconf/" "securetty" "alternatives/" "ucf.conf" "python2.7/" "dkms/" "cron.daily/" "modprobe.d/" "ufw/" "ca-certificates.conf" "gdb/" "legal" "update-notifier/" "apm/" "wpa_supplicant/" "subversion/" "appstream.conf" "mtools.conf" "mysql/" "odbc.ini" "insserv/" "gitweb.conf" "opt/" "libnl-3/" "guest-session/" "ld.so.conf" "host.conf" "lighttpd/" "machine-id" "login.defs" "subuid-" "lintianrc" "polkit-1/" "ffserver.conf" "group-" "upstart-xsessions" "python/" "icedtea-web/" "mke2fs.conf" "ca-certificates/" "ODBCDataSources/" "init/" "emacs24/" "nsswitch.conf" "gnome-vfs-2.0/" "logrotate.d/" "pam.d/" "mime.types" "usb_modeswitch.d/" "aptdaemon/" "deluser.conf" "acpi/" "brltty/" "ppp/" "mailcap.order" "netscsid.conf" "rc0.d/" "locale.alias" "perl/" "network/" "rc4.d/" "openmpi/" "logcheck/" "firefox/" "sysstat/" "rc3.d/" "timezone" "services" "rsyslog.d/" "pulse/" "drirc" "debian_version" "nanorc" "depmod.d/" "bonobo-activation/" "fuse.conf" "avahi/" "pnm2ppa.conf" "compizconfig/" "dnsmasq.d/" "X11/" "udisks2/" "cron.weekly/" "mailcap" "ld.so.conf.d/" "gconf/" "ros/" "apport/" "mtab" "kernel/" "fstab" "gimp/" "papersize" "apg.conf" "matplotlibrc" "pki/" "sbcl.rc" "libao.conf" "ld.so.cache" "iproute2/" "hddtemp.db" "apparmor.d/" "kbd/" "protocols" "gtk-2.0/" "subgid" "chatscripts/" "groff/" "at-spi2/" "binfmt.d/" "subuid" "systemd/" "zsh_command_not_found" "gshadow" "../" "./")
 
  ("/home/sgarcia/nutria/scrimmage-nutria-plugins/python/probing/motor_schemas/" (22886 37484 10755 402000) "util.py" "__init__.py" "../" "frames.pkl" "infer_motor_schemas_base.py" "infer_motor_schemas_advi.py" "infer_from_frames.py" "infer_frames_map.py" "motor_schemas_model.py" "./" "infer_motor_schemas_map.py")
 
@@ -221,8 +330,6 @@
 
  ("/home/sgarcia/nutria/scrimmage-nutria-plugins/plugins/" (22886 30207 407868 908000) "../" "autonomy/" "CMakeLists.txt" "./")
 
- ("/home/sgarcia/nutria/" (22886 30199 207686 368000) "../" "gtri-car/" "CapabilityToArchitectureMapping-[Sergio and Kevin].xlsx" "Nutria - technical approach - 30 Sept 2016.odt" "pics and vids/" "scrimmage-nutria-plugins/" "CapabilityToArchitectureMapping-[Sergio].xlsx" "Information Gain Writeup.pdf" "./" "latlon_squiggle_world.txt" "fsm.png")
-
  ("/home/sgarcia/gtri-car-deleteme/velodyne_plugin/src/" (22879 44418 413657 189000) "../" "velodyne_plugin.cpp" "./")
 
  ("/home/sgarcia/playground/obj/" (22883 36200 250385 7000) "../" "number_of_elements" "HelloWorld" "fibonacci" "read_arrow_keys" "./" "getWorkTime")
@@ -231,103 +338,15 @@
 
  ("/home/sgarcia/playground/src/" (22886 14000 781884 341000) "../" "getWorkTime.cpp" "HelloWorld.cpp" "fibonacci.cpp" "read_arrow_keys.cpp" "ros_cpp_template.cpp" "./" "number_of_elements.cpp")
 
- ("/home/sgarcia/.emacs.d/" (22885 4975 243072 747000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "url/" "ido.last~" "elpa/" "./" "snippets/")
-
  ("/home/sgarcia/GTRI/" (22884 63624 645231 473000) "../" "Insider Threat Certificate-[SGarcia].png" "ConflictOfInterest.pdf" "./")
 
  ("/home/sgarcia/.gnupg/" (22879 42884 461803 942000) "../" "private-keys-v1.d/" "secring.gpg" "pubring.gpg" "S.gpg-agent" "./")
-
- ("/home/sgarcia/.emacs.d/settings/" (22883 46199 881063 365000) "../" "fill-column-indicator.el" "markdown-mode.el" "bash-completion.el" "packages.el" "appearance.el" "key-bindings.el" "./")
 
  ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/msg/" (22869 22136 413549 6000) "LaneCoordinates.msg" "../" "BlinkerState.msg" "PoseAndVelocityList.msg" "WaypointPoseAndTag.msg" "PoseAndVelocity.msg" "BezierWaypoints.msg" "WaypointTag.msg" "WaypointTagList.msg" "IntersectionState.msg" "./")
 
  ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/rviz/" (22869 22136 377548 498000) "../" "azcar.rviz" "azcar_tf.rviz" "azcar_sim_teb_planner.rviz" "azcar_multiple_robots.rviz" "./")
 
  ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/" (22861 10596 353659 495000) "../" "listener.cpp" "talker.cpp" "add_two_ints_server.cpp" "add_two_ints_client.cpp" "display_shapes.cpp" "./")
-
- ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/" (22850 58476 862186 13000) "package.xml" "../" "msg/" "launch/" "include/" "src/" "CMakeLists.txt" "srv/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/simulink/" (22772 57906 190588 848000) "../" "carFollower.slx" "cameraExample.slx" "controllerTester.slx" "quickExample.slx" "car_speed_tested.slx" "plotData.m" "plotDistances.m" "hoffmannFollower.slx" "circularPathPrototype.m" "obstacleStopper.slx" "simpleStateFlowModel.slx" "deadMansSwitch_tester.slx" "cmdvel2gazebo.slx" "safeOpenLoopCircle.slx" "./" "plotDisvout.m")
-
- ("/home/sgarcia/nutria/gtri-car/src/hoffmannfollower/" (22772 57906 390589 360000) "slros_initialize.cpp" "slros_msgconvert_utils.h" "package.xml" "rtwtypes.h" "../" "hoffmannFollower.h" "rtmodel.h" "slTestTypes.h" "rt_nonfinite.h" "rtGetInf.h" "MW_custom_RTOS_header.h" "linuxinitialize.h" "slros_busmsg_conversion.cpp" "rtGetNaN.cpp" "rtGetInf.cpp" "ert_main.cpp" "hoffmannFollower.cpp" "CMakeLists.txt" "rt_defines.h" "hoffmannFollower_types.h" "slros_generic_param.h" "slros_initialize.h" "slros_generic_pubsub.h" "rt_nonfinite.cpp" "slros_generic.h" "slTestResult.h" "hoffmannFollower_private.h" "rtGetNaN.h" "slros_generic_param.cpp" "linuxinitialize.cpp" "slros_busmsg_conversion.h" "./" "defines.txt" "hoffmannFollower_data.cpp")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/action/" (22848 19891 826654 604000) "GTRIMoveBase.action" "../" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/" (22848 19973 891239 103000) "package.xml" "../" "include/" "src/" "CMakeLists.txt" "scripts/" "./" "setup.py")
-
- ("/home/" (22655 41303 628365 506000) "../" "sgarcia/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/launch/" (22820 9946 523413 303000) "humancar_leadercmd.launch" "azcar_follower.launch" "azcar.launch" "azcar_world.launch" "humancar.launch" "azcar_slomo.launch" "../" "azcar_skidpan_slomo.launch" "hectorslam-sicktest.launch" "azcar_neighborhood.launch" "joystick.launch" "rviz.launch" "distanceEstimator.launch" "azcar_skidpan.launch" "hectorslam.launch" "humancar_newspawn.launch" "azcar_squiggle.launch" "humancar_spawn_nocmd.launch" "azcar_canyonview.launch" "humancar_followerControl.launch" "distanceEstimator_simulator.launch" "applyVelProfile.launch" "azcar_empty.launch" "distanceEstimator_standalone.launch" "sick_laptop_500k.launch" "sickTest.launch" "applyController.launch" "./" "azcar_roads.launch" "robotviz.launch")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/include/" (22820 9946 523413 303000) "../" "./" "lane_follower_layer.h")
-
- ("/home/sgarcia/playground/catkin_ws/src/smach_tutorials/scripts/" (22824 38535 363257 544000) "../" "state_machine_simple.py" "./")
-
- ("/home/sgarcia/gtri-car-deleteme/velodyne_plugin/world/" (22821 57757 697251 987000) "../" "multiple_sensors.world" "./" "velodyne.world")
-
- ("/home/sgarcia/gtri-car-deleteme/velodyne_plugin/include/" (22821 52317 510908 91000) "../" "./")
-
- ("/home/sgarcia/gtri-car-deleteme/velodyne_plugin/" (22821 52467 788573 667000) "../" "include/" "src/" "CMakeLists.txt" "build/" "world/" "./")
-
- ("/opt/ros/kinetic/share/gazebo_ros/" (22766 30411 892378 883000) "package.xml" "../" "launch/" "cmake/" "./")
-
- ("/opt/ros/kinetic/share/" (22777 6383 564266 992000) "rosnode/" "dynamic_reconfigure/" "roslisp/" "ros_tutorials/" "gencpp/" "move_base_msgs/" "rotate_recovery/" "rospy_tutorials/" "self_test/" "hector_trajectory_server/" "ps3joy/" "compressed_depth_image_transport/" "interactive_marker_tutorials/" "hector_geotiff_plugins/" "nodelet_core/" "diagnostic_updater/" "theora_image_transport/" "rqt_publisher/" "shape_msgs/" "rosconsole_bridge/" "diagnostic_msgs/" "nodelet/" "eigen_stl_containers/" "bondpy/" "perception/" "message_runtime/" "uuid_msgs/" "rqt_image_view/" "imu_sensor_controller/" "image_transport/" "common-lisp/" "rqt_robot_dashboard/" "roslib/" "ecl_type_traits/" "rqt_common_plugins/" "diagnostic_analysis/" "spacenav_node/" "rqt_moveit/" "depth_image_proc/" "ecl_linear_algebra/" "stage/" "nodelet_tutorial_math/" "roswtf/" "std_msgs/" "velodyne_gazebo_plugins/" "xacro/" "rviz_plugin_tutorials/" "genmsg/" "rosbag_migration_rule/" "teleop_twist_keyboard/" "rosmake/" "controller_interface/" "collada_parser/" "genpy/" "actionlib/" "geometry_tutorials/" "resource_retriever/" "class_loader/" "catkin/" "rospack/" "nav_msgs/" "combined_robot_hw/" "clear_costmap_recovery/" "gennodejs/" "tf2_eigen/" "rqt_action/" "interactive_markers/" "velocity_controllers/" "carrot_planner/" "rosbuild/" "geneus/" "cv_bridge/" "cpp_common/" "geometry/" "rviz/" "urdf/" "navigation/" "hector_imu_attitude_to_tf/" "turtlesim/" "rqt_robot_plugins/" "qt_gui_py_common/" "common_msgs/" "OpenCV-3.2.0-dev/" "rviz_python_tutorial/" "roscpp/" "image_proc/" "move_slow_and_clear/" "rqt_joint_trajectory_controller/" "nodelet_topic_tools/" "rqt_srv/" "smach/" "qwt_dependency/" "pluginlib/" "hector_gazebo_plugins/" "roslint/" "media_export/" "laser_geometry/" "tf2_py/" "message_filters/" "pluginlib_tutorials/" "hector_marker_drawing/" "teb_local_planner_tutorials/" "rqt_console/" "camera_calibration/" "angles/" "python_qt_binding/" "fake_localization/" "cmake_modules/" "tf2_kdl/" "rqt_graph/" "ecl_exceptions/" "gmapping/" "hector_map_tools/" "rosunit/" "actionlib_tutorials/" "nav_core/" "control_msgs/" "rosclean/" "rqt_rviz/" "viz/" "ecl_formatters/" "gazebo_ros_pkgs/" "robot_pose_ekf/" "controller_manager/" "polled_camera/" "laser_pipeline/" "ros_core/" "rosbash/" "smach_ros/" "executive_smach/" "rqt_robot_monitor/" "laser_assembler/" "hector_map_server/" "rostest/" "stage_ros/" "joint_trajectory_controller/" "teb_local_planner/" "rqt_topic/" "desktop/" "map_msgs/" "bond_core/" "rqt_logger_level/" "geometry_msgs/" "ros_comm/" "forward_command_controller/" "pcl_ros/" "geometric_shapes/" "map_server/" "rosmsg/" "robot/" "move_base/" "roslz4/" "gazebo_ros/" "libg2o/" "ecl_config/" "camera_calibration_parsers/" "random_numbers/" "rqt_runtime_monitor/" "global_planner/" "rqt_tf_tree/" "common_tutorials/" "rosbag/" "rqt_gui/" "roseus/" "turtle_tf/" "tf/" "base_local_planner/" "robot_model/" "rosout/" "rosconsole/" "rqt/" "tf2_ros/" "ros_controllers/" "stereo_image_proc/" "rospy/" "visualization_marker_tutorials/" "rosmaster/" "eigen_conversions/" "sensor_msgs/" "visualization_tutorials/" "rostime/" "laser_filters/" "kdl_parser/" "ros_control/" "hector_compressed_map_transport/" "rqt_gui_cpp/" "opencv3/" "ecl_build/" "std_srvs/" "bondcpp/" "rqt_nav_view/" "orocos_kdl/" "joint_state_publisher/" "rqt_reconfigure/" "librviz_tutorial/" "image_transport_plugins/" "position_controllers/" "bond/" "yocs_msgs/" "stereo_msgs/" "hardware_interface/" "pid/" "urdf_parser_plugin/" "hector_mapping/" "voxel_grid/" "rqt_py_common/" "roscpp_core/" "diff_drive_controller/" "gazebo_ros_control/" "openslam_gmapping/" "compressed_image_transport/" "rqt_msg/" "pr2_description/" "roslang/" "rqt_web/" "trajectory_msgs/" "rqt_shell/" "robot_state_publisher/" "ecl_converters/" "ecl_errors/" "hector_slam/" "hector_slam_launch/" "roscpp_tutorials/" "diagnostics/" "image_view/" "genlisp/" "force_torque_sensor_controller/" "yocs_waypoints_navi/" "gl_dependency/" "tf2_tools/" "pcl_msgs/" "diagnostic_aggregator/" "gripper_action_controller/" "rqt_bag_plugins/" "filters/" "wiimote/" "rosgraph/" "python_orocos_kdl/" "vision_opencv/" "perception_pcl/" "mk/" "joint_limits_interface/" "controller_manager_msgs/" "sophus/" "rqt_robot_steering/" "qt_dotgraph/" "geographic_msgs/" "tf2/" "tf_conversions/" "rqt_service_caller/" "bfl/" "transmission_interface/" "joy/" "controller_manager_tests/" "roscreate/" "tf2_msgs/" "amcl/" "rqt_pose_view/" "rqt_top/" "roscpp_serialization/" "hector_nav_msgs/" "combined_robot_hw_tests/" "yocs_math_toolkit/" "rosparam/" "roscpp_traits/" "ecl_license/" "camera_info_manager/" "ecl_concepts/" "simulators/" "costmap_converter/" "ros_base/" "xmlrpcpp/" "turtle_actionlib/" "dwa_local_planner/" "realtime_tools/" "collada_urdf/" "rqt_plot/" "ecl_mpl/" "doc/" "desktop_full/" "smach_msgs/" "ros/" "rosbag_storage/" "actionlib_msgs/" "joystick_drivers/" "topic_tools/" "qt_gui/" "pcl_conversions/" "gazebo_msgs/" "visualization_msgs/" "costmap_2d/" "ecl_eigen/" "qt_gui_cpp/" "effort_controllers/" "rqt_bag/" "turtle_tf2/" "rosservice/" "navfn/" "rosboost_cfg/" "diagnostic_common_diagnostics/" "roslaunch/" "smclib/" "tf2_geometry_msgs/" "hector_geotiff/" "image_rotate/" "image_geometry/" "rqt_gui_py/" "rqt_dep/" "joint_state_controller/" "urdf_tutorial/" "control_toolbox/" "image_common/" "message_generation/" "kdl_conversions/" "image_pipeline/" "rqt_launch/" "ecl_math/" "rosgraph_msgs/" "octomap/" "rostopic/" "gazebo_plugins/" "rqt_py_console/" "../" "./")
-
- ("/opt/ros/kinetic/" (22766 30241 928040 636000) "_setup_util.py" ".catkin" "../" "etc/" "setup.zsh" ".rosinstall" "lib/" "setup.bash" "include/" "bin/" "env.sh" "share/" "setup.sh" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/include/" (22820 9946 615414 134000) "../" "gtri_pkg/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/" (22820 9946 523413 303000) "package.xml" "../" "simulink/" "rviz/" "urdf/" "launch/" "include/" "src/" "config/" "CMakeLists.txt" "worlds/" "matlab files/" "scripts/" "meshes/" "./" "setup.py")
-
- ("/home/sgarcia/playground/catkin_ws/src/python_pkg/src/python_pkg/" (22814 2451 605634 183000) "hello.pyc" "__init__.py" "../" "hello.py" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/srv/" (22805 56855 243617 221000) "../" "./" "PubVelCmd.srv" "OsmRouter.srv")
-
- ("/home/sgarcia/playground/launch/" (22787 41402 236587 283000) "test_osm.launch" "../" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/sicktoolbox_wrapper/" (22772 57973 406760 664000) "standalone/" "package.xml" "../" "CMakeLists.txt" ".git" "ros/" "./" "sick_test.vcg")
-
- ("/home/sgarcia/nutria/gtri-car/build/CMakeFiles/" (22786 27432 803986 503000) "cmake.check_cache" "CMakeRuleHashes.txt" "feature_tests.cxx" "../" "3.5.1/" "tests.dir/" "download_extra_data.dir/" "Makefile.cmake" "TargetDirectories.txt" "CMakeOutput.log" "Makefile2" "feature_tests.c" "progress.marks" "run_tests.dir/" "CMakeDirectoryInformation.cmake" "CMakeError.log" "clean_test_results.dir/" "CMakeTmp/" "doxygen.dir/" "./" "feature_tests.bin")
-
- ("/home/sgarcia/playground/catkin_ws/src/python_pkg/bin/" (22785 3198 393524 537000) "../" "hello" "./")
-
- ("/home/sgarcia/playground/catkin_ws/src/smach_tutorials/" (22784 64657 377297 860000) "package.xml" "../" "CMakeLists.txt" "scripts/" "./")
-
- ("/home/sgarcia/playground/catkin_ws/src/python_pkg/" (22783 21787 142071 994000) "package.xml" "../" "src/" "bin/" "CMakeLists.txt" "./" "setup.py")
-
- ("/home/sgarcia/playground/catkin_ws/src/python_pkg/src/" (22782 37563 976117 214000) "../" "python_pkg/" "./")
-
- ("/home/sgarcia/playground/catkin_ws/src/" (22782 37533 583919 247000) "../" "python_pkg/" "smach_tutorials/" "CMakeLists.txt" "beginner_tutorials/" "learning_tf/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/scripts/" (22782 32977 852544 271000) "../" "odom2path.py" "primitiveCmdVel.py" "joy2cmdvel.py" "cmdvel2gazebo.py" "resetSim.sh" "tests/" "./")
-
- ("/home/sgarcia/gtri-car-deleteme/car_nav2d/src/" (22777 3029 676830 689000) "teleop_with_keyboard.cpp" "my_gazebo_ros_block_laser.cpp" "lane_position_tracker.cpp" "../" "collect_lidar_data.cpp" "lane_following_controller.cpp" "ls2pc.cpp" "KalmanFilter.cpp" "PositionTracker.cpp" "my_observation_buffer.cpp" "lane_follower_layer.cpp" "./")
-
- ("/home/sgarcia/gtri-car-deleteme/car_nav2d/" (22772 55868 876153 695000) "package.xml" "../" "msg/" "maps/" "launch/" "include/" "src/" "costmap_plugins.xml" "config/" "CMakeLists.txt" "srv/" "scripts/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/maps/" (22772 61646 947571 844000) "squiggle-improved.pgm" "canyonview_hector.pgm" "../" "canyonview_gmapping.pgm" "canyonview_gmapping.yaml" "squiggle.pgm" "canyonview_field.pgm" "squiggle.yaml" "./" "canyonview_field.yaml" "squiggle-original.pgm" "canyonview_hector.yaml")
-
- ("/home/sgarcia/nutria/gtri-car/src/cmdvel2gazebo/" (22772 57906 390589 360000) "cmdvel2gazebo_private.h" "slros_initialize.cpp" "slros_msgconvert_utils.h" "package.xml" "rtwtypes.h" "../" "rtw_continuous.h" "cmdvel2gazebo_data.cpp" "rtmodel.h" "slTestTypes.h" "rt_nonfinite.h" "rtGetInf.h" "MW_custom_RTOS_header.h" "linuxinitialize.h" "slros_busmsg_conversion.cpp" "rtGetNaN.cpp" "rtGetInf.cpp" "ert_main.cpp" "CMakeLists.txt" "slros_generic_param.h" "slros_initialize.h" "slros_generic_pubsub.h" "rt_nonfinite.cpp" "slros_generic.h" "cmdvel2gazebo.h" "slTestResult.h" "rtGetNaN.h" "slros_generic_param.cpp" "linuxinitialize.cpp" "cmdvel2gazebo.cpp" "cmdvel2gazebo_types.h" "slros_busmsg_conversion.h" "rtw_solver.h" "./" "defines.txt")
-
- ("/home/sgarcia/nutria/gtri-car/src/sicktoolbox_wrapper/ros/sicklms/" (22772 57973 406760 664000) "../" "sicklms.cpp" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/velodyne/velodyne_pointcloud/" (22772 57974 34762 265000) "package.xml" "../" "launch/" "include/" "src/" "nodelets.xml" "CMakeLists.txt" "scripts/" "CHANGELOG.rst" "tests/" "params/" "cfg/" "./" "mainpage.dox")
-
- ("/home/sgarcia/nutria/gtri-car/src/sicktoolbox/" (22772 57973 34759 714000) "c++/" "package.xml" "../" "manuals/" "COPYING" "doxygen.cfg" "AUTHORS" "include/" "CMakeLists.txt" "README" ".git" "THANKS" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/src/" (22772 57906 190588 848000) "leadercmd.cc" "../" "cont.cc" "cont_lead.cc" "distanceEstimator.cpp" "firstOrderController.cc" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/config/" (22772 57906 182588 827000) "../" "azcar_control.yaml" "map.yaml" "./")
-
- ("/opt/ros/kinetic/share/gazebo_ros/launch/" (22766 30411 892378 883000) "../" "empty_world.launch" "shapes_world.launch" "rubble_world.launch" "elevator_world.launch" "mud_world.launch" "willowgarage_world.launch" "range_world.launch" "./")
-
- ("/opt/ros/kinetic/share/amcl/examples/" (22766 30143 447843 742000) "amcl_omni.launch" "../" "amcl_diff.launch" "./")
-
- ("/opt/ros/kinetic/include/sensor_msgs/" (22766 30270 844098 311000) "LaserEcho.h" "Range.h" "SetCameraInfo.h" "point_field_conversion.h" "../" "point_cloud2_iterator.h" "PointCloud.h" "CompressedImage.h" "Imu.h" "MultiDOFJointState.h" "NavSatFix.h" "ChannelFloat32.h" "SetCameraInfoResponse.h" "distortion_models.h" "CameraInfo.h" "MultiEchoLaserScan.h" "JoyFeedbackArray.h" "MagneticField.h" "PointCloud2.h" "Joy.h" "point_cloud_conversion.h" "impl/" "Temperature.h" "SetCameraInfoRequest.h" "fill_image.h" "BatteryState.h" "RegionOfInterest.h" "LaserScan.h" "TimeReference.h" "Image.h" "JoyFeedback.h" "PointField.h" "Illuminance.h" "JointState.h" "image_encodings.h" "NavSatStatus.h" "FluidPressure.h" "./" "RelativeHumidity.h")
-
- ("/opt/ros/kinetic/share/costmap_2d/" (22766 30289 928136 343000) "package.xml" "../" "msg/" "costmap_plugins.xml" "cmake/" "./")
-
- ("/opt/ros/kinetic/include/costmap_2d/" (22766 30289 924136 335000) "voxel_layer.h" "ObstaclePluginConfig.h" "testing_helper.h" "../" "static_layer.h" "layer.h" "footprint.h" "observation.h" "observation_buffer.h" "Costmap2DConfig.h" "array_parser.h" "cost_values.h" "InflationPluginConfig.h" "costmap_2d_ros.h" "costmap_2d.h" "costmap_math.h" "costmap_layer.h" "GenericPluginConfig.h" "obstacle_layer.h" "VoxelGrid.h" "VoxelPluginConfig.h" "costmap_2d_publisher.h" "./" "inflation_layer.h" "layered_costmap.h")
 )
 
 ;; ----- ido-unc-hosts-cache -----
