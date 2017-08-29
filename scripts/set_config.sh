@@ -82,9 +82,21 @@ function set_bashaliases()
 function set_bashrc()
 {
     echo ""
-    echo "NOTE: ~/.bashrc files are sensitive so the script does NOT copy automatically."
-    echo "Handle file as you wish."
+    echo "WARNING: ~/.bashrc files are sensitive."
+    echo "Completing this process will delete your current ~/.bashrc file."
     echo ""
+
+    # ask user
+    read -r -p "Are you sure? [y/N] " response
+    response=${response,,}    # tolower
+    echo " "
+    if [[ "$response" =~ ^(yes|y)$ ]]; then
+	rm ~/.bashrc
+	cp ../files_and_dirs/bashrc ~/.bashrc
+	echo "Deleting old and copying new... Complete"
+    else
+	echo "Nothing done."
+    fi
 }
 
 
@@ -101,8 +113,11 @@ elif [ $SERVICE = "emacs" ]; then
     set_emacs
 elif [ $SERVICE = "aliases" ]; then
     set_bashaliases
+elif [ $SERVICE = "bashrc" ]; then
+    set_bashrc
 else
     echo "$SERVICE: Not handling this service just yet. Only:"
+    echo ""
     printNames
 fi
 
