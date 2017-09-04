@@ -1,6 +1,6 @@
 ;;; init.el --- Global settings
 
-;;; Commentary: 
+;;; Commentary:
 
 ;;; Code:
 ;; add settings directory to load path
@@ -33,8 +33,6 @@
 
 ;; initialize flycheck mode
 (require 'flycheck)
-;; (require 'seq)
-;; (global-flycheck-mode)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (setq-default flycheck-emacs-lisp-load-path 'inherit)
 
@@ -81,20 +79,23 @@
 (require 'dockerfile-mode)
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
 
+;; delete trailing whitespace when you save a buffer
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; Return key automatically indents cursor on new line in yaml mode
 (add-hook 'yaml-mode-hook
 	  (lambda ()
-            (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+	    (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 
 ;; make backup to a designated dir, mirroring the full path
 (defun my-backup-file-name (fpath)
   "Return a new file path of a given file path.
 If the new path's directories does not exist, create them."
   (let* (
-         (backupRootDir "~/.emacs.d/emacs-backup/")
-         (filePath (replace-regexp-in-string "[A-Za-z]:" "" fpath )) ; remove Windows driver letter in path, ⁖ “C:”
-         (backupFilePath (replace-regexp-in-string "//" "/" (concat backupRootDir filePath "~") ))
-         )
+	 (backupRootDir "~/.emacs.d/emacs-backup/")
+	 (filePath (replace-regexp-in-string "[A-Za-z]:" "" fpath )) ; remove Windows driver letter in path, ⁖ “C:”
+	 (backupFilePath (replace-regexp-in-string "//" "/" (concat backupRootDir filePath "~") ))
+	 )
     (make-directory (file-name-directory backupFilePath) (file-name-directory backupFilePath))
     backupFilePath
     )

@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ delete-trailing-whitespace
+ just-one-space
  package-install
  recover-file
  list-packages
  set-fill-column
  package-list-packages
- ansi-term
- uncomment-region
 )
 
 ;; ----- smex-data -----
@@ -20,4 +20,6 @@
  (list-packages . 1)
  (recover-file . 1)
  (package-install . 2)
+ (delete-trailing-whitespace . 2)
+ (just-one-space . 1)
 )

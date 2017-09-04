@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/sgarciav/" . ".emacs.d/")
  ("/home/sgarcia/cuas/gtri-uav/uav_build/" . "dependency_scripts/")
  ("/home/sgarcia/cuas/gtri-uav/ci/" . "dockerfiles/")
  ("/home/sgarcia/cuas/gtri-uav/" . "ci/")
@@ -80,6 +81,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/sgarciav/.emacs.d/"
+ "/home/sgarciav/"
  "/home/sgarcia/.emacs.d/settings/"
  "/home/sgarcia/cuas/gtri-uav/"
  "/home/sgarcia/cuas/gtri-uav/ci/dockerfiles/"
@@ -128,12 +131,12 @@
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/behaviors/"
  "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/src/"
  "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/include/gtri_pkg/"
- "/home/sgarcia/git-repos/prius_demo/src/prius_description/urdf/"
- "/home/sgarcia/git-repos/prius_demo/src/car_demo/launch/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "init.el"
+ "deleteme.txt"
  "dockerfile-mode.el"
  "README.md"
  "ubuntu-16.04-64-developer"
@@ -142,12 +145,14 @@
  "LICENSE.txt"
  ".bashrc"
  "run_autonomy.launch"
- "setup.sh"
- "get_yocs_waypoints.sh"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/sgarciav/.emacs.d/" (22957 57111 235727 857000) "settings/" "url/" "emacs-backup/" "init.el" "./" "smex-items" "auto-save-list/" "../" "snippets/" "elpa/" "themes/" "ido.last" "ac-comphist.dat")
+
+ ("/home/sgarciav/" (22957 57127 967852 425000) ".config/" ".sudo_as_admin_successful" "Pictures/" ".ipython/" ".ICEauthority" ".cache/" "git-repos/" ".bash_aliases" ".gimp-2.8/" ".gnome2/" ".compiz/" "Downloads/" ".gnupg/" ".gitconfig" ".xsession-errors" ".Xauthority" ".gksu.lock" ".ecryptfs/" ".scrimmage/" ".local/" ".bashrc" ".macromedia/" "Music/" "examples.desktop" "Public/" ".bash_history" ".adobe/" ".nvidia-settings-rc" ".gnome2_private/" ".nano/" ".bash_logout" "Documents/" ".profile" ".emacs.d/" "Videos/" "deleteme.txt" ".thumbnails/" "Desktop/" ".mozilla/" ".xsession-errors.old" ".Private/" ".dbus/" "Templates/" ".gconf/" "../" "./")
+
  ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/" (22848 19973 891239 103000) "package.xml" "../" "include/" "src/" "CMakeLists.txt" "scripts/" "./" "setup.py")
 
  ("/home/sgarcia/cuas/gtri-uav/ci/dockerfiles/" (22940 17288 714292 325000) "../" "ubuntu-16.04-64-developer" "ubuntu-16.04-64-complete" "./")
@@ -343,10 +348,6 @@
  ("/home/sgarcia/.gnupg/" (22879 42884 461803 942000) "../" "private-keys-v1.d/" "secring.gpg" "pubring.gpg" "S.gpg-agent" "./")
 
  ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/msg/" (22869 22136 413549 6000) "LaneCoordinates.msg" "../" "BlinkerState.msg" "PoseAndVelocityList.msg" "WaypointPoseAndTag.msg" "PoseAndVelocity.msg" "BezierWaypoints.msg" "WaypointTag.msg" "WaypointTagList.msg" "IntersectionState.msg" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/rviz/" (22869 22136 377548 498000) "../" "azcar.rviz" "azcar_tf.rviz" "azcar_sim_teb_planner.rviz" "azcar_multiple_robots.rviz" "./")
-
- ("/home/sgarcia/playground/catkin_ws/src/beginner_tutorials/src/" (22861 10596 353659 495000) "../" "listener.cpp" "talker.cpp" "add_two_ints_server.cpp" "add_two_ints_client.cpp" "display_shapes.cpp" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
