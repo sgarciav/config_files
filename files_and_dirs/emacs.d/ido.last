@@ -2,6 +2,12 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/sgarciav/.emacs.d/" . "settings/")
+ ("/home/sgarciav/latex_docs/papers/" . "vel_obs_metrics/")
+ ("/home/sgarciav/latex_docs/cmake/" . "Modules/")
+ ("/home/sgarciav/latex_docs/" . "papers/")
+ ("/home/sgarciav/git-repos/personal-webcam-server/" . "scripts/")
+ ("/home/sgarciav/git-repos/" . "personal-webcam-server/")
  ("/home/sgarciav/" . ".emacs.d/")
  ("/home/sgarcia/cuas/gtri-uav/uav_build/" . "dependency_scripts/")
  ("/home/sgarcia/cuas/gtri-uav/ci/" . "dockerfiles/")
@@ -82,7 +88,18 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/sgarciav/.emacs.d/"
+ "/home/sgarciav/.emacs.d/settings/"
  "/home/sgarciav/"
+ "/home/sgarciav/Downloads/"
+ "/home/sgarciav/latex_docs/papers/vel_obs_metrics/"
+ "/home/sgarciav/latex_docs/"
+ "/home/sgarciav/latex_docs/papers/bare-conf/"
+ "/home/sgarciav/latex_docs/cmake/Modules/"
+ "/home/sgarciav/latex_docs/papers/"
+ "/home/sgarciav/git-repos/personal-webcam-server/"
+ "/home/sgarciav/git-repos/flask-video-streaming/"
+ "/home/sgarciav/git-repos/personal-webcam-server/scripts/"
+ "/home/sgarciav/git-repos/personal-webcam-server/src/"
  "/home/sgarcia/.emacs.d/settings/"
  "/home/sgarcia/cuas/gtri-uav/"
  "/home/sgarcia/cuas/gtri-uav/ci/dockerfiles/"
@@ -120,38 +137,59 @@
  "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/src/"
- "/home/sgarcia/nutria/gtri-car/"
- "/home/sgarcia/nutria/scrimmage-nutria-plugins/"
- "/home/sgarcia/git-repos/scrimmage-gtri-share/"
- "/home/sgarcia/nutria/gtri-car/src/osrf_prius/car_demo/nodes/"
- "/home/sgarcia/nutria/gtri-car/src/car_demo/car_demo/nodes/"
- "/home/sgarcia/nutria/gtri-car/src/car_demo/car_demo/"
- "/home/sgarcia/git-repos/prius_demo/src/prius_msgs/"
- "/home/sgarcia/git-repos/prius_demo/src/car_demo/"
- "/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/behaviors/"
- "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/src/"
- "/home/sgarcia/nutria/gtri-car/src/gtri_pkg/include/gtri_pkg/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  "init.el"
- "deleteme.txt"
- "dockerfile-mode.el"
+ "wrap-lines.el"
+ "appearance.el"
+ ".gitconfig"
+ "SGarcia_ECE_Dissertation.tex"
+ "IntrinsicMotivationStudy.tex"
+ "vel_obs_metrics.tex"
  "README.md"
- "ubuntu-16.04-64-developer"
- "install_dependencies"
- "install_ros"
- "LICENSE.txt"
- ".bashrc"
- "run_autonomy.launch"
+ "CMakeLists.txt"
+ "bare_conf.tex"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/sgarciav/.emacs.d/" (22957 57111 235727 857000) "settings/" "url/" "emacs-backup/" "init.el" "./" "smex-items" "auto-save-list/" "../" "snippets/" "elpa/" "themes/" "ido.last" "ac-comphist.dat")
+ ("/home/sgarciav/.emacs.d/" (22960 55748 326602 352000) "settings/" "url/" "emacs-backup/" "init.el" "./" "smex-items" "auto-save-list/" "../" "snippets/" "elpa/" "themes/" "ido.last" "ac-comphist.dat")
 
- ("/home/sgarciav/" (22957 57127 967852 425000) ".config/" ".sudo_as_admin_successful" "Pictures/" ".ipython/" ".ICEauthority" ".cache/" "git-repos/" ".bash_aliases" ".gimp-2.8/" ".gnome2/" ".compiz/" "Downloads/" ".gnupg/" ".gitconfig" ".xsession-errors" ".Xauthority" ".gksu.lock" ".ecryptfs/" ".scrimmage/" ".local/" ".bashrc" ".macromedia/" "Music/" "examples.desktop" "Public/" ".bash_history" ".adobe/" ".nvidia-settings-rc" ".gnome2_private/" ".nano/" ".bash_logout" "Documents/" ".profile" ".emacs.d/" "Videos/" "deleteme.txt" ".thumbnails/" "Desktop/" ".mozilla/" ".xsession-errors.old" ".Private/" ".dbus/" "Templates/" ".gconf/" "../" "./")
+ ("/home/sgarciav/.emacs.d/settings/" (22960 55201 933304 588000) "packages.el" "appearance.el" "dockerfile-mode.el" "wrap-lines.el" "./" "bash-completion.el" "../" "markdown-mode.el" "key-bindings.el" "fill-column-indicator.el")
+
+ ("/home/sgarciav/.ecryptfs/" (22478 15226 880111 103000) "auto-mount" "wrapped-passphrase" "Private.sig" "./" "../" "auto-umount" "Private.mnt")
+
+ ("/home/sgarciav/Downloads/" (22960 54403 718295 308000) "./" "SGarcia_ECE_Dissertation.tex" "../")
+
+ ("/home/sgarciav/latex_docs/" (22960 52736 957892 313000) "cmake/" "common-images/" "CMakeLists.txt" "papers/" "./" "build/" "README.md" "../" "clean.sh")
+
+ ("/home/sgarciav/latex_docs/build/" (22960 52739 473400 7000) "cmake_install.cmake" "Makefile" "papers/" "./" "CMakeCache.txt" "CMakeFiles/" "../")
+
+ ("/home/sgarciav/latex_docs/papers/vel_obs_metrics/" (22960 52344 547563 495000) "CMakeLists.txt" "./" "../" "vel_obs_metrics.tex" "llncs.cls")
+
+ ("/home/sgarciav/latex_docs/papers/" (22960 51965 138316 434000) "CMakeLists.txt" "vel_obs_metrics/" "./" "bare-conf/" "../")
+
+ ("/home/sgarciav/latex_docs/papers/bare-conf/" (22960 51134 833786 964000) "CMakeLists.txt" "bare_conf.tex" "./" "IEEEtran.cls" "../")
+
+ ("/home/sgarciav/latex_docs/cmake/Modules/" (22960 50678 393911 75000) "UseLATEX.cmake" "./" "../" "MacroSubDirList.cmake")
+
+ ("/home/sgarciav/latex_docs/cmake/" (22960 50094 663243 641000) "Modules/" "./" "../")
+
+ ("/home/sgarciav/git-repos/" (22960 46392 451552 203000) "personal-webcam-server/" "config_files/" "papers/" "scrimmage/" "./" "pygame-examples/" "playground/" "../" "flask-video-streaming/")
+
+ ("/home/sgarciav/" (22960 50078 571392 395000) "latex_docs/" ".config/" ".sudo_as_admin_successful" "Pictures/" ".ipython/" ".ICEauthority" ".cache/" "git-repos/" ".bash_aliases" ".gimp-2.8/" ".gnome2/" ".compiz/" "Downloads/" ".gnupg/" ".gitconfig" ".xsession-errors" ".cmake/" ".Xauthority" ".gksu.lock" ".ecryptfs/" ".scrimmage/" ".local/" ".ccache/" ".bashrc" ".macromedia/" "Music/" "examples.desktop" "Public/" ".bash_history" ".adobe/" ".nvidia-settings-rc" ".gnome2_private/" ".nano/" ".bash_logout" "Documents/" ".profile" ".emacs.d/" "Videos/" ".thumbnails/" "Desktop/" ".mozilla/" ".xsession-errors.old" ".Private/" ".dbus/" "Templates/" ".gconf/" "../" "./")
+
+ ("/home/sgarciav/git-repos/flask-video-streaming/" (22957 65019 712900 516000) "LICENSE" "3.jpg" "app.py" "camera.pyc" "requirements-opencv.txt" "2.jpg" "camera_pi.py" ".gitignore" "base_camera.py" "camera.py" "requirements.txt" "camera_opencv.py" "./" ".git/" "templates/" "README.md" "../" "requirements-pi.txt" "1.jpg" "base_camera.pyc")
+
+ ("/home/sgarciav/git-repos/personal-webcam-server/" (22957 64939 100184 382000) "scripts/" "CMakeLists.txt" ".gitignore" "src/" "index.html" "requirements.txt" "./" "build/" ".git/" "README.md" "../")
+
+ ("/home/sgarciav/git-repos/personal-webcam-server/scripts/" (22957 63335 462601 147000) "app.py" "./" "../")
+
+ ("/home/sgarciav/git-repos/personal-webcam-server/src/" (22957 62062 309601 594000) "./" "displayWebcam.cpp" "../")
+
+ ("/home/sgarciav/Desktop/" (22620 15599 482821 80000) "./" "../")
 
  ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/" (22848 19973 891239 103000) "package.xml" "../" "include/" "src/" "CMakeLists.txt" "scripts/" "./" "setup.py")
 
@@ -316,38 +354,6 @@
  ("/home/sgarcia/git-repos/prius_demo/" (22896 53958 741454 915000) "../" "Dockerfile" "src/" "README.md" "run_demo.bash" "build/" "build_demo.bash" ".git/" "devel/" ".catkin_workspace" "./" ".gitignore")
 
  ("/home/sgarcia/git-repos/prius_demo/src/car_demo/launch/" (22896 51048 728325 7000) "demo.launch" "../" "./")
-
- ("/home/sgarcia/git-repos/prius_demo/src/prius_description/urdf/" (22895 54231 239819 993000) "../" "prius.urdf" "./")
-
- ("/home/sgarcia/git-repos/prius_demo/src/prius_description/" (22895 49188 431766 63000) "package.xml" "../" "urdf/" "CMakeLists.txt" "meshes/" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/my_prius_description/" (22895 51085 722624 672000) "package.xml" ".#CMakeLists.txt" "../" "urdf/" "plugins/" "CMakeLists.txt" "meshes/" "./")
-
- ("/home/sgarcia/Gimp/" (22729 48763 283901 533000) "../" "squiggle-improvement in progress.xcf" "squiggle-improvement in progress-simple.xcf" "./")
-
- ("/home/sgarcia/git-repos/prius_demo/src/" (22894 11908 104733 689000) "../" "prius_description/" "car_demo/" "prius_msgs/" "CMakeLists.txt" "./")
-
- ("/home/sgarcia/nutria/scrimmage-nutria-plugins/python/probing/motor_schemas/" (22886 37484 10755 402000) "util.py" "__init__.py" "../" "frames.pkl" "infer_motor_schemas_base.py" "infer_motor_schemas_advi.py" "infer_from_frames.py" "infer_frames_map.py" "motor_schemas_model.py" "./" "infer_motor_schemas_map.py")
-
- ("/home/sgarcia/nutria/scrimmage-nutria-plugins/python/probing/" (22886 30207 411868 998000) "__init__.py" "../" "motor_schemas/" "nn_transform.py" "boids_probe_opt.py" "nn_probe_opt.py" "lu_bijector.py" "opt_util.py" "./" "probe_param_parser.py")
-
- ("/home/sgarcia/nutria/scrimmage-nutria-plugins/python/" (22886 30610 692834 81000) "../" "probing.egg-info/" "build/" "probing/" "dist/" "./" "setup.py")
-
- ("/home/sgarcia/nutria/scrimmage-nutria-plugins/plugins/" (22886 30207 407868 908000) "../" "autonomy/" "CMakeLists.txt" "./")
-
- ("/home/sgarcia/gtri-car-deleteme/velodyne_plugin/src/" (22879 44418 413657 189000) "../" "velodyne_plugin.cpp" "./")
-
- ("/home/sgarcia/playground/obj/" (22883 36200 250385 7000) "../" "number_of_elements" "HelloWorld" "fibonacci" "read_arrow_keys" "./" "getWorkTime")
-
- ("/home/sgarcia/playground/" (22886 13960 104995 419000) "../" "launch/" ".index.html.swp" "src/" "obj/" "catkin_ws/" "scripts/" "./")
-
- ("/home/sgarcia/playground/src/" (22886 14000 781884 341000) "../" "getWorkTime.cpp" "HelloWorld.cpp" "fibonacci.cpp" "read_arrow_keys.cpp" "ros_cpp_template.cpp" "./" "number_of_elements.cpp")
-
- ("/home/sgarcia/GTRI/" (22884 63624 645231 473000) "../" "Insider Threat Certificate-[SGarcia].png" "ConflictOfInterest.pdf" "./")
-
- ("/home/sgarcia/.gnupg/" (22879 42884 461803 942000) "../" "private-keys-v1.d/" "secring.gpg" "pubring.gpg" "S.gpg-agent" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/msg/" (22869 22136 413549 6000) "LaneCoordinates.msg" "../" "BlinkerState.msg" "PoseAndVelocityList.msg" "WaypointPoseAndTag.msg" "PoseAndVelocity.msg" "BezierWaypoints.msg" "WaypointTag.msg" "WaypointTagList.msg" "IntersectionState.msg" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

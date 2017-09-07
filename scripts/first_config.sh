@@ -23,7 +23,12 @@ EOF
 # --------------------
 function install_dependencies()
 {
-    sudo apt-get install -y emacs
+    sudo apt-get install -y \
+	 # tools
+	 emacs \
+
+	 # latex
+	 texlive-full biber cmake imagemagick
 }
 
 # --------------------
@@ -36,7 +41,7 @@ function setup_git()
 # --------------------
 function setup_ssh()
 {
-    echo "ssh: in progredss"
+    echo "ssh: in progress"
 }
 
 # main function
