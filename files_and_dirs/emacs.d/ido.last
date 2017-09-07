@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/sgarcia/latex_docs/papers/" . "vel_obs_metrics/")
+ ("/home/sgarcia/latex_docs/" . "papers/")
  ("/home/sgarcia/scrimmage/scrimmage/cmake/" . "Modules/")
  ("/home/sgarcia/scrimmage/scrimmage/scripts/templates/cmake-project/src/" . "plugins/")
  ("/home/sgarcia/scrimmage/scrimmage/scripts/templates/cmake-project/" . "src/")
@@ -45,8 +47,8 @@
  ("/home/sgarcia/git-repos/playground/" . "learning_docker/")
  ("/home/sgarcia/cuas/gtri-uav/uav_build/" . "dependency_scripts/")
  ("/home/sgarcia/cuas/gtri-uav/ci/" . "dockerfiles/")
- ("/home/sgarcia/cuas/gtri-uav/" . "src/")
- ("/home/sgarcia/cuas/" . "scrimmage-cuas/")
+ ("/home/sgarcia/cuas/gtri-uav/" . "uav_build/")
+ ("/home/sgarcia/cuas/" . "gtri-uav/")
  ("/home/sgarcia/git-repos/gtri-uav-aerial-robotics/" . "gtri-uav/")
  ("/home/sgarcia/git-repos/gtri-uav-simulation/" . "ArduPilot/")
  ("/home/sgarcia/git-repos/xsens_mti_ros_node_forked/xsens_driver/" . "src/")
@@ -121,8 +123,14 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/sgarcia/"
  "/home/sgarcia/.emacs.d/"
+ "/home/sgarcia/Downloads/"
+ "/home/sgarcia/latex_docs/papers/vel_obs_metrics/"
+ "/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/launch/"
+ "/home/sgarcia/cuas/gtri-uav/uav_build/"
+ "/home/sgarcia/cuas/gtri-uav/"
+ "/home/sgarcia/cuas/gtri-uav/bringup/"
+ "/home/sgarcia/"
  "/home/sgarcia/.emacs.d/settings/"
  "/home/sgarcia/scrimmage/scrimmage-cuas/src/plugins/"
  "/home/sgarcia/scrimmage/scrimmage-cuas/src/plugins/metrics/"
@@ -148,15 +156,12 @@
  "/home/sgarcia/cuas/gtri-uav/src/gt_formation/include/gt_formation/"
  "/home/sgarcia/cuas/gtri-uav/src/gt_formation/src/"
  "/home/sgarcia/.scrimmage/"
- "/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/launch/"
  "/home/sgarcia/git-repos/gtri-uav-simulation/ArduPilot/"
  "/home/sgarcia/git-repos/scrimmage/"
  "/home/sgarcia/cuas/gtri-uav/ci/dockerfiles/"
  "/home/sgarcia/cuas/gtri-uav/ci/scripts/"
- "/home/sgarcia/cuas/gtri-uav/bringup/"
  "/home/sgarcia/nutria/pioneer_navigation/"
  "/home/sgarcia/cuas/gtri-uav/ci/"
- "/home/sgarcia/cuas/gtri-uav/"
  "/home/sgarcia/git-repos/playground/learning_docker/gui_inside_container/"
  "/home/sgarcia/git-repos/playground/learning_docker/compile_host_code/"
  "/home/sgarcia/git-repos/playground/learning_docker/"
@@ -164,36 +169,57 @@
  "/home/sgarcia/git-repos/config_files/scripts/"
  "/home/sgarcia/git-repos/playground/learning_docker/compile_host_code/dockerfiles/"
  "/home/sgarcia/git-repos/playground/learning_docker/basic/"
- "/home/sgarcia/cuas/gtri-uav/uav_build/"
  "/home/sgarcia/cuas/gtri-uav/uav_build/dependency_scripts/"
  "/home/sgarcia/git-repos/gtri-uav-aerial-robotics/gtri-uav/"
  "/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/"
  "/home/sgarcia/git-repos/gtri-uav/"
- "/home/sgarcia/git-repos/gtri-uav-simulation/docs/"
- "/home/sgarcia/git-repos/gtri-uav-simulation/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "#sergiotest.txt#"
  "init.el"
- "key-bindings.el"
- "sergiotest.txt"
- "CMakeLists.txt"
- "MacroSubDirList.cmake"
+ "SGarcia_ECE_Dissertation.tex"
+ "vel_obs_metrics.tex"
+ "control_wJoystick.launch"
+ "remote_launch.launch"
+ "run_autonomy.launch"
+ "multiple_simulated.launch"
+ "robot.launch"
+ "install_dependencies"
  "README.md"
- "SimpleCollisionScore.cpp"
- "SimpleCollisionMetrics.cpp"
- "VelocityObstaclesMetrics.h"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/sgarcia/" (22961 28561 806930 29000) ".dmrc" ".xsession-errors" ".keras/" ".ccache/" "Public/" "Music/" ".gconf/" "../" "Downloads/" ".mavproxy/" "gtri-car-deleteme/" ".fltk/" ".docker/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".tilecache/" ".macromedia/" ".profile" ".wget-hsts" ".viminfo" ".apport-ignore.xml" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Octave/" "Gimp/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".lesshst" ".gnuplot_history" ".bashrc" "Desktop/" ".ICEauthority" ".vmware/" ".gksu.lock" ".sudo_as_admin_successful" "GTRI-docs/" ".compiz/" ".cache/" ".config/" ".java/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".ipython/" "cuas/" ".gnupg/" ".cmake/" ".pylint.d/" ".gnome2/" ".octave_hist" "flying/" "scrimmage/" ".webex/" ".parallel/" ".gnome2_private/" ".git-credential-cache/" ".adobe/" ".Xauthority" ".rviz/" "#sergiotest.txt#" ".ros/" ".bash_aliases" ".gvfs/" "nutria/" ".scrimmage/" "VirtualBox VMs/" ".ssr/" ".gimp-2.8/" "./" "swarm-log/" "examples.desktop" ".mozilla/" ".local/" "gtri_uav_bringup.launch")
+ ("/home/sgarcia/.emacs.d/" (22961 51201 606333 278000) "../" "auto-save-list/" "settings/" "emacs-backup/" "#init.el#" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "url/" "ido.last~" "elpa/" "./" "snippets/")
+
+ ("/home/sgarcia/Downloads/" (22961 51848 518316 226000) "../" "tar_files/" "emacs-Kevin/" "header_files/" "iso_files/" "./" "SGarcia_ECE_Dissertation.tex")
+
+ ("/home/sgarcia/latex_docs/" (22961 51299 290330 703000) "../" "clean.sh" "README.md" "CMakeLists.txt" "papers/" "build/" "cmake/" "common-images/" "./")
+
+ ("/home/sgarcia/latex_docs/papers/vel_obs_metrics/" (22961 51371 490328 800000) "../" "llncs.cls" ".#vel_obs_metrics.tex" "vel_obs_metrics.tex" "CMakeLists.txt" "#vel_obs_metrics.tex#" "./")
+
+ ("/home/sgarcia/latex_docs/papers/" (22961 50637 438348 148000) "../" "bare-conf/" "CMakeLists.txt" "./" "vel_obs_metrics/")
+
+ ("/home/sgarcia/" (22961 50631 826348 296000) ".dmrc" ".xsession-errors" ".keras/" ".ccache/" "Public/" "Music/" ".gconf/" "../" "Downloads/" ".mavproxy/" "gtri-car-deleteme/" ".fltk/" ".docker/" ".dbus/" ".nano/" "Templates/" ".sdformat/" ".tilecache/" ".macromedia/" ".profile" ".wget-hsts" ".viminfo" ".apport-ignore.xml" ".bash_history" ".emacs.d/" "git-repos/" ".gitconfig" ".ssh/" ".thunderbird/" "Octave/" "Gimp/" "Pictures/" "Documents/" "Videos/" ".hplip/" ".lesshst" ".gnuplot_history" ".bashrc" "Desktop/" ".ICEauthority" ".vmware/" ".gksu.lock" ".sudo_as_admin_successful" "GTRI-docs/" ".compiz/" ".cache/" ".config/" ".java/" ".gazebo/" ".xsession-errors.old" ".thumbnails/" ".bash_logout" ".ipython/" "cuas/" ".gnupg/" ".cmake/" ".pylint.d/" ".gnome2/" ".octave_hist" "flying/" "latex_docs/" "scrimmage/" ".webex/" ".parallel/" ".gnome2_private/" ".git-credential-cache/" ".adobe/" ".Xauthority" ".rviz/" ".ros/" ".bash_aliases" ".gvfs/" "nutria/" ".scrimmage/" "VirtualBox VMs/" ".ssr/" ".gimp-2.8/" "./" "swarm-log/" "examples.desktop" ".mozilla/" ".local/" "gtri_uav_bringup.launch")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/launch/" (22961 48209 338412 149000) "../" "robot.launch" "multiple_simulated.launch" "control_wJoystick.launch" "create_map.launch" "run_autonomy.launch" "move_base.launch" "./" "remote_launch.launch")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/" (22961 48125 70414 371000) "package.xml" "../" "msg/" "maps/" "rviz/" "urdf/" "launch/" "include/" "src/" "config/" "missions/" "CMakeLists.txt" "cmake/" "scripts/" "meshes/" "./")
+
+ ("/home/sgarcia/nutria/pioneer_navigation/" (22961 40390 322618 247000) "../" "#README.md#" ".#README.md" "src/" "README.md" "build/" ".git/" "devel/" ".gitmodules" ".catkin_workspace" "scripts/" "./" ".gitignore")
+
+ ("/home/sgarcia/nutria/" (22960 12343 461084 949000) "docs/" "../" "gtri-car/" "pics and vids/" "pioneer_navigation/" "./")
+
+ ("/home/sgarcia/cuas/gtri-uav/uav_build/" (22961 36328 574725 308000) "uav_dependency_paths.bash" "../" "build_srcx.py" "build_cmake.pyc" "dependency_scripts/" "build" "install_dependencies" "build_resources.py" "build_cmake.py" "cmake/" "build_gtri-uav-scrimmage.py" "./")
+
+ ("/home/sgarcia/cuas/gtri-uav/uav_setup/" (22953 58066 363971 771000) "../" "onboard_setup_uav_environment" "remotely_configure_uav" "remotely_setup_uav_autostart" "remotely_setup_uav_environment" "remotely_setup_uav_system_sudoers" "remotely_setup_uav_system_interfaces" "configurations/" "remotely_install_uav_packages" "onboard_setup_uav_installpaths" "remotely_setup_uav_system_first_time_init" "remotely_update_uav_system" "onboard_setup_uav_autostart" "onboard_setup_uav_system_interfaces" "packages/" "readme" "remotely_setup_ssh_keys" "remotely_setup_uav_user" "readme_convert_legacy_Odroid" "onboard_configure_uav" "keys/" "./" "onboard_setup_uav_user")
+
+ ("/home/sgarcia/cuas/gtri-uav/bringup/" (22961 32378 206829 434000) "uav_bringup" "../" "clock_bringup" "uav_paths.bash" "start_sil" "uav_envsetup" "./")
+
+ ("/home/sgarcia/cuas/" (22960 12334 141085 195000) "../" "./" "gtri-uav/")
 
  ("/home/sgarcia/.emacs.d/settings/" (22961 28545 190930 467000) "../" "fill-column-indicator.el" "markdown-mode.el" "bash-completion.el" "packages.el" "appearance.el" "key-bindings.el" "dockerfile-mode.el" "./")
-
- ("/home/sgarcia/.emacs.d/" (22961 28451 226932 943000) "../" "auto-save-list/" "settings/" "emacs-backup/" "init.el" "themes/" "ido.last" "smex-items" "ac-comphist.dat" "url/" "ido.last~" "elpa/" "./" "snippets/")
 
  ("/home/sgarcia/scrimmage/scrimmage-cuas/src/plugins/" (22960 18613 528919 680000) "../" "autonomy/" "metrics/" "CMakeLists.txt" "sensor/" "./")
 
@@ -299,8 +325,6 @@
 
  ("/home/sgarcia/cuas/scrimmage-cuas/" (22958 63048 131203 310000) "docs/" "../" "ci/" "Jenkinsfile" "AUTHORS" "include/" "src/" "missions/" "README.md" "CMakeLists.txt" "build/" ".git/" "cmake/" "setup/" "test/" "LICENSE" "./" ".gitignore")
 
- ("/home/sgarcia/cuas/" (22958 63036 923203 606000) "../" "scrimmage-cuas/" "./" "gtri-uav/")
-
  ("/home/sgarcia/git-repos/scrimmage/missions/" (22958 55777 3394 966000) "../" "moos-ex1.xml" "straight.xml" "rigid_body_6dof.xml" "fixed_wing_6dof.xml" "colliding_spheres.xml" "straight_jsbsim.xml" "auction_assign.xml" "straight-no-gui.xml" "straight-vs-motorschemas.xml" "straight_cars.xml" "cars.xml" "external_control.xml" "./" "cars-2d-maze.xml" "moos-ex2.xml")
 
  ("/home/sgarcia/git-repos/gtri-tactics/missions/" (22958 57996 591336 461000) "qlearner-vs-greedy.xml" "../" "aircraft_6DOF.xml" "velocity_obstacle_3d_jsbsim_head_on.xml" "split_s.xml" "cluster_modql.xml" "greedy-vs-greedy.xml" "qtab_test_only_pos_rew.xml" "boids.xml" "velocity_obstacle_3d_spheres_head_on.xml" "velocity_obstacle_3d_spheres.xml" "autonomy_sample.xml" "unicycle_test.xml" "car_swarm.xml" "waypoint.xml" "swarm-v-swarm.xml" "test_firing.xml" "greedy-vs-greedy-small.xml" "random-vs-random.xml" "da-vs-greedy-small.xml" "da-vs-greedy-mvn.xml" "da-vs-gs-new-firing.xml" "da-sandwich-demo.xml" "gs-vs-gs-new-firing.xml" "greedy-vs-random.xml" "quadrotor_test.xml" "gs_2_vs_modql.xml" "car_avoid_collision.xml" "modql.xml" "capture_the_flag.xml" "entcomm_modql_vs_straight.xml" "prop-nav-evade.xml" "python_tutorial_1.xml" "rvo.xml" "single_car.xml" "avoid_collision.xml" "value-iteration-vs-greedy.xml" "simple_aircraft.xml" "replay_mavdata.xml" "greedy_shooter_swarms.xml" "greedy-vs-munkres.xml" "coverage.xml" "entcomm_modql.xml" "quadrotor_defense.xml" "one-v-one.xml" "consensus.xml" "./" "piedmont.xml" "vel_obs_vs_motorschemas.xml" "bomber-run.xml" "angles_test.xml")
@@ -329,21 +353,13 @@
 
  ("/home/" (22655 41303 628365 506000) "../" "sgarcia/" "./")
 
- ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/launch/" (22953 54578 4063 719000) "../" "robot.launch" "multiple_simulated.launch" "control_wJoystick.launch" "create_map.launch" "run_autonomy.launch" "move_base.launch" "./" "remote_launch.launch")
-
- ("/home/sgarcia/nutria/pioneer_navigation/src/pioneer_autonomy/" (22953 54578 4063 719000) "package.xml" "../" "msg/" "maps/" "rviz/" "urdf/" "launch/" "include/" "src/" "config/" "missions/" "CMakeLists.txt" "cmake/" "scripts/" "meshes/" "./")
-
  ("/home/sgarcia/cuas/gtri-uav/ci/dockerfiles/" (22953 48890 828213 624000) "../" "ubuntu-16.04-64-developer" "ubuntu-16.04-64-complete" "./")
 
  ("/home/sgarcia/cuas/gtri-uav/ci/scripts/" (22953 48890 828213 624000) "../" "use_ssh" "docker-compose.yml" "build.sh" "./")
 
  ("/home/sgarcia/cuas/gtri-uav/ci/" (22953 48890 828213 624000) "../" "README.md" "dockerfiles/" "scripts/" "./")
 
- ("/home/sgarcia/cuas/gtri-uav/bringup/" (22953 48890 828213 624000) "uav_bringup" "../" "clock_bringup" "uav_paths.bash" "start_sil" "uav_envsetup" "./")
-
  ("/home/sgarcia/cuas/gtri-uav/gtri-uav-scrimmage/" (22944 41569 646742 597000) "../" "plugins/" "plugin_libs/" "lib/" "include/" "src/" "missions/" "README.md" "CMakeLists.txt" "cmake/" "setup/" "scripts/" "test/" "./")
-
- ("/home/sgarcia/nutria/pioneer_navigation/" (22953 27392 936780 276000) "../" "src/" "README.md" "build/" ".git/" "devel/" ".gitmodules" ".catkin_workspace" "scripts/" "./" ".gitignore")
 
  ("/home/sgarcia/git-repos/playground/learning_docker/gui_inside_container/" (22952 15373 838824 511000) "../" "dockerfile" "./")
 
@@ -354,8 +370,6 @@
  ("/home/sgarcia/cuas/gtri-uav/src/" (22944 44035 54677 613000) "gt_autopilot/" "../" "CMakeLists.txt" "gt_piccolo/" "gt_formation/" "gt_uav_mavlink_comms/" "./" "gt_uav_msgs/" "gt_uav/" "yocs_cmd_vel_mux")
 
  ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/scripts/" (22951 10354 336684 247000) "../" "pub_vel_cmd_server.py" "trajectory_test.py" "get_yocs_waypoints.sh" "probing_fsm.py" "osm_router_server.py" "vel_controller.py" "speed_test.py" "plot_estimated_lane_markers.py" "README.txt" "intersection_controller.py" "send_trajectory.py" "osm_router_test.py" "infer_fw_col.py" "contact_manager.py" "state_machine_velocity_control.py" "./")
-
- ("/home/sgarcia/cuas/gtri-uav/uav_build/" (22942 58045 589763 176000) "uav_dependency_paths.bash" "../" "build_srcx.py" "build_cmake.pyc" "dependency_scripts/" "build" "install_dependencies" "build_resources.py" "build_cmake.py" "cmake/" "build_gtri-uav-scrimmage.py" "./")
 
  ("/home/sgarcia/git-repos/config_files/scripts/" (22949 53776 970994 552000) "../" "set_config.sh" "get_config.sh" "./")
 
@@ -376,18 +390,6 @@
  ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/" (22848 19973 891239 103000) "package.xml" "../" "include/" "src/" "CMakeLists.txt" "scripts/" "./" "setup.py")
 
  ("/home/sgarcia/cuas/gtri-uav/uav_build/dependency_scripts/" (22935 17329 610928 395000) "install_yaml_cpp" "install_uuid" "../" "install_poco" "install_eigen" "install_lz4" "install_rrt" "install_console_bridge" "install_jsbsim" "prepare_git" "install_ros-wet.rosinstall" "install_boost" "install_geographiclib" "install_preamble.bash" "install_python" "install_piccolo_gtri_only" "install_scrimmage" "prepare_file" "prepare_hg" "install_dubins" "install_gtri_tactics" "install_tinyxml" "install_bzip2" "install_gtri_tactics_data" "install_ros" "install_python_2.7.3_xcompile.patch" "install_protobuf" "./" "install_scrimmage_gtri_share")
-
- ("/home/sgarcia/nutria/gtri-car/src/azcar_sim/worlds/" (22933 54385 245034 336000) "../" "asphalt.world" "skidpan.world" "neighborhood.world" "hills.world" "azcar.world" "squiggle.world" "roads.world" "squiggle_noLinesAtIntersection.world" "canyonview_field.world" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/include/gtri_pkg/" (22933 54385 177030 373000) "../" "my_waypoints_navi.hpp" "my_observation.h" "my_gazebo_ros_block_laser.h" "angle_functions.h" "my_observation_buffer.h" "./" "KalmanFilter.h" "PositionTracker.h")
-
- ("/home/sgarcia/nutria/gtri-car/src/gtri_pkg/src/" (22933 54385 177030 373000) "my_gazebo_ros_block_laser.cpp" "../" "KalmanFilter.cpp" "my_waypoints_navi.cpp" "PositionTracker.cpp" "my_observation_buffer.cpp" "./")
-
- ("/home/sgarcia/nutria/gtri-car/src/car_nav2d/launch/behaviors/" (22933 54385 165029 674000) "lane_follower_wCostmaps.launch" "../" "self_driving_car.launch" "lane_follower_wController.launch" "./" "probing.launch")
-
- ("/home/sgarcia/git-repos/prius_demo/src/car_demo/" (22915 10441 297371 501000) "package.xml" "../" "rviz/" "launch/" "plugins/" "CMakeLists.txt" "models/" "worlds/" "./" "nodes/")
-
- ("/home/sgarcia/nutria/gtri-car/" (22933 54385 197031 539000) "../" "src/" "README.md" ".git/" ".gitmodules" ".catkin_workspace" "RELEASE_NOTES.md" "scripts/" "./" ".gitignore")
 )
 
 ;; ----- ido-unc-hosts-cache -----
