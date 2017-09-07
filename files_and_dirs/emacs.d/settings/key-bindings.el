@@ -8,7 +8,7 @@
 (global-set-key (kbd "M-s") 'query-replace)
 
 ;; point cursor to beginning of buffer
-(global-set-key (kbd "M-q") 'beginning-of-buffer)
+(global-set-key (kbd "M-1") 'beginning-of-buffer)
 (global-set-key (kbd "M-z") 'end-of-buffer)
 
 ;; access shell

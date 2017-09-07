@@ -74,7 +74,7 @@
 (global-fci-mode 1)
 
 ;; auto wrap lines at column 80
-(add-hook 'text-mode-hook '(lambda() (turn-on-auto-fill) (set-fill-column 80)))
+;; (add-hook 'text-mode-hook '(lambda() (turn-on-auto-fill) (set-fill-column 80)))
 
 ;; add syntax highlighting for Dockerfiles and the ability to build the image
 ;; directly (C-c C-b) from the buffer

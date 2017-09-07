@@ -1,14 +1,4 @@
-((("from" .
-   [1 0 0 0])
-  ("code" .
-   [1 0 0 0])
-  ("co" .
-   [2 0])
-  ("wrap-lines" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("wrap" .
-   [2 0 0 0])
-  ("delete-trailing-whitespace" .
+((("delete-trailing-whitespace" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
   ("debug" .
    [1 0 0 0 0])
