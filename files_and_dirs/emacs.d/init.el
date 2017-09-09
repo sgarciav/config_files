@@ -11,6 +11,7 @@
 (require 'key-bindings)
 (require 'packages)
 (require 'bash-completion)
+(require 'latex-emacs-okular)
 
 ;; Enable ido-mode
 (require 'ido)
