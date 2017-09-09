@@ -35,8 +35,8 @@ while getopts s: flag; do
 	    SERVICE=$OPTARG
 	    ;;
 	?)
-	usage;
-	exit;
+	usage
+	exit
 	;;
     esac
 done
@@ -61,8 +61,8 @@ function printNames()
 function install_dependencies()
 {
     sudo apt-get install -y \
-	 emacs \
-	 texlive-full biber cmake imagemagick
+	 emacs cmake \
+	 texlive-full biber imagemagick okular auctex
 }
 
 # --------------------
@@ -117,6 +117,8 @@ function set_bashrc()
 # --------------------
 function setup_git()
 {
+    # setup personal git-server:
+    # https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
     git config --global user.name "Sergio Garcia"
     git config --global user.email $EMAIL
 }
