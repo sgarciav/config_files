@@ -24,6 +24,7 @@
 (global-set-key (kbd "M-C-z") 'switch-window)
 
 ;; iedit
+(global-set-key (kbd "C-c i") 'iedit-mode)
 (global-set-key (kbd "C-c ;") 'iedit-mode)
 (global-set-key [double-mouse-1] 'iedit-mode)
 

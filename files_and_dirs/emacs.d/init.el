@@ -41,9 +41,23 @@
 (autoload 'bash-completion-dynamic-complete "bash-completion" "BASH completion hook")
 (add-hook 'shell-dynamic-complete-functions 'bash-completion-dynamic-complete)
 
-;; set tab width
-(setq c-default-style "linux"
-      c-basic-offset 5)
+;; ;; set tab width
+;; (setq c-default-style "linux"
+;;       c-basic-offset 4)
+
+;; Set the C coding style to k&r.
+(setq c-default-style "k&r")
+
+;; Use four spaces instead of a tab
+(setq-default c-basic-offset 4
+	      tab-width 4
+	      indent-tabs-mode nil)
+
+;; Change the current buffer to Latin 1 with Unix line-ends.
+(defun unix-file ()
+  "Change the current buffer to Latin 1 with Unix line-ends."
+  (interactive)
+  (set-buffer-file-coding-system 'iso-latin-1-unix t))
 
 ;; roslaunch highlighting
 (add-to-list 'auto-mode-alist '("\\.launch$" . xml-mode))
