@@ -34,27 +34,38 @@ alias src2bashrc='echo "source $(readlink -f ./devel/setup.bash)" >> ~/.bashrc'
 # remove dangling docker images (i.e. <none>:<none> images that are not referenced by anything)
 alias drmi_dangling='docker rmi $(docker images -f "dangling=true" -q)'
 
+# open zotero
+alias zotero='cd ~ && ./Zotero/zotero &'
+
 # run different ROS visualization programs (eg. rviz, rqt_graph, rqt_console, etc.)
 myrosrun() {
-	rosrun $1 $1
+    rosrun $1 $1
 }
 
 # open document with emacs in terminal
 docedit() {
-	emacs -nw $1
+    emacs -nw $1
 }
 
 # open document using locate
-locate_open() {
-	docedit $(echo $(locate $1))
+open_locate() {
+    docedit $(echo $(locate $1))
 }
 
 # speed up videos using ffmpeg
 speedup_4x() {
-	ffmpeg -i $1 -r 120 -filter:v "setpts=0.25*PTS" $2
+    ffmpeg -i $1 -r 120 -filter:v "setpts=0.25*PTS" $2
 }
 
 # generate urdf file from xacro file
 xacro2urdf() {
-	rosrun xacro xacro.py --inorder $1 roboname:=car0 > urdf_output.urdf
+    rosrun xacro xacro.py --inorder $1 roboname:=car0 > urdf_output.urdf
+}
+
+# encrypt/decrypt
+encrypt() {
+    openssl aes-256-cbc -in $1 -out $1.aes && rm $1
+}
+decrypt() {
+    openssl aes-256-cbc -d -in $1 -out new_file
 }

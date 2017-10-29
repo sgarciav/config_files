@@ -61,7 +61,8 @@ function printNames()
 function install_dependencies()
 {
     sudo apt-get install -y \
-	 emacs cmake \
+	 emacs cmake trash-cli gitk \
+	 python-pip \
 	 texlive-full biber imagemagick okular auctex
 }
 
