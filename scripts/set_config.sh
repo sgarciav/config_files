@@ -68,7 +68,8 @@ function install_dependencies()
     sudo apt-get install -y \
 	 emacs cmake trash-cli gitk \
 	 python-pip \
-	 texlive-full biber imagemagick okular auctex
+	 texlive-full biber imagemagick okular auctex \
+     openconnect network-manager-openconnect-gnome
 }
 
 # --------------------
