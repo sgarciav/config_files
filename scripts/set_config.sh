@@ -8,7 +8,7 @@ function usage()
 {
     cat << EOF
 
-usage: ./set_config.sh -s SERVICE
+usage: ./set_config.sh -s SERVICE -e EMAIL
 
 Apply config files from repository to the current machine. Running this script
 will delete current files in machine.
@@ -21,6 +21,8 @@ SERVICE (default = all): file or directory to be updated.
    git: setup git configuration.
    ssh: setup ssh configuration.
 
+EMAIL (default = sergiodotgarcia@gmail.com): email used to set git and ssh
+
 EOF
 }
 
@@ -29,10 +31,13 @@ EMAIL="sergiodotgarcia@gmail.com"
 SERVICE=all
 
 # update variables if there are user inputs
-while getopts s: flag; do
+while getopts s:e: flag; do
     case $flag in
 	s)
 	    SERVICE=$OPTARG
+	    ;;
+	e)
+	    EMAIL=$OPTARG
 	    ;;
 	?)
 	usage
