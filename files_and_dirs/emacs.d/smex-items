@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ rename-file-and-buffer
  rgrep
  delete-trailing-whitespace
  just-one-space
  package-install
  recover-file
  list-packages
- set-fill-column
 )
 
 ;; ----- smex-data -----
@@ -23,4 +23,5 @@
  (delete-trailing-whitespace . 2)
  (just-one-space . 1)
  (rgrep . 5)
+ (rename-file-and-buffer . 1)
 )
