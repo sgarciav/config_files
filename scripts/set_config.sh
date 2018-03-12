@@ -20,6 +20,7 @@ SERVICE (default = all): file or directory to be updated.
    bashrc: bashrc file.
    git: setup git configuration.
    ssh: setup ssh configuration.
+   install_commit_script: install commit script by copying to ~/.local/bin.
 
 EMAIL (default = sergiodotgarcia@gmail.com): email used to set git and ssh
 
@@ -136,6 +137,12 @@ function setup_ssh()
     ssh-keygen -t rsa -b 4096 -C $EMAIL
 }
 
+# --------------------
+function install_commit_script()
+{
+    cp commit_order.sh ~/.local/bin
+}
+
 
 # main function
 # -------------------------------------
@@ -161,6 +168,8 @@ elif [ $SERVICE = "git" ]; then
     setup_git
 elif [ $SERVICE = "ssh" ]; then
     setup_ssh
+elif [ $SERVICE = "install_commit_script" ]; then
+    install_commit_script
 else
     echo "$SERVICE: Not handling this service just yet. Only:"
     echo ""
