@@ -37,6 +37,14 @@ alias drmi_dangling='docker rmi $(docker images -f "dangling=true" -q)'
 # open zotero
 alias zotero='cd ~ && ./Zotero/zotero &'
 
+# git status
+alias gs='git status'
+
+# git log
+alias gl='git log --oneline --decorate --graph'
+
+# -------------------------------------------------------------
+
 # run different ROS visualization programs (eg. rviz, rqt_graph, rqt_console, etc.)
 myrosrun() {
     rosrun $1 $1
@@ -68,4 +76,9 @@ encrypt() {
 }
 decrypt() {
     openssl aes-256-cbc -d -in $1 -out new_file
+}
+
+# cd and ls into a directory
+cdl() {
+    cd $1 && ll
 }
