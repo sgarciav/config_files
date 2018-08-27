@@ -68,6 +68,12 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; enable octave mode
+(setq auto-mode-alist
+      (cons
+       '("\\.m$" . octave-mode)
+       auto-mode-alist))
+
 ;; enable gfm mode (not sure what this one is for)
 (autoload 'gfm-mode "markdown-mode"
   "Major mode for editing GitHub Flavored Markdown files" t)
