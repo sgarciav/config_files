@@ -43,6 +43,9 @@ alias gs='git status'
 # git log
 alias gl='git log --oneline --decorate --graph'
 
+# update TODO lisy
+alias todo='emacs ~/Dropbox\ \(GaTech\)/todo.md'
+
 # -------------------------------------------------------------
 
 # run different ROS visualization programs (eg. rviz, rqt_graph, rqt_console, etc.)
