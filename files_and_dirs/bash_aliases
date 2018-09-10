@@ -48,11 +48,6 @@ alias todo='emacs ~/Dropbox\ \(GaTech\)/todo.md'
 
 # -------------------------------------------------------------
 
-# run different ROS visualization programs (eg. rviz, rqt_graph, rqt_console, etc.)
-myrosrun() {
-    rosrun $1 $1
-}
-
 # open document with emacs in terminal
 docedit() {
     emacs -nw $1
@@ -96,4 +91,9 @@ analyze_cpu(){
     log_time=$(date +"%Y_%m_%d_%H_%M_%S")
     num_process=16
     while true; do (echo "%CPU %MEM ARGS $(date)" && ps -e -o pcpu,pmem,args --sort=-pcpu | cut -d" " -f1-6 | head -n$num_process | tail -n$(expr $num_process - 1)) >> ~/cpu_log_$log_time.log; sleep 1; done
+}
+
+# split file into smaller files
+splitme() {
+    split --bytes=$1 --numeric-suffixes --suffix-length=2 $2 $2.
 }
