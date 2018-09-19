@@ -97,3 +97,10 @@ analyze_cpu(){
 splitme() {
     split --bytes=$1 --numeric-suffixes --suffix-length=2 $2 $2.
 }
+
+# convert markdown file to pdf
+# See: https://superuser.com/questions/689056/how-can-i-convert-github-flavored-markdown-to-a-pdf
+# sudo pip install grip && sudo apt-get install wkhtmltopdf
+md2pdf() {
+    grip $1 --export deleteme.html && wkhtmltopdf deleteme.html FINAL.pdf && rm deleteme.html
+}
