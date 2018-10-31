@@ -43,9 +43,6 @@ alias gs='git status'
 # git log
 alias gl='git log --oneline --decorate --graph'
 
-# update TODO lisy
-alias todo='emacs ~/Dropbox\ \(GaTech\)/todo.md'
-
 # -------------------------------------------------------------
 
 # open document with emacs in terminal
@@ -73,7 +70,7 @@ encrypt() {
     openssl aes-256-cbc -in $1 -out $1.aes && rm $1
 }
 decrypt() {
-    openssl aes-256-cbc -d -in $1 -out new_file
+    openssl aes-256-cbc -d -in $1.$2.aes -out $1.$2 && rm $1.$2.aes
 }
 
 # cd and ls into a directory
@@ -102,5 +99,5 @@ splitme() {
 # See: https://superuser.com/questions/689056/how-can-i-convert-github-flavored-markdown-to-a-pdf
 # sudo pip install grip && sudo apt-get install wkhtmltopdf
 md2pdf() {
-    grip $1 --export deleteme.html && wkhtmltopdf deleteme.html FINAL.pdf && rm deleteme.html
+    grip $1.md --export deleteme.html && wkhtmltopdf deleteme.html $1.pdf && rm deleteme.html
 }
