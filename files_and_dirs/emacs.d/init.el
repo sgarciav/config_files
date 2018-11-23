@@ -13,11 +13,23 @@
 (require 'bash-completion)
 (require 'latex-emacs-okular)
 
-;; Enable ido-mode
-(require 'ido)
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
+;; ;; Enable ido-mode
+;; (require 'ido)
+;; (setq ido-enable-flex-matching t)
+;; (setq ido-everywhere t)
+;; (ido-mode 1)
+
+;; Helm Configuration for searching files (replaces ido-mode)
+(require 'helm)
+(require 'helm-config)
+
+(global-set-key (kbd "M-x") 'helm-M-x)
+(setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
+
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
+(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB work in terminal
+(define-key helm-map (kbd "C-a")  'helm-select-action) ; list actions using
 
 ;; Enable undo-tree-mode
 (require 'undo-tree)

@@ -41,8 +41,14 @@
 ;; yank / paste
 (global-set-key (kbd "C-v") 'yank)
 
-;; backtab
-; TODO
+;; Helm Configuration
+
+;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
+;; Changed to "C-x \S-h". Note: We must set "C-x \S-h" globally,
+;; because we cannot change `helm-command-prefix-key' once
+;; `helm-config' is loaded.
+(global-set-key (kbd "C-x \S-h") 'helm-command-prefix)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
 
 ;; end of file
 (provide 'key-bindings)
