@@ -31,10 +31,6 @@
 ;; split window below
 (global-set-key [mouse-3] 'split-window-below)
 
-;; comment and uncomment region
-(global-set-key (kbd "C-x c") 'comment-region)
-(global-set-key (kbd "C-x \S-c") 'uncomment-region)
-
 ;; show flycheck error
 (global-set-key (kbd "C-x e") 'flycheck-list-errors)
 
@@ -48,7 +44,12 @@
 ;; because we cannot change `helm-command-prefix-key' once
 ;; `helm-config' is loaded.
 (global-set-key (kbd "C-x \S-h") 'helm-command-prefix)
+(global-unset-key (kbd "C-x c"))
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
+
+;; comment and uncomment region
+(global-set-key (kbd "C-x c") 'comment-region)
+(global-set-key (kbd "C-x \S-c") 'uncomment-region)
 
 ;; end of file
 (provide 'key-bindings)
