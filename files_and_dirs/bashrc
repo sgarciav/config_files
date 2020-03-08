@@ -130,12 +130,5 @@ fi
 # set default editor
 export EDITOR='emacs'
 
-# temporary | expand the LD_LIBRARY_PATH 
-# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sgarcia/gtri-car-deleteme/velodyne_plugin/build
-
 # automatically source some setup files
-source /opt/ros/kinetic/setup.bash
-source ~/nutria/gtri-car/devel/setup.bash
-source ~/nutria/pioneer_navigation/devel/setup.bash
 source /etc/bash_completion
-source ~/.scrimmage/setup.bash
