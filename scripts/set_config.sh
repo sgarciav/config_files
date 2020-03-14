@@ -34,16 +34,16 @@ SERVICE=all
 # update variables if there are user inputs
 while getopts s:e: flag; do
     case $flag in
-	s)
-	    SERVICE=$OPTARG
+	    s)
+	        SERVICE=$OPTARG
+	        ;;
+	    e)
+	        EMAIL=$OPTARG
+	        ;;
+	    ?)
+	    usage
+	    exit
 	    ;;
-	e)
-	    EMAIL=$OPTARG
-	    ;;
-	?)
-	usage
-	exit
-	;;
     esac
 done
 
@@ -67,10 +67,10 @@ function printNames()
 function install_dependencies()
 {
     sudo apt-get install -y \
-	 emacs cmake trash-cli gitk \
-	 python-pip \
-	 texlive-full biber imagemagick okular auctex \
-     openconnect network-manager-openconnect-gnome
+	     emacs cmake trash-cli gitk \
+	     python-pip \
+	     texlive-full biber imagemagick okular auctex \
+         openconnect network-manager-openconnect-gnome
 }
 
 # --------------------
@@ -78,8 +78,8 @@ function set_emacs()
 {
     # delete existing repository
     if [ -d ~/.emacs.d ]; then
-	rm -r ~/.emacs.d
-	echo "Deleting ~/.emacs.d from machine... Complete"
+	    rm -r ~/.emacs.d
+	    echo "Deleting ~/.emacs.d from machine... Complete"
     fi
 
     # add copy from repo
@@ -92,8 +92,8 @@ function set_bashaliases()
 {
     # remove file if if exists
     if [ -f ~/.bash_aliases ]; then
-	rm ~/.bash_aliases
-	echo "Deleting ~/.bash_aliases from machine... Complete"
+	    rm ~/.bash_aliases
+	    echo "Deleting ~/.bash_aliases from machine... Complete"
     fi
 
     # copy repo version to home directory
@@ -114,11 +114,11 @@ function set_bashrc()
     response=${response,,}    # tolower
     echo " "
     if [[ "$response" =~ ^(yes|y)$ ]]; then
-	rm ~/.bashrc
-	cp ../files_and_dirs/bashrc ~/.bashrc
-	echo "Deleting old and copying new... Complete"
+	    rm ~/.bashrc
+	    cp ../files_and_dirs/bashrc ~/.bashrc
+	    echo "Deleting old and copying new... Complete"
     else
-	echo "Nothing done."
+	    echo "Nothing done."
     fi
 }
 
