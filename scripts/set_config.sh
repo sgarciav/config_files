@@ -20,6 +20,7 @@ SERVICE (default = all): file or directory to be updated.
    bashrc: bashrc file.
    git: setup git configuration.
    ssh: setup ssh configuration.
+   isolate_workspaces: run the command to isolate workspaces (Ubuntu 18.04).
    install_commit_script: install commit script by copying to ~/.local/bin.
 
 EMAIL (default = sergiodotgarcia@gmail.com): email used to set git and ssh
@@ -60,6 +61,8 @@ function printNames()
     echo "bashrc: replaces the ~/.bashrc file"
     echo "git: setup for git configuration"
     echo "ssh: setup for ssh configuration"
+    echo "isolate_workspaces: run the command to isolate workspaces (Ubuntu 18.04)"
+    echo "install_commit_script: install commit script by copying to ~/.local/bin"
     echo ""
 }
 
@@ -138,6 +141,12 @@ function setup_ssh()
 }
 
 # --------------------
+function isolate_workspaces()
+{
+    gsettings set org.gnome.shell.app-switcher current-workspace-only true
+}
+
+# --------------------
 function install_commit_script()
 {
     cp commit_order.sh ~/.local/bin
@@ -156,6 +165,7 @@ if [ $SERVICE = "all" ]; then
     set_bashrc
     setup_git
     setup_ssh
+    isolate_workspaces
 elif [ $SERVICE = "dependencies" ]; then
     install_dependencies
 elif [ $SERVICE = "emacs" ]; then
@@ -168,6 +178,8 @@ elif [ $SERVICE = "git" ]; then
     setup_git
 elif [ $SERVICE = "ssh" ]; then
     setup_ssh
+elif [ $SERVICE = "isolate_workspaces" ]; then
+    isolate_workspaces
 elif [ $SERVICE = "install_commit_script" ]; then
     install_commit_script
 else
