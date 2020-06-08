@@ -60,6 +60,11 @@ speedup_4x() {
     ffmpeg -i $1 -r 120 -filter:v "setpts=0.25*PTS" $2
 }
 
+# generate video from frames (framerate usually 25)
+genvid() {
+    ffmpeg -framerate $1 -i %*.jpg -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p output.mp4
+}
+
 # generate urdf file from xacro file
 xacro2urdf() {
     rosrun xacro xacro.py --inorder $1 roboname:=car0 > urdf_output.urdf
