@@ -7,11 +7,14 @@ cd ~
 # Clear the terminal
 alias cls='clear'
 
+# source ROS environment
+alias srcros='source /opt/ros/foxy/setup.bash'
+
 # view the ROS package ros environment variable
 alias ros_pack_path='echo $ROS_PACKAGE_PATH'
 
 # open pictures
-alias pic_open='gnome-open'
+alias pic_open='gio open'
 
 # clear screen and go to home directory
 alias god='cd && clear'
