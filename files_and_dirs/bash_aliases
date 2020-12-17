@@ -7,9 +7,6 @@ cd ~
 # Clear the terminal
 alias cls='clear'
 
-# source ROS environment
-alias srcros='source /opt/ros/foxy/setup.bash'
-
 # view the ROS package ros environment variable
 alias ros_pack_path='echo $ROS_PACKAGE_PATH'
 
@@ -42,6 +39,12 @@ alias gl='git log --oneline --decorate --graph'
 # open document with emacs in terminal
 docedit() {
     emacs -nw $1
+}
+
+# source ROS environments
+# cyrrently installed: foxy, noetic
+rossrc() {
+    source /opt/ros/$1/setup.bash
 }
 
 # open document using locate
