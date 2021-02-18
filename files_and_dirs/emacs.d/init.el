@@ -47,6 +47,23 @@
 (require 'undo-tree)
 (global-undo-tree-mode)
 
+;; Enable org-mode when you create/open a *.org file
+;; See: https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html
+(require 'org)
+(setq org-directory "~/git-repos/private/org")
+(setq org-agenda-files (list "~/git-repos/private/org/main.org"
+                             "~/git-repos/private/org/schedule.org"
+                             ))
+(setq org-todo-keywords
+      '((sequence "TODO" "|" "DONE" "DEFERRED" "MEETING")))
+(setq org-log-done 'time) ; Create a timestamp when DONE
+(add-hook 'org-mode-hook
+          (lambda ()
+            (add-hook (local-set-key (kbd "C-c a") 'org-agenda) nil 'make-it-local)
+            (add-hook (local-set-key (kbd "C-c c") 'org-capture) nil 'make-it-local)
+            )
+          )
+
 ;; initialize auto complete
 (require 'auto-complete)
 (require 'auto-complete-config)
