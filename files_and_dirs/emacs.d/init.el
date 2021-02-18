@@ -55,7 +55,7 @@
                              "~/git-repos/private/org/schedule.org"
                              ))
 (setq org-todo-keywords
-      '((sequence "TODO" "|" "DONE" "DEFERRED" "MEETING")))
+      '((sequence "TODO" "MEETING" "|" "DONE" "DEFERRED")))
 (setq org-log-done 'time) ; Create a timestamp when DONE
 (add-hook 'org-mode-hook
           (lambda ()
