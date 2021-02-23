@@ -49,14 +49,16 @@
 
 ;; Enable org-mode when you create/open a *.org file
 ;; See: https://orgmode.org/worg/org-tutorials/orgtutorial_dto.html
+;; See (Clocking Work Time): https://orgmode.org/manual/Clocking-Work-Time.html
 (require 'org)
 (setq org-directory "~/git-repos/private/org")
 (setq org-agenda-files (list "~/git-repos/private/org/main.org"
                              "~/git-repos/private/org/schedule.org"
                              ))
 (setq org-todo-keywords
-      '((sequence "TODO" "MEETING" "|" "DONE" "DEFERRED")))
+      '((sequence "TODO" "MEETING" "|" "DONE" "DEFERRED" "CANCELED")))
 (setq org-log-done 'time) ; Create a timestamp when DONE
+(setq org-clock-idle-time 20) ; Emacs alerts you when you've been idle for X mins.
 (add-hook 'org-mode-hook
           (lambda ()
             (add-hook (local-set-key (kbd "C-c a") 'org-agenda) nil 'make-it-local)
