@@ -56,8 +56,9 @@
                              "~/git-repos/private/org/schedule.org"
                              ))
 (setq org-todo-keywords
-      '((sequence "TODO" "MEETING" "REMINDER" "|" "DONE" "DEFERRED" "CANCELED")))
+      '((sequence "TODO" "MEETING" "REMINDER" "IN PROGRESS" "|" "DONE" "DEFERRED" "CANCELED")))
 (setq org-log-done 'time) ; Create a timestamp when DONE
+(setq org-archive-location "~/repos/private/org/archive/%s_archive::")
 (setq org-clock-idle-time 20) ; Emacs alerts you when you've been idle for X mins.
 (add-hook 'org-mode-hook
           (lambda ()
