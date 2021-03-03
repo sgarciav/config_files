@@ -37,6 +37,9 @@
 ;; yank / paste
 (global-set-key (kbd "C-v") 'yank)
 
+;; org-mode access agenda
+(global-set-key (kbd "C-c a") 'org-agenda)
+
 ;; Helm Configuration
 
 ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.

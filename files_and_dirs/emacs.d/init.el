@@ -60,6 +60,11 @@
       '((sequence "TODO" "MEETING" "REMINDER" "IN PROGRESS" "|" "DONE" "DEFERRED" "CANCELED")))
 (setq org-log-done 'time) ; Create a timestamp when DONE
 (setq org-clock-idle-time 20) ; Emacs alerts you when you've been idle for X mins.
+(setq org-agenda-custom-commands
+      '(("h" "Home" tags-todo "@home")
+        ("p" "Side Projects" tags-todo "@side")
+        ("c" "Consulting" tags-todo "@consulting")
+        ("r" "RIF Robotics" tags-todo "@rif")))
 
 ;; Organize the archive.org file with the same hierarchy as the main file.
 ;; See: https://orgmode.org/worg/org-hacks.html
@@ -84,7 +89,6 @@
 
 (add-hook 'org-mode-hook
           (lambda ()
-            (add-hook (local-set-key (kbd "C-c a") 'org-agenda) nil 'make-it-local)
             (add-hook (local-set-key (kbd "C-c c") 'org-capture) nil 'make-it-local)
             (add-hook (local-set-key (kbd "C-c d") 'org-archive-done-tasks) nil 'make-it-local)
             )
