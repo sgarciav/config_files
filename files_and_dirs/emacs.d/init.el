@@ -52,18 +52,41 @@
 ;; See (Clocking Work Time): https://orgmode.org/manual/Clocking-Work-Time.html
 (require 'org)
 (setq org-directory "~/git-repos/private/org")
+(setq org-archive-location "~/git-repos/private/org/archive/%s_archive::")
 (setq org-agenda-files (list "~/git-repos/private/org/main.org"
                              "~/git-repos/private/org/schedule.org"
                              ))
 (setq org-todo-keywords
       '((sequence "TODO" "MEETING" "REMINDER" "IN PROGRESS" "|" "DONE" "DEFERRED" "CANCELED")))
 (setq org-log-done 'time) ; Create a timestamp when DONE
-(setq org-archive-location "~/repos/private/org/archive/%s_archive::")
 (setq org-clock-idle-time 20) ; Emacs alerts you when you've been idle for X mins.
+
+;; Organize the archive.org file with the same hierarchy as the main file.
+;; See: https://orgmode.org/worg/org-hacks.html
+(defadvice org-archive-subtree (around my-org-archive-subtree activate)
+  (let ((org-archive-location
+         (if (save-excursion (org-back-to-heading)
+                             (> (org-outline-level) 1))
+             (concat (car (split-string org-archive-location "::"))
+                     "::* "
+                     (car (org-get-outline-path)))
+           org-archive-location)))
+    ad-do-it))
+
+;; Archive ALL the tasks that are DONE with one command.
+(defun org-archive-done-tasks ()
+  (interactive)
+  (org-map-entries
+   (lambda ()
+     (org-archive-subtree)
+     (setq org-map-continue-from (org-element-property :begin (org-element-at-point)))) "/DONE" 'file)
+  )
+
 (add-hook 'org-mode-hook
           (lambda ()
             (add-hook (local-set-key (kbd "C-c a") 'org-agenda) nil 'make-it-local)
             (add-hook (local-set-key (kbd "C-c c") 'org-capture) nil 'make-it-local)
+            (add-hook (local-set-key (kbd "C-c d") 'org-archive-done-tasks) nil 'make-it-local)
             )
           )
 
@@ -244,6 +267,7 @@ If the new path's directories does not exist, create them."
  '(ido-max-work-directory-list 0)
  '(ido-max-work-file-list 0)
  '(ido-record-commands nil)
+ '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
     (cmake-mode helm magit yasnippet org-journal markdown-mode flymake-cppcheck flycheck cpputils-cmake company-c-headers cmake-project auto-complete))))
