@@ -59,7 +59,7 @@
 (setq org-todo-keywords
       '((sequence "TODO" "MEETING" "REMINDER" "IN PROGRESS" "|" "DONE" "DEFERRED" "CANCELED")))
 (setq org-log-done 'time) ; Create a timestamp when DONE
-(setq org-clock-idle-time 20) ; Emacs alerts you when you've been idle for X mins.
+(setq org-clock-idle-time 240) ; Emacs alerts you when you've been idle for X mins.
 (setq org-agenda-custom-commands
       '(("h" "Home" tags-todo "@home")
         ("p" "Side Projects" tags-todo "@side")
