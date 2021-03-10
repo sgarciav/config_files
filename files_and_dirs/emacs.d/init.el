@@ -124,6 +124,13 @@
 	      tab-width 4
 	      indent-tabs-mode nil)
 
+;; Use two spaces for indentation in specific
+(defun indent-two-spaces ()
+  (interactive)
+  (setq-default c-basic-offset 2
+                tab-width 2)
+  )
+
 ;; Change the current buffer to Latin 1 with Unix line-ends.
 (defun unix-file ()
   "Change the current buffer to Latin 1 with Unix line-ends."
