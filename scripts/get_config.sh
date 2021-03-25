@@ -17,6 +17,7 @@ SERVICE (default = all): file or directory to be updated.
    emacs: files and directories to set EMACS configuration.
    aliases: aliases to be set.
    bashrc: bashrc file.
+   terminator: config file for terminator
 
 EOF
 }
@@ -48,6 +49,7 @@ function printNames()
     echo "~/.bash_aliases"
     echo "~/.emacs.d/"
     echo "~/.bashrc"
+    echo "~/.config/terminator/config"
     echo ""
 }
 
@@ -90,6 +92,18 @@ function get_bashrc()
     fi
 }
 
+# --------------------
+function get_terminator_config()
+{
+    if [ -f ~/.config/terminator/config ]; then
+	    rm ../files_and_dirs/terminator_config
+	    cp ~/.config/terminator/config ../files_and_dirs/terminator_config
+	    echo "Copying ~/.config/terminator/config from machine to repo... Complete"
+    else
+	    echo "~/.config/terminator/config does NOT exist in current machine."
+    fi
+}
+
 
 # main function
 # -------------------------------------
@@ -100,12 +114,15 @@ if [ $SERVICE = "all" ]; then
     get_emacs
     get_bashaliases
     get_bashrc
+    get_terminator_config
 elif [ $SERVICE = "emacs" ]; then
     get_emacs
 elif [ $SERVICE = "aliases" ]; then
     get_bashaliases
 elif [ $SERVICE = "bashrc" ]; then
     get_bashrc
+elif [ $SERVICE = "terminator" ]; then
+    get_terminator_config
 else
     echo "$SERVICE: Not handling this service just yet. Only:"
     printNames

@@ -18,6 +18,7 @@ SERVICE (default = all): file or directory to be updated.
    emacs: files and directories to set EMACS configuration.
    aliases: aliases to be set.
    bashrc: bashrc file.
+   terminator: config file for terminator
    git: setup git configuration.
    ssh: setup ssh configuration.
    isolate_workspaces: run the command to isolate workspaces (Ubuntu 18.04).
@@ -130,6 +131,20 @@ function set_bashrc()
 }
 
 # --------------------
+function set_terminator_config()
+{
+    # remove file if if exists
+    if [ -f ~/.config/terminator/config ]; then
+	    rm ~/.config/terminator/config
+	    echo "Deleting ~/.config/terminator/config from machine... Complete"
+    fi
+
+    # copy repo version to home directory
+    cp ../files_and_dirs/terminator_config ~/.config/terminator/config
+    echo "Copying ~/.config/terminator/config to machine... Complete"
+}
+
+# --------------------
 function setup_git()
 {
     # setup personal git-server:
@@ -167,6 +182,7 @@ if [ $SERVICE = "all" ]; then
     set_emacs
     set_bashaliases
     set_bashrc
+    set_terminator_config
     setup_git
     setup_ssh
     isolate_workspaces
@@ -178,6 +194,8 @@ elif [ $SERVICE = "aliases" ]; then
     set_bashaliases
 elif [ $SERVICE = "bashrc" ]; then
     set_bashrc
+elif [ $SERVICE = "terminator" ]; then
+    set_terminator_config
 elif [ $SERVICE = "git" ]; then
     setup_git
 elif [ $SERVICE = "ssh" ]; then
