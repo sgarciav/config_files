@@ -9,6 +9,12 @@
   move_tab_left = <Shift><Alt>n
   next_tab = <Alt>n
   prev_tab = <Alt>p
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_6 = <Alt>6
 [profiles]
   [[default]]
     visible_bell = True
