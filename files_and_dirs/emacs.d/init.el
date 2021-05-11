@@ -62,10 +62,10 @@
 (setq org-clock-idle-time 240) ; Emacs alerts you when you've been idle for X mins.
 (setq org-agenda-custom-commands
       '(("h" "Home" tags-todo "@home")
-        ("s" "Side Projects" tags-todo "@side")
+        ("p" "Side Projects" tags-todo "@side")
         ("c" "Consulting" tags-todo "@consulting")
         ("r" "RIF Robotics" tags-todo "@rif")
-        ("a" "Cosmos Robotics" tags-todo "@cosmos")))
+        ("s" "Cosmos Robotics" tags-todo "@cosmos")))
 
 ;; Organize the archive.org file with the same hierarchy as the main file.
 ;; See: https://orgmode.org/worg/org-hacks.html
