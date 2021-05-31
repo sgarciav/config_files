@@ -133,6 +133,12 @@ function set_bashrc()
 # --------------------
 function set_terminator_config()
 {
+    # create the ~/.config/terminator directory if it doesn't exist
+    if [ ! -d ~/.config/terminator ]; then
+        mkdir -p ~/.config/terminator
+        echo "Creating the ~/.config/terminator directory... Complete"
+    fi
+
     # remove file if if exists
     if [ -f ~/.config/terminator/config ]; then
 	    rm ~/.config/terminator/config
