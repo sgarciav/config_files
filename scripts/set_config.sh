@@ -72,7 +72,7 @@ function install_dependencies()
 {
     sudo apt-get install -y \
 	     emacs cmake trash-cli gitk \
-	     python-pip \
+	     python-pip pass \
          gnome-tweak-tool \
 	     texlive-full biber imagemagick okular auctex \
          openconnect network-manager-openconnect-gnome
