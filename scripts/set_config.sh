@@ -74,6 +74,7 @@ function install_dependencies()
 	     emacs cmake trash-cli gitk \
 	     python-pip pass \
          gnome-tweak-tool \
+         openssh-client openssh-server \
 	     texlive-full biber imagemagick okular auctex \
          openconnect network-manager-openconnect-gnome
 
