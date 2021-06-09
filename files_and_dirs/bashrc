@@ -130,5 +130,14 @@ fi
 # set default editor
 export EDITOR='emacs'
 
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
 # automatically source some setup files
 source /etc/bash_completion
+source /usr/share/colcon_cd/function/colcon_cd.sh
+# export _colcon_cd_root=~/ros2_install
+source /usr/share/gazebo/setup.sh # Gazebo
+
+export TURTLEBOT3_MODEL=burger
