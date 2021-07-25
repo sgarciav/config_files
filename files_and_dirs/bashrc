@@ -127,6 +127,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# direnv needs to be hooked to into the shell for it to work properly
+# See: https://direnv.net/docs/hook.html
+eval "$(direnv hook bash)"
+
 # set default editor
 export EDITOR='emacs'
 
@@ -134,10 +138,12 @@ export EDITOR='emacs'
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
+# export some ROS variables
+export TURTLEBOT3_MODEL=burger
+export PATH=/home/sgarciav/git-repos/rif-docker/dockerfiles/ros_docker:${PATH}
+# export _colcon_cd_root=~/ros2_install
+
 # automatically source some setup files
 source /etc/bash_completion
 source /usr/share/colcon_cd/function/colcon_cd.sh
-# export _colcon_cd_root=~/ros2_install
 source /usr/share/gazebo/setup.sh # Gazebo
-
-export TURTLEBOT3_MODEL=burger
