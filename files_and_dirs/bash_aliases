@@ -7,6 +7,10 @@ cd ~
 # Clear the terminal
 alias cls='clear'
 
+# source ROS environments
+alias noetic='source /opt/ros/noetic/setup.bash'
+alias galactic='source /opt/ros/galactic/setup.bash'
+
 # view the ROS package ros environment variable
 alias ros_pack_path='echo $ROS_PACKAGE_PATH'
 
@@ -34,6 +38,12 @@ alias gs='git status'
 # git log
 alias gl='git log --oneline --decorate --graph'
 
+# mic control (since I can't remember the command name)
+alias mic_control='pavucontrol'
+
+# Greenzie alias
+alias dch="DEBEMAIL=\"$(git config --get user.email)\" DEBFULLNAME=\"$(git config --get user.name)\" dch"
+
 # -------------------------------------------------------------
 
 # open document with emacs in terminal
@@ -55,6 +65,11 @@ open_locate() {
 # speed up videos using ffmpeg
 speedup_4x() {
     ffmpeg -i $1 -r 120 -filter:v "setpts=0.25*PTS" $2
+}
+
+# mp4 to gif
+togif() {
+    ffmpeg -i $1 -r 10 -s 1080x720 output.gif
 }
 
 # generate video from frames (framerate usually 25)
