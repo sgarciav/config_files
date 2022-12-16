@@ -41,9 +41,6 @@ alias gl='git log --oneline --decorate --graph'
 # mic control (since I can't remember the command name)
 alias mic_control='pavucontrol'
 
-# Greenzie alias
-alias dch="DEBEMAIL=\"$(git config --get user.email)\" DEBFULLNAME=\"$(git config --get user.name)\" dch"
-
 # -------------------------------------------------------------
 
 # open document with emacs in terminal
@@ -52,9 +49,13 @@ docedit() {
 }
 
 # source ROS environments
-# cyrrently installed: foxy, noetic
 rossrc() {
     source /opt/ros/$1/setup.bash
+}
+
+# drop into a spinning Docker container
+dockerexec() {
+    docker exec -it $1 /bin/bash
 }
 
 # open document using locate
