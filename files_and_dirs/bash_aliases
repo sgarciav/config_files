@@ -7,12 +7,13 @@ cd ~
 # Clear the terminal
 alias cls='clear'
 
-# source ROS environments
-alias noetic='source /opt/ros/noetic/setup.bash'
-alias galactic='source /opt/ros/galactic/setup.bash'
-
 # view the ROS package ros environment variable
 alias ros_pack_path='echo $ROS_PACKAGE_PATH'
+
+# source ROS environments
+alias noetic='source /opt/ros/noetic/setup.bash'
+alias foxy='source /opt/ros/foxy/setup.bash'
+alias galactic='source /opt/ros/galactic/setup.bash'
 
 # open pictures
 alias pic_open='gio open'
@@ -41,21 +42,15 @@ alias gl='git log --oneline --decorate --graph'
 # mic control (since I can't remember the command name)
 alias mic_control='pavucontrol'
 
+# for Greenzie development
+# properly set up name and email when running dch, put this in your .bashrc
+alias dch="DEBEMAIL=\"$(git config --get user.email)\" DEBFULLNAME=\"$(git config --get user.name)\" dch"
+
 # -------------------------------------------------------------
 
 # open document with emacs in terminal
 docedit() {
     emacs -nw $1
-}
-
-# source ROS environments
-rossrc() {
-    source /opt/ros/$1/setup.bash
-}
-
-# drop into a spinning Docker container
-dockerexec() {
-    docker exec -it $1 /bin/bash
 }
 
 # open document using locate
@@ -68,9 +63,19 @@ speedup_4x() {
     ffmpeg -i $1 -r 120 -filter:v "setpts=0.25*PTS" $2
 }
 
+# remove audio from a video using ffmpeg
+rmaudio() {
+    ffmpeg -i $1 -an -vcodec copy output_file.mp4
+}
+
 # mp4 to gif
 togif() {
     ffmpeg -i $1 -r 10 -s 1080x720 output.gif
+}
+
+# drop into a spinning Docker container
+dockerexec() {
+    docker exec -it $1 /bin/bash
 }
 
 # generate video from frames (framerate usually 25)
