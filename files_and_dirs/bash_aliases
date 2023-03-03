@@ -42,6 +42,9 @@ alias gl='git log --oneline --decorate --graph'
 # mic control (since I can't remember the command name)
 alias mic_control='pavucontrol'
 
+# run the Docker container for the URSim environment
+alias ursim='docker run --rm -it -v ${HOME}/.ursim/urcaps:/urcaps -v ${HOME}/.ursim/programs:/ursim/programs --name ursim universalrobots/ursim_e-series'
+
 # for Greenzie development
 # properly set up name and email when running dch, put this in your .bashrc
 alias dch="DEBEMAIL=\"$(git config --get user.email)\" DEBFULLNAME=\"$(git config --get user.name)\" dch"
