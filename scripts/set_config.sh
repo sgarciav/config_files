@@ -86,7 +86,10 @@ function install_dependencies()
          okular \
          auctex \
          openconnect \
-         network-manager-openconnect-gnome
+         network-manager-openconnect-gnome \
+         htop \
+         net-tools \
+         mlocate
 
     # See: https://askubuntu.com/questions/70784/how-can-i-enable-compose-key
     # gnome-tweak-tool is used to set a "command" key allowing you to type special character
