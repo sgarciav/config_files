@@ -80,7 +80,7 @@ function install_dependencies()
          gnome-tweaks \
          openssh-client \
          openssh-server \
-	       texlive-full \
+         texlive-full \
          biber \
          imagemagick \
          okular \
@@ -91,7 +91,8 @@ function install_dependencies()
          net-tools \
          mlocate \
          redshift \
-         redshift-gtk
+         redshift-gtk \
+         wl-clipboard
 
     # See: https://askubuntu.com/questions/70784/how-can-i-enable-compose-key
     # gnome-tweak-tool is used to set a "command" key allowing you to type special character
