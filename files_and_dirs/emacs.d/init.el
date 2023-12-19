@@ -222,6 +222,11 @@ If the new path's directories does not exist, create them."
           (set-visited-file-name new-name)
           (set-buffer-modified-p nil))))))
 
+;; set the default command-line option for LaTeX to include the `--shell-escape` option
+(setq-default TeX-command-extra-options "-shell-escape")
+(setq TeX-view-program-selection '((output-pdf "PDF Tools")))
+(setq TeX-view-program-list '(("PDF Tools" TeX-pdf-tools-sync-view)))
+
 ;; end of file
 (provide 'init)
 ;;; init.el ends here
