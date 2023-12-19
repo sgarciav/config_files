@@ -40,6 +40,9 @@
 ;; org-mode access agenda
 (global-set-key (kbd "C-c a") 'org-agenda)
 
+;; magit
+(global-set-key (kbd "C-c s") 'magit-status)
+
 ;; Helm Configuration
 
 ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.

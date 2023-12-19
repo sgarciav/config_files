@@ -6,3 +6,6 @@ smex-items
 url/
 emacs-backup/
 auto-save-list/
+
+# emacs session files
+session.*
