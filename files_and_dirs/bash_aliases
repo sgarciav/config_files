@@ -46,6 +46,9 @@ alias mic_control='pavucontrol'
 # properly set up name and email when running dch, put this in your .bashrc
 alias dch="DEBEMAIL=\"$(git config --get user.email)\" DEBFULLNAME=\"$(git config --get user.name)\" dch"
 
+# RIF development
+alias rif='cd ~/ros2/robotic_tray_processor/robotic_tray_processor_setup/humble/shell'
+
 # -------------------------------------------------------------
 
 # open document with emacs in terminal
