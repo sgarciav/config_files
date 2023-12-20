@@ -49,6 +49,9 @@ alias dch="DEBEMAIL=\"$(git config --get user.email)\" DEBFULLNAME=\"$(git confi
 # RIF development
 alias rif='cd ~/ros2/robotic_tray_processor/robotic_tray_processor_setup/humble/shell'
 
+# WDDLY development
+alias wddly='cd ~/ros2/wddly/WDDLY-setup/shell'
+
 # -------------------------------------------------------------
 
 # open document with emacs in terminal
