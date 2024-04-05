@@ -47,7 +47,7 @@ alias mic_control='pavucontrol'
 alias dch="DEBEMAIL=\"$(git config --get user.email)\" DEBFULLNAME=\"$(git config --get user.name)\" dch"
 
 # RIF development
-alias rif='cd ~/ros2/robotic_tray_processor/robotic_tray_processor_setup/humble/shell'
+alias rif='cd ~/ros2/robotic_tray_processor/robotic_tray_processor_setup/iron/shell'
 
 # WDDLY development
 alias wddly='cd ~/ros2/wddly/WDDLY-setup/shell'
