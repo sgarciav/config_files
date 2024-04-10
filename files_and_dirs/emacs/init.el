@@ -77,7 +77,7 @@
 
 ;; Do not use `init.el` for `custom-*` code - use `custom-file.el`.
 ;; TODO: Can we create this file automatically if it doesn't exist?
-(setq custom-file "~/git-repos/3rd-party/dotfiles/emacs-v2/custom-file.el")
+(setq custom-file "~/git-repos/config_files/files_and_dirs/emacs/custom-file.el")
 
 ;; Assuming that the code in custom-file is execute before the code
 ;; ahead of this line is not a safe assumption. So load this file
@@ -626,8 +626,8 @@
 (global-undo-tree-mode)
 (global-set-key (kbd "M-/") 'undo-tree-visualize)
 
-;; switch-to-buffer
-(global-set-key (kbd "M-C-z") 'switch-to-buffer)
+;; switch-window
+(global-set-key (kbd "M-C-z") 'switch-window)
 
 ;; iedit
 (global-set-key (kbd "C-c i") 'iedit-mode)
@@ -646,8 +646,8 @@
 ;; org-mode access agenda
 (global-set-key (kbd "C-c a") 'org-agenda)
 
-;; magit
-(global-set-key (kbd "C-c s") 'magit-status)
+;; ;; magit
+;; (global-set-key (kbd "C-c s") 'magit-status)
 
 ;; comment and uncomment region
 (global-set-key (kbd "C-x \S-c") 'uncomment-region)
