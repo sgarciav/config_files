@@ -95,7 +95,8 @@ function install_dependencies()
          wl-clipboard \
          terminator \
          direnv \
-         simplescreenrecorder
+         simplescreenrecorder \
+         silversearcher-ag # this is for helm-projectile-ag in emacs
 
     # See: https://askubuntu.com/questions/70784/how-can-i-enable-compose-key
     # gnome-tweak-tool is used to set a "command" key allowing you to type special character
