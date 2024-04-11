@@ -6,6 +6,10 @@
 ; Disable the startup message
 (setq inhibit-startup-message t)
 
+; Start in full screen
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 ; Set the load path for where lisp code can be loaded outside of the
 ; package system.
 (add-to-list 'load-path "~/.emacs.d/lisp")

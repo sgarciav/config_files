@@ -6,6 +6,7 @@
  '(backup-directory-alist `(("." \, (concat user-emacs-directory "backups"))))
  '(confirm-kill-processes nil)
  '(indent-tabs-mode nil)
+ '(initial-frame-alist '((fullscreen . maximized)))
  '(org-agenda-files
    '("~/repos/private/org/inbox.org" "~/repos/private/org/gtd.org" "~/repos/private/org/schedule.org" "/home/syllogismrxs/repos/private/org/journal/2021-08-25.org"))
  '(package-archives
