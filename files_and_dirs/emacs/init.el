@@ -629,6 +629,8 @@
 (require 'undo-tree)
 (global-undo-tree-mode)
 (global-set-key (kbd "M-/") 'undo-tree-visualize)
+; disable automatic save of undo history
+(setq undo-tree-auto-save-history nil)
 
 ;; switch-window
 (global-set-key (kbd "M-C-z") 'switch-window)
