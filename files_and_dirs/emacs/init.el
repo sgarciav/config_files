@@ -23,8 +23,8 @@
 ; Disable the side scrolling bar
 (scroll-bar-mode -1)
 
-; Highlight the current line
-(global-hl-line-mode t)
+;; ; Highlight the current line
+;; (global-hl-line-mode t)
 
 ; Display the line number at the bottom of emacs
 (line-number-mode t)
