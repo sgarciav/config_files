@@ -125,42 +125,48 @@
   :defer nil
   )
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; doom themes
-(use-package doom-themes
-  :ensure t
-  :defer nil
-  :config
-  ;; Global settings (defaults)
-  (setq doom-themes-enable-bold nil    ; if nil, bold is universally disabled
-        doom-themes-enable-italic nil) ; if nil, italics is universally disabled
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;; doom themes
+;; (use-package doom-themes
+;;   :ensure t
+;;   :defer nil
+;;   :config
+;;   ;; Global settings (defaults)
+;;   (setq doom-themes-enable-bold nil    ; if nil, bold is universally disabled
+;;         doom-themes-enable-italic nil) ; if nil, italics is universally disabled
 
-  ;(load-theme 'doom-one t)
-  (load-theme 'doom-acario-dark t)
-  ;(load-theme 'doom-gruvbox t)
-  ;(load-theme 'doom-oceanic-next t)
-  ;(load-theme 'doom-tomorrow-night t)
-  ;(load-theme 'doom-dark+ t)
-  ;(load-theme 'doom-nord t)
+;;   ;(load-theme 'doom-one t)
+;;   (load-theme 'doom-acario-dark t)
+;;   ;(load-theme 'doom-gruvbox t)
+;;   ;(load-theme 'doom-oceanic-next t)
+;;   ;(load-theme 'doom-tomorrow-night t)
+;;   ;(load-theme 'doom-dark+ t)
+;;   ;(load-theme 'doom-nord t)
 
-  ;; Enable flashing mode-line on errors
-  (doom-themes-visual-bell-config)
+;;   ;; Enable flashing mode-line on errors
+;;   (doom-themes-visual-bell-config)
 
-  ;; Enable custom neotree theme (all-the-icons must be installed!)
-  (doom-themes-neotree-config)
-  ;; or for treemacs users
-  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
-  (doom-themes-treemacs-config)
+;;   ;; Enable custom neotree theme (all-the-icons must be installed!)
+;;   (doom-themes-neotree-config)
+;;   ;; or for treemacs users
+;;   (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+;;   (doom-themes-treemacs-config)
 
-  ;; Corrects (and improves) org-mode's native fontification.
-  (doom-themes-org-config)
+;;   ;; Corrects (and improves) org-mode's native fontification.
+;;   (doom-themes-org-config)
 
-  ;; Set the comment font size to the same as the other text. This is
-  ;; necessary in the doom-acario-dark theme.
-  (custom-set-faces
-   `(font-lock-comment-face           ((t (:inherit font-lock-builtin-face))))
-   `(font-lock-comment-delimiter-face ((t (:inherit font-lock-builtin-face)))))
-  )
+;;   ;; Set the comment font size to the same as the other text. This is
+;;   ;; necessary in the doom-acario-dark theme.
+;;   (custom-set-faces
+;;    `(font-lock-comment-face           ((t (:inherit font-lock-builtin-face))))
+;;    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-builtin-face)))))
+;;   )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Appearence / theme
+(add-to-list `custom-theme-load-path  "~/.emacs.d/themes/")
+(load-theme 'clarity t)
+(enable-theme 'clarity)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Smooth scrolling (line by line) instead of jumping by half-screens.
