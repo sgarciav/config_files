@@ -228,6 +228,9 @@
 (use-package helm-ag
   :ensure t
   :defer nil
+  :bind
+  (("C-c f"     . helm-ag)
+   )
   )
 
 ; helm-tramp
@@ -255,7 +258,12 @@
 (use-package magit
   :ensure t
   :bind (("C-x g" . magit-status)
-         ("C-x C-g" . magit-status)))
+         ("C-x C-g" . magit-status))
+  :config
+  ;; (setq magit-display-buffer-function 'magit-display-buffer-same-window-except-diff-v1)
+  (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1)
+  ;; (setq projectile-switch-project-action 'magit-status)
+  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Load company for auto-completion
@@ -278,28 +286,25 @@
   (setq deft-recursive t)
   )
 
-;; (use-package org
-;;   :ensure t
-;;   :defer nil
-;;   :config
-;;   (setq org-directory "~/repos/private/org")
-;;   (setq org-agenda-files (list "~/repos/private/org/inbox.org"
-;;                                "~/repos/private/org/gtd.org"
-;;                                "~/repos/private/org/schedule.org"
-;;                                "~/repos/private/org/phone.org"
-;;                                ))
-;;   (setq org-todo-keywords
-;;         '((sequence "TODO" "NEXT" "FEEDBACK" "|" "DONE" "DEFERRED" "MEETING")))
-;;   (setq org-log-done 'time) ; Create a timestamp when DONE
-;;   (setq org-archive-location "~/repos/private/org/archive/%s_archive::")
-;;   (setq org-agenda-custom-commands
-;;       '(("h" "Home" tags-todo "@home")
-;;         ("n" "Next" todo "NEXT")
-;;         ("p" "Side Projects" tags-todo "@side")
-;;         ("c" "Consulting" tags-todo "@consulting")
-;;         ("l" "Learning" tags-todo "@learning")
-;;         ("r" "RIF Robotics" tags-todo "@rif")
-;;         ("e" "Entrepreneur" tags-todo "@entrepreneur")))
+(use-package org
+  :ensure t
+  :defer nil
+  :config
+  (setq org-directory "~/git-repos/private/org")
+  (setq org-archive-location "~/git-repos/private/org/archive/%s_archive::")
+  (setq org-agenda-files (list "~/git-repos/private/org/main.org"
+                               "~/git-repos/private/org/schedule.org"
+                               ))
+  (setq org-todo-keywords
+        '((sequence "TODO" "MEETING" "REMINDER" "IN PROGRESS" "|" "DONE" "DEFERRED" "CANCELED")))
+  (setq org-log-done 'time) ; Create a timestamp when DONE
+  (setq org-clock-idle-time 240) ; Emacs alerts you when you've been idle for X mins.
+  (setq org-agenda-custom-commands
+        '(("h" "Home" tags-todo "@home")
+          ("p" "Side Projects" tags-todo "@side")
+          ("c" "Consulting" tags-todo "@consulting")
+          ("r" "RIF Robotics" tags-todo "@rif")
+          ("s" "Cosmos Robotics" tags-todo "@cosmos")))
 ;;   (setq org-refile-targets '(("~/repos/private/org/gtd.org" :maxlevel . 2)
 ;;                              ("~/repos/private/org/someday.org" :level . 1)
 ;;                              ("~/repos/private/org/schedule.org" :maxlevel . 1)))
@@ -327,12 +332,12 @@
 ;;   (add-hook 'org-shiftdown-final-hook 'windmove-down)
 ;;   (add-hook 'org-shiftright-final-hook 'windmove-right)
 ;;   (add-to-list 'org-file-apps '("\\.pdf" . "evince %s"))
-;;   :bind
-;;   ("C-c a" . org-agenda)
-;;   ("C-c c" . org-capture)
-;;   ("C-c C-x o" . org-clock-out)
-;;   ("C-c C-x l" . org-clock-in-last)
-;;   )
+  ;; :bind
+  ;; ("C-c a" . org-agenda)
+  ;; ("C-c c" . org-capture)
+  ;; ("C-c C-x o" . org-clock-out)
+  ;; ("C-c C-x l" . org-clock-in-last)
+  )
 
 ;; ;(use-package org-journal
 ;; ;  :ensure t
