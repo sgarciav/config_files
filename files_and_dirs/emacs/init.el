@@ -95,10 +95,14 @@
                           ("melpa"     . "https://melpa.org/packages/")
                           ("elpa"      . "https://elpa.gnu.org/packages/"))))
 
+;; To activate the Taskjuggler exporter in Org-mode
+(setq taskjuggler-mode "~/git-repos/config_files/files_and_dirs/emacs/taskjuggler-mode.el")
+(load-file taskjuggler-mode)
+
 ; Initialize the package system
 (package-initialize)
 
-; Refresh the package archive contents                                        ;
+; Refresh the package archive contents
 (when (not package-archive-contents)
   (package-refresh-contents))
 
