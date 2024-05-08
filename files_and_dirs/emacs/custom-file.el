@@ -8,7 +8,7 @@
  '(indent-tabs-mode nil)
  '(initial-frame-alist '((fullscreen . maximized)))
  '(org-agenda-files
-   '("~/repos/private/org/inbox.org" "~/repos/private/org/gtd.org" "~/repos/private/org/schedule.org" "/home/syllogismrxs/repos/private/org/journal/2021-08-25.org"))
+   '("~/repos/private/org/inbox.org" "~/repos/private/org/gtd.org" "~/repos/private/org/schedule.org" "/home/syllogismrxs/repos/private/org/journal/2021-08-25.org") t)
  '(package-archives
    '(("marmalade" . "https://marmalade-repo.org/packages/")
      ("melpa" . "https://melpa.org/packages/")
