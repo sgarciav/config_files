@@ -96,6 +96,7 @@ function install_dependencies()
          terminator \
          direnv \
          simplescreenrecorder \
+         awesome \
          silversearcher-ag # this is for helm-projectile-ag in emacs
 
     # See: https://askubuntu.com/questions/70784/how-can-i-enable-compose-key
