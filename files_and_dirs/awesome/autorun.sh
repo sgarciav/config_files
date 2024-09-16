@@ -7,21 +7,13 @@ function run {
   fi
 }
 
-run autorandr --load desktop
-
-run nm-applet
+run autorandr --load atdc
+# Ex: xrandr --output HDMI-2 --left-of eDP-1
 
 run volumeicon
 
-#run autokey-gtk
-
-#run blueman-applet
-# xfce4-power-manager
-# volumeicon
-
-#LD_LIBRARY_PATH=/home/syllogismrxs/apps/Discord run /home/syllogismrxs/apps/Discord/Discord
 run discord
 
-#run slack
-
 run xscreensaver -no-splash
+
+run compton

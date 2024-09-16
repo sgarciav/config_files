@@ -2,24 +2,23 @@
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
-------------------------------------------
--- Determine which computer is being used
--- see if the file exists
-function file_exists(file)
-  local f = io.open(file, "rb")
-  if f then f:close() end
-  return f ~= nil
-end
+-- -------------------------------------------
+-- --- Determine which computer is being used
+-- --- see if the file exists
+-- function file_exists(file)
+--   local f = io.open(file, "rb")
+--   if f then f:close() end
+--   return f ~= nil
+-- end
 
-local file_path = os.getenv("HOME") .. "/.config/awesome.computer_name"
-local computer_name = "desktop-single-screen" -- Default
+-- local file_path = os.getenv("HOME") .. "/.config/awesome.computer_name"
+-- local computer_name = "desktop-single-screen" -- Default
 
-if file_exists(file_path) then
-   file = io.open(file_path, "r")
-   computer_name = file:read()
-end
-------------------------------------------
-
+-- if file_exists(file_path) then
+--    file = io.open(file_path, "r")
+--    computer_name = file:read()
+-- end
+-- -------------------------------------------
 
 -- Standard awesome library
 local gears = require("gears")
@@ -33,12 +32,6 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
-
-local battery_widget
-if computer_name == "alien" then
-   battery_widget = require("battery-widget")
-end
-
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -74,9 +67,6 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
---beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), "syllo"))
---local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), "syllo")
---beautiful.init(theme_path)
 beautiful.init(gears.filesystem.get_configuration_dir () .. "/themes/zenburn/theme.lua")
 --beautiful.init(gears.filesystem.get_configuration_dir () .. "/themes/default/theme.lua")
 --beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
@@ -84,9 +74,10 @@ beautiful.init(gears.filesystem.get_configuration_dir () .. "/themes/zenburn/the
 --beautiful.init(gears.filesystem.get_themes_dir() .. "gtk/theme.lua")
 --beautiful.init(gears.filesystem.get_themes_dir() .. "sky/theme.lua")
 --beautiful.init(gears.filesystem.get_themes_dir() .. "xresources/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "gnome-terminal"
+terminal = "terminator"
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -100,18 +91,18 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile,
-    awful.layout.suit.floating,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
-    awful.layout.suit.corner.nw,
+    -- awful.layout.suit.floating,
+    -- awful.layout.suit.tile.left,
+    -- awful.layout.suit.tile.bottom,
+    -- awful.layout.suit.tile.top,
+    -- awful.layout.suit.fair,
+    -- awful.layout.suit.fair.horizontal,
+    -- awful.layout.suit.spiral,
+    -- awful.layout.suit.spiral.dwindle,
+    -- awful.layout.suit.max,
+    -- awful.layout.suit.max.fullscreen,
+    -- awful.layout.suit.magnifier,
+    -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
@@ -251,28 +242,7 @@ awful.screen.connect_for_each_screen(function(s)
     s.mywibox = awful.wibar({ position = "top", screen = s })
 
     -- Add widgets to the wibox
-    if computer_name == "alien" then
-       s.mywibox:setup {
-          layout = wibox.layout.align.horizontal,
-          { -- Left widgets
-             layout = wibox.layout.fixed.horizontal,
-             mylauncher,
-             s.mytaglist,
-             s.mypromptbox,
-          },
-          s.mytasklist, -- Middle widget
-          { -- Right widgets
-             layout = wibox.layout.fixed.horizontal,
-             mykeyboardlayout,
-             wibox.widget.systray(),
-             battery_widget {
-             },
-             mytextclock,
-             s.mylayoutbox,
-          },
-       }
-    else
-       s.mywibox:setup {
+    s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
@@ -289,7 +259,6 @@ awful.screen.connect_for_each_screen(function(s)
             s.mylayoutbox,
         },
     }
-    end
 end)
 -- }}}
 
@@ -332,6 +301,7 @@ globalkeys = gears.table.join(
               {description = "swap with next client by index", group = "client"}),
     awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
               {description = "swap with previous client by index", group = "client"}),
+    awful.key({ }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end),
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
               {description = "focus the next screen", group = "screen"}),
     awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
@@ -372,8 +342,6 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
 
-    awful.key({ }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end),
-
     awful.key({ modkey, "Control" }, "n",
               function ()
                   local c = awful.client.restore()
@@ -402,7 +370,20 @@ globalkeys = gears.table.join(
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "show the menubar", group = "launcher"}),
+
+    -- Volume Control (Amixer)
+    awful.key({}, "XF86AudioRaiseVolume", function ()
+          awful.spawn("amixer set Master 5%+ unmute") -- Increase volume by 5%
+    end, {description = "increase volume", group = "audio"}),
+
+    awful.key({}, "XF86AudioLowerVolume", function ()
+          awful.spawn("amixer set Master 5%- unmute") -- Decrease volume by 5%
+    end, {description = "decrease volume", group = "audio"}),
+
+    awful.key({}, "XF86AudioMute", function ()
+          awful.spawn("amixer set Master toggle") -- Toggle mute
+    end, {description = "mute/unmute audio", group = "audio"})
 )
 
 clientkeys = gears.table.join(
@@ -517,10 +498,11 @@ clientbuttons = gears.table.join(
 root.keys(globalkeys)
 -- }}}
 
-local second_display_num = 2
-if computer_name == 'alien' or computer_name == 'desktop-single-screen' then
-   second_display_num = 1
-end
+-- TODO: Setup for second display
+-- local second_display_num = 2
+-- if computer_name == 'alien' or computer_name == 'desktop-single-screen' then
+--    second_display_num = 1
+-- end
 
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
@@ -575,16 +557,18 @@ awful.rules.rules = {
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-    --{ rule = { class = "Firefox" },
-    --  properties = { screen = 1, tag = "1" } },
-    { rule = { class = "rviz" },
+    { rule = { class = "Firefox" },
+      properties = { screen = 1, tag = "1" } },
+    { rule = { class = "emacs" },
       properties = { screen = 1, tag = "3" } },
-    { rule = { class = "Gazebo" },
+    { rule = { class = "rviz" },
       properties = { screen = 1, tag = "4" } },
+    -- { rule = { class = "Gazebo" },
+    --   properties = { screen = 1, tag = "4" } },
     { rule = { class = "discord" },
-      properties = { screen = second_display_num, tag = "9" } },
-    { rule = { class = "Slack" },
-      properties = { screen = second_display_num, tag = "8" } },
+      properties = { screen = second_display_num, tag = "6" } },
+    -- { rule = { class = "Slack" },
+    --   properties = { screen = second_display_num, tag = "8" } },
 }
 -- }}}
 
@@ -643,17 +627,14 @@ client.connect_signal("request::titlebars", function(c)
     }
 end)
 
--- Enable sloppy focus, so that focus follows mouse.
-client.connect_signal("mouse::enter", function(c)
-    c:emit_signal("request::activate", "mouse_enter", {raise = false})
-end)
+-- -- Enable sloppy focus, so that focus follows mouse.
+-- client.connect_signal("mouse::enter", function(c)
+--     c:emit_signal("request::activate", "mouse_enter", {raise = false})
+-- end)
 
-client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
-client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+-- client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
+-- client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
-
--- Change the key hold repeat rate
-os.execute("xset r rate 220 30")
 
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 
@@ -662,3 +643,5 @@ awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 -- if file_exists(autorun_computer_name) then
 --    awful.spawn.with_shell(autorun_computer_name)
 -- end
+
+-- awful.spawn.with_shell("nitrogen --restore")
