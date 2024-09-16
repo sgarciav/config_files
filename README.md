@@ -31,15 +31,24 @@ you want to run.
 
 # Specific Installs
 
+## awesome
+
+    $ mkdir -p ~/.config/awesome
+    $ ln -s /path/to/config_files/files_and_dirs/awesome/rc.lua ~/.config/awesome
+    $ ln -s /path/to/config_files/files_and_dirs/awesome/autorun.sh ~/.config/awesome
+    $ ln -s /path/to/config_files/files_and_dirs/awesome/themes ~/.config/awesome
+
+### Enable Bluetooth
+
+    $ sudo apt-get install bluez blueman
+    $ sudo systemctl enable bluetooth
+    $ sudo systemctl start bluetooth
+    $ blueman-manager
+
 ## Emacs
 
-	$ cd ~
 	$ ln -s /path/to/config_files/files_and_dirs/emacs/init.el ~/.emacs.el
 	$ cp /path/to/config_files/files_and_dirs/emacs/* ~/.emacs.d
-
-## Magit
-
-	$ sudo apt-get install magit
 
 ## undo-tree
 
@@ -49,6 +58,7 @@ See: https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-
 
 Through `list-packages` search for:
 * switch-window
+* iedit
 
 # Authors
 
