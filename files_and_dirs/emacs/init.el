@@ -3,6 +3,10 @@
 ; https://medium.com/@suvratapte/configuring-emacs-from-scratch-packages-220bbc5e55b7
 ; https://menno.io/posts/use-package/
 
+; Follow instructions below to fix elap gnu keys
+;; See: https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-signature-check-failure
+; (setq package-check-signature nil)
+
 ; Disable the startup message
 (setq inhibit-startup-message t)
 
