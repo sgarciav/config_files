@@ -29,6 +29,27 @@ The `set_config.sh` script will delete local files and replace them with the
 ones from the repo. There are no security checks in place, so be completely sure
 you want to run.
 
+# Specific Installs
+
+## Emacs
+
+	$ cd ~
+	$ ln -s /path/to/config_files/files_and_dirs/emacs/init.el ~/.emacs.el
+	$ cp /path/to/config_files/files_and_dirs/emacs/* ~/.emacs.d
+
+## Magit
+
+	$ sudo apt-get install magit
+
+## undo-tree
+
+See: https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-signature-check-failure
+
+## Others
+
+Through `list-packages` search for:
+* switch-window
+
 # Authors
 
 Sergio Garcia-Vergara <sergiodotgarcia@gmail.com>
