@@ -21,8 +21,8 @@
 ; Disable the icon tool bar at the top of emacs
 (tool-bar-mode -1)
 
-; Enable the "File" "Edit" "Options" etc.
-(menu-bar-mode 1)
+; Enable/Disable (1/-1) the "File" "Edit" "Options" etc.
+(menu-bar-mode -1)
 
 ; Disable the side scrolling bar
 (scroll-bar-mode -1)
