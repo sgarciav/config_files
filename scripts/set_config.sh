@@ -98,6 +98,7 @@ function install_dependencies()
          simplescreenrecorder \
          magit \
          awesome \
+         awesome-extra \
          autorandr \
          alsa-utils \
          bluez \

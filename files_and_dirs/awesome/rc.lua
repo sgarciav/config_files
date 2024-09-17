@@ -40,6 +40,19 @@ require("awful.hotkeys_popup.keys")
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
 
+-- Load Vicious library and create a battery widget
+local vicious = require("vicious")
+local batterywidget = wibox.widget.textbox()
+
+-- Register the battery widget using vicious
+vicious.register(batterywidget, vicious.widgets.bat, "Battery: $2%", 121, "BAT0")
+
+-- -- Add battery widget to the wibar (usually in the right section)
+-- local battery_icon = wibox.widget {
+--     widget = wibox.widget.imagebox,
+--     image = "~/.config/awesome/icons/battery-icon.jpg"
+-- }
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -75,6 +88,7 @@ beautiful.init(gears.filesystem.get_configuration_dir () .. "/themes/zenburn/the
 --beautiful.init(gears.filesystem.get_themes_dir() .. "sky/theme.lua")
 --beautiful.init(gears.filesystem.get_themes_dir() .. "xresources/theme.lua")
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.useless_gaps = 5
 
 -- This is used later as the default terminal and editor to run.
 terminal = "terminator"
@@ -256,6 +270,8 @@ awful.screen.connect_for_each_screen(function(s)
             mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
+            -- battery_icon,
+            batterywidget,
             s.mylayoutbox,
         },
     }
@@ -559,16 +575,14 @@ awful.rules.rules = {
     -- Set Firefox to always map on the tag named "2" on screen 1.
     { rule = { class = "Firefox" },
       properties = { screen = 1, tag = "1" } },
-    { rule = { class = "emacs" },
-      properties = { screen = 1, tag = "3" } },
+    { rule = { class = "google-chrome" },
+      properties = { screen = 1, tag = "1" } },
+    -- { rule = { class = "emacs" },
+    --   properties = { screen = 1, tag = "2" } },
     { rule = { class = "rviz" },
       properties = { screen = 1, tag = "4" } },
-    -- { rule = { class = "Gazebo" },
-    --   properties = { screen = 1, tag = "4" } },
     { rule = { class = "discord" },
       properties = { screen = second_display_num, tag = "6" } },
-    -- { rule = { class = "Slack" },
-    --   properties = { screen = second_display_num, tag = "8" } },
 }
 -- }}}
 
