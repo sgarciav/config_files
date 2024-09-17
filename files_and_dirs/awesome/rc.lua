@@ -45,12 +45,12 @@ local vicious = require("vicious")
 local batterywidget = wibox.widget.textbox()
 
 -- Register the battery widget using vicious
-vicious.register(batterywidget, vicious.widgets.bat, "Battery: $2%", 121, "BAT0")
+vicious.register(batterywidget, vicious.widgets.bat, "Bat: $2%", 121, "BAT0")
 
 -- -- Add battery widget to the wibar (usually in the right section)
 -- local battery_icon = wibox.widget {
 --     widget = wibox.widget.imagebox,
---     image = "~/.config/awesome/icons/battery-icon.jpg"
+--     image = "/home/sergio/.config/awesome/icons/battery-icon.png"
 -- }
 
 -- {{{ Error handling
