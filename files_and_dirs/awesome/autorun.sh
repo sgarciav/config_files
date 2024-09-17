@@ -10,10 +10,15 @@ function run {
 run autorandr --load atdc
 # Ex: xrandr --output HDMI-2 --left-of eDP-1
 
-run volumeicon
+# run volumeicon
 
+run xscreensaver -no-splash # F12
+
+run compton # enable transparency
+
+# Programs
 run discord
 
-run xscreensaver -no-splash
+run Firefox
 
-run compton
+run google-chrome
