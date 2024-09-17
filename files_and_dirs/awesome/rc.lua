@@ -388,6 +388,21 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"}),
 
+    -- Keybinding for suspending the system
+    awful.key({ modkey, "Shift" }, "s", function ()
+          awful.spawn("systemctl suspend")
+    end, {description = "suspend the system", group = "system"}),
+
+    -- Keybinding for shutting down the system
+    awful.key({ modkey, "Shift" }, "/", function ()
+          awful.spawn("systemctl poweroff")
+    end, {description = "shutdown the system", group = "system"}),
+
+    -- Keybinding for rebooting the system
+    awful.key({ modkey, "Shift" }, "r", function ()
+          awful.spawn("systemctl reboot")
+    end, {description = "reboot the system", group = "system"}),
+
     -- Volume Control (Amixer)
     awful.key({}, "XF86AudioRaiseVolume", function ()
           awful.spawn("amixer set Master 5%+ unmute") -- Increase volume by 5%
