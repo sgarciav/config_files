@@ -403,18 +403,28 @@ globalkeys = gears.table.join(
           awful.spawn("systemctl reboot")
     end, {description = "reboot the system", group = "system"}),
 
-    -- Volume Control (Amixer)
-    awful.key({}, "XF86AudioRaiseVolume", function ()
-          awful.spawn("amixer set Master 5%+ unmute") -- Increase volume by 5%
-    end, {description = "increase volume", group = "audio"}),
+    -- -- Increase brightness
+    -- awful.key({}, "XF86MonBrightnessUp", function ()
+    --       awful.spawn("brightnessctl set +10%")
+    -- end, {description = "increase brightness", group = "hotkeys"}),
 
-    awful.key({}, "XF86AudioLowerVolume", function ()
-          awful.spawn("amixer set Master 5%- unmute") -- Decrease volume by 5%
-    end, {description = "decrease volume", group = "audio"}),
+    -- -- Decrease brightness
+    -- awful.key({}, "XF86MonBrightnessDown", function ()
+    --       awful.spawn("brightnessctl set 10%-")
+    -- end, {description = "decrease brightness", group = "hotkeys"}),
 
-    awful.key({}, "XF86AudioMute", function ()
-          awful.spawn("amixer set Master toggle") -- Toggle mute
-    end, {description = "mute/unmute audio", group = "audio"})
+    -- -- Volume Control (Amixer)
+    -- awful.key({}, "XF86AudioRaiseVolume", function ()
+    --       awful.spawn("amixer set Master 5%+ unmute") -- Increase volume by 5%
+    -- end, {description = "increase volume", group = "audio"}),
+
+    -- awful.key({}, "XF86AudioLowerVolume", function ()
+    --       awful.spawn("amixer set Master 5%- unmute") -- Decrease volume by 5%
+    -- end, {description = "decrease volume", group = "audio"}),
+
+    -- awful.key({}, "XF86AudioMute", function ()
+    --       awful.spawn("amixer set Master toggle") -- Toggle mute
+    -- end, {description = "mute/unmute audio", group = "audio"})
 )
 
 clientkeys = gears.table.join(
