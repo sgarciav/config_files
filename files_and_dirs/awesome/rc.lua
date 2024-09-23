@@ -401,7 +401,7 @@ globalkeys = gears.table.join(
     -- Keybinding for rebooting the system
     awful.key({ modkey, "Shift" }, "r", function ()
           awful.spawn("systemctl reboot")
-    end, {description = "reboot the system", group = "system"}),
+    end, {description = "reboot the system", group = "system"})
 
     -- -- Increase brightness
     -- awful.key({}, "XF86MonBrightnessUp", function ()
