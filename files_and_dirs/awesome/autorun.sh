@@ -16,6 +16,8 @@ run xscreensaver -no-splash # F12
 
 run compton # enable transparency
 
+run nm-applet # allows for wifi password popup
+
 # Programs
 run discord
 
