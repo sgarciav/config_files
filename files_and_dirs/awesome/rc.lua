@@ -40,18 +40,34 @@ require("awful.hotkeys_popup.keys")
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
 
--- Load Vicious library and create a battery widget
-local vicious = require("vicious")
-local batterywidget = wibox.widget.textbox()
+-- Battery Widget
+local battery_widget = wibox.widget.textbox()
+local function update_battery_widget()
+   -- Get battery status using upower
+   local handle = io.popen("upower -i $(upower -e | grep 'BAT') | grep -E 'state|percentage'")
+   local result = handle:read("*a")
+   handle:close()
 
--- Register the battery widget using vicious
-vicious.register(batterywidget, vicious.widgets.bat, "Bat: $2%", 121, "BAT0")
+   -- Parse battery state and percentage
+   local state = result:match("state:%s+(%w+)")
+   local percentage = result:match("percentage:%s+(%d+)%%")
 
--- -- Add battery widget to the wibar (usually in the right section)
--- local battery_icon = wibox.widget {
---     widget = wibox.widget.imagebox,
---     image = "/home/sergio/.config/awesome/icons/battery-icon.png"
--- }
+   -- Set widget text based on charging state
+   if state == "charging" then
+      battery_widget:set_text("⚡ " .. percentage .. "%")
+   elseif state == "fully-charged" then
+      battery_widget:set_text("🔋 Full")
+   else
+      battery_widget:set_text(percentage .. "%")
+   end
+end
+
+-- Update the widget every 10 seconds
+gears.timer {
+   timeout   = 10,
+   autostart = true,
+   callback  = update_battery_widget
+}
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -270,8 +286,7 @@ awful.screen.connect_for_each_screen(function(s)
             mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
-            -- battery_icon,
-            batterywidget,
+            battery_widget,
             s.mylayoutbox,
         },
     }
