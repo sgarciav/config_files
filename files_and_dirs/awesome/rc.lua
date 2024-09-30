@@ -439,7 +439,20 @@ globalkeys = gears.table.join(
 
     awful.key({}, "XF86AudioMute", function ()
           awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")
-    end, {description = "mute/unmute audio", group = "audio"})
+    end, {description = "mute/unmute audio", group = "audio"}),
+
+    -- Take Screenshots
+    awful.key({ "Shift" }, "Print", function ()
+          awful.spawn.with_shell("scrot ~/Pictures/all_windows_screenshot_%Y-%m-%d_%H-%M-%S.png")
+    end, {description = "take a screenshot", group = "hotkeys"}),
+
+    awful.key({ "Control" }, "Print", function ()
+          awful.spawn.with_shell("scrot -u ~/Pictures/window_screenshot_%Y-%m-%d_%H-%M-%S.png")
+    end, {description = "take a screenshot of focused window", group = "hotkeys"}),
+
+    awful.key({ }, "Print", function ()
+          awful.spawn.with_shell("scrot -s ~/Pictures/selection_screenshot_%Y-%m-%d_%H-%M-%S.png")
+    end, {description = "take a screenshot of selected area", group = "hotkeys"})
 )
 
 clientkeys = gears.table.join(
