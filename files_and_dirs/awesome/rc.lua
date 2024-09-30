@@ -62,9 +62,9 @@ local function update_battery_widget()
    end
 end
 
--- Update the widget every 10 seconds
+-- Update the widget every 120 seconds
 gears.timer {
-   timeout   = 10,
+   timeout   = 120,
    autostart = true,
    callback  = update_battery_widget
 }
