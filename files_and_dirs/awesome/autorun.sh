@@ -21,6 +21,4 @@ run nm-applet # allows for wifi password popup
 # Programs
 run discord
 
-run Firefox
-
 run google-chrome
