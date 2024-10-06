@@ -93,6 +93,7 @@ function install_dependencies()
          redshift \
          redshift-gtk \
          wl-clipboard \
+         git-lfs \
          terminator \
          direnv \
          simplescreenrecorder \
