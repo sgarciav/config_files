@@ -45,6 +45,22 @@ you want to run.
     $ sudo systemctl start bluetooth
     $ blueman-manager
 
+### Multiple Monitors
+
+Get the list of monitors:
+
+    $ xrandr --auto
+    $ xrandr --listmonitors
+
+Setup the profile:
+
+    $ xrandr --output DP-1-0.1 --right-of eDP-1
+    $ xrandr --output HDMI-2 --left-of eDP-1
+
+Add to `autorun.sh`:
+
+    run autorandr --load atdc
+
 ## Emacs
 
 	$ ln -s /path/to/config_files/files_and_dirs/emacs/init.el ~/.emacs.el

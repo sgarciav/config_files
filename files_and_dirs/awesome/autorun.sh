@@ -5,10 +5,9 @@ function run {
   then
     $@&
   fi
-}
 
-run autorandr --load atdc
-# Ex: xrandr --output HDMI-2 --left-of eDP-1
+
+run autorandr --load atdc # Options: atdc, home
 
 # run volumeicon
 
