@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 
-function run {
-  if ! pgrep -f $1 ;
-  then
-    $@&
-  fi
+# FILEPATH="~/.config/awesome/Running-on-${date}.txt"
+# echo "Hello! I'm running the following programs:" >> FILEPATH
+# echo " " >> FILEPATH
 
+function run
+{
+    if ! pgrep -f $1 ; then
+        $@&
+        # echo "$@" >> FILEPATH
+    fi
+}
 
 run autorandr --load atdc # Options: atdc, home
 
