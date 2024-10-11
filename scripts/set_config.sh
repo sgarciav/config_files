@@ -101,6 +101,7 @@ function install_dependencies()
          awesome \
          awesome-extra \
          autorandr \
+         playerctl \
          alsa-utils \
          bluez \
          blueman \
