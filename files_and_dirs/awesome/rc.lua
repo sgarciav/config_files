@@ -418,28 +418,40 @@ globalkeys = gears.table.join(
           awful.spawn("systemctl reboot")
     end, {description = "reboot the system", group = "system"}),
 
-    -- Increase brightness
+    -- Brightness Control
     awful.key({}, "XF86MonBrightnessUp", function ()
           awful.spawn.with_shell("brightnessctl set +10%")
     end, {description = "increase brightness", group = "hotkeys"}),
 
-    -- Decrease brightness
     awful.key({}, "XF86MonBrightnessDown", function ()
           awful.spawn.with_shell("brightnessctl set 10%-")
     end, {description = "decrease brightness", group = "hotkeys"}),
 
     -- Volume Control
     awful.key({}, "XF86AudioRaiseVolume", function ()
-          awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +10%")
+          awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")
     end, {description = "increase volume", group = "audio"}),
 
     awful.key({}, "XF86AudioLowerVolume", function ()
-          awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -10%")
+          awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")
     end, {description = "decrease volume", group = "audio"}),
 
     awful.key({}, "XF86AudioMute", function ()
           awful.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")
     end, {description = "mute/unmute audio", group = "audio"}),
+
+    -- Media Controls
+    awful.key({}, "XF86AudioPlay", function ()
+          awful.spawn.with_shell("playerctl play-pause")
+    end, {description = "play/pause music", group = "media"}),
+
+    awful.key({}, "XF86AudioNext", function ()
+          awful.spawn.with_shell("playerctl next")
+    end, {description = "next track", group = "media"}),
+
+    awful.key({}, "XF86AudioPrev", function ()
+          awful.spawn.with_shell("playerctl previous")
+    end, {description = "previous track", group = "media"}),
 
     -- Take Screenshots
     awful.key({ "Shift" }, "Print", function ()
