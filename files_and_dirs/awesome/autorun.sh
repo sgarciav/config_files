@@ -12,7 +12,7 @@ function run
     fi
 }
 
-run autorandr --load atdc # Options: atdc, home
+run autorandr --load atdc # Options: atdc, home, riftv
 
 # run volumeicon
 

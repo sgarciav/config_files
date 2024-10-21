@@ -106,6 +106,9 @@ function install_dependencies()
          bluez \
          blueman \
          brightnessctl \
+         xscreensaver \
+         xscreensaver-data \
+         xscreensaver-data-extra \
          silversearcher-ag # this is for helm-projectile-ag in emacs
 
     # See: https://askubuntu.com/questions/70784/how-can-i-enable-compose-key
