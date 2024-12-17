@@ -126,7 +126,7 @@ awful.layout.layouts = {
     -- awful.layout.suit.tile.bottom,
     -- awful.layout.suit.tile.top,
     awful.layout.suit.fair,
-    -- awful.layout.suit.fair.horizontal,
+    awful.layout.suit.fair.horizontal,
     -- awful.layout.suit.spiral,
     -- awful.layout.suit.spiral.dwindle,
     -- awful.layout.suit.max,
@@ -642,6 +642,8 @@ awful.rules.rules = {
       properties = { screen = 1, tag = "1" } },
     { rule = { class = "rviz" },
       properties = { screen = 1, tag = "4" } },
+    -- { rule = { class = "groot2" },
+    --   properties = { screen = 1, tag = "5" } },
     { rule = { class = "discord" },
       properties = { screen = 1, tag = "6" } },
 }
