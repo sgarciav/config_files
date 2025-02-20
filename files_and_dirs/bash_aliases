@@ -42,9 +42,8 @@ alias gl='git log --oneline --decorate --graph'
 # mic control (since I can't remember the command name)
 alias mic_control='pavucontrol'
 
-# for Greenzie development
-# properly set up name and email when running dch, put this in your .bashrc
-alias dch="DEBEMAIL=\"$(git config --get user.email)\" DEBFULLNAME=\"$(git config --get user.name)\" dch"
+# turn off all other displays
+alias turn_off_monitors='xrandr --output eDP-1 --auto $(xrandr | grep " connected" | awk '{print "--output " $1 " --off"}' | grep -v "eDP-1")'
 
 # RIF development
 alias humble='cd ~/ros2/robotic_tray_processor/robotic_tray_processor_setup/humble/shell'
