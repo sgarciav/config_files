@@ -43,7 +43,7 @@ alias gl='git log --oneline --decorate --graph'
 alias mic_control='pavucontrol'
 
 # turn off all other displays
-alias turn_off_monitors='xrandr --output eDP-1 --auto $(xrandr | grep " connected" | awk '{print "--output " $1 " --off"}' | grep -v "eDP-1")'
+alias turn_off_monitors='xrandr --output $1 --off'
 
 # RIF development
 alias humble='cd ~/ros2/robotic_tray_processor/robotic_tray_processor_setup/humble/shell'
