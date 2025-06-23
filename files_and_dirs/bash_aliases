@@ -54,6 +54,11 @@ alias wddly='cd ~/ros2/wddly/WDDLY-setup/shell'
 
 # -------------------------------------------------------------
 
+# restart awesome wm
+awesome_restart() {
+    echo 'awesome.restart()' | awesome-client
+}
+
 # open document with emacs in terminal
 docedit() {
     emacs -nw $1
