@@ -94,9 +94,10 @@ ursim() {
     docker run --rm -it -e ROBOT_MODEL=UR$1 -v ~/.ursim/urcaps:/urcaps -v ~/.ursim/programs:/ursim/programs --name ursim universalrobots/ursim_e-series
 }
 
-# generate video from frames (framerate usually 25)
+# generate video from frames
+# $1: image extension (jpg vs png)
 genvid() {
-    ffmpeg -framerate $1 -i %*.jpg -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p output.mp4
+    ffmpeg -framerate 25 -i %*.$1 -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p output.mp4
 }
 
 # generate urdf file from xacro file
