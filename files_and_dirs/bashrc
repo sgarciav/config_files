@@ -172,5 +172,3 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
-export GOOGLE_APPLICATION_CREDENTIALS=/home/sergio/.config/gcloud/application_default_credentials.json
-export GEMINI_API_KEY=AIzaSyA5h17d5QWoMLD5ZktJqPQHE8tZ4wo525I
