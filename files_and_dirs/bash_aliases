@@ -141,3 +141,11 @@ splitme() {
 md2pdf() {
     grip $1.md --export deleteme.html && wkhtmltopdf deleteme.html $1.pdf && rm deleteme.html
 }
+
+# execute command inside RIF Docker container
+dtail() {
+    docker exec -it rtp_jazzy_nvidia tail -f /home/ros/.ros/log/$1
+}
+dexec() {
+    docker exec -it rtp_jazzy_nvidia $1
+}
