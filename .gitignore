@@ -10,4 +10,4 @@ auto-save-list/
 # emacs session files
 session.*
 .aider*
-custom-file.el
+*custom-file.el*
