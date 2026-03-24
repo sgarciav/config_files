@@ -9,3 +9,4 @@ auto-save-list/
 
 # emacs session files
 session.*
+.aider*
