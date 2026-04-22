@@ -66,9 +66,18 @@ Add to `autorun.sh`:
 	$ ln -s /path/to/config_files/files_and_dirs/emacs/init.el ~/.emacs.el
 	$ cp /path/to/config_files/files_and_dirs/emacs/* ~/.emacs.d
 
-## undo-tree
+### undo-tree
 
 See: https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-signature-check-failure
+
+### c++ clang format
+
+1. Install `clang-format` on host: `sudo apt-get install clang-format`
+1. Install `clang-format+` in emacs list-packages: `Install clang-format+`
+1. Add hook in your .emacs config file to enable clang-format+ in C mode: `(add-hook 'c-mode-common-hook #'clang-format+-mode)`
+
+When you save a cpp file, your emacs will automatically use the `.clang-format`
+file in the repo and fix your file.
 
 ## Others
 
