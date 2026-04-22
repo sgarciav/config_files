@@ -79,11 +79,15 @@ See: https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-
 When you save a cpp file, your emacs will automatically use the `.clang-format`
 file in the repo and fix your file.
 
-## Others
+### Others
 
 Through `list-packages` search for:
 * switch-window
 * iedit
+
+**Reminder**: To install packages through `list-packages`, press `i` on the
+packages that you'd like to install. Then press `x` to install all the marked
+packages.
 
 # Authors
 
