@@ -632,7 +632,8 @@
   ; defun my-get-openrouter-api-key yourself elsewhere for security reasons
   ;(setenv "OPENROUTER_API_KEY" (my-get-openrouter-api-key))
 
-  (setq aidermacs-default-model "ollama/deepseek-coder-v2")
+  ;; (setq aidermacs-default-model "ollama/deepseek-coder-v2")
+  (setq aidermacs-default-model "gemini/gemini-3.1-pro-preview")
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
