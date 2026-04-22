@@ -73,6 +73,9 @@
 ; Delete trailing whitespace before saving
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+; Enable clang-format+ in C mode
+(add-hook 'c-mode-common-hook #'clang-format+-mode)
+
 ; Highlight matching parenthesis
 (show-paren-mode)
 
