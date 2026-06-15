@@ -77,6 +77,7 @@ function install_dependencies()
          gitk \
          python3-pip \
          pass \
+         picom \
          gnome-tweaks \
          openssh-client \
          openssh-server \
