@@ -75,7 +75,6 @@ function install_dependencies()
          cmake \
          trash-cli \
          gitk \
-         python-pip \
          pass \
          gnome-tweaks \
          openssh-client \
@@ -89,7 +88,6 @@ function install_dependencies()
          network-manager-openconnect-gnome \
          htop \
          net-tools \
-         mlocate \
          redshift \
          redshift-gtk \
          wl-clipboard \

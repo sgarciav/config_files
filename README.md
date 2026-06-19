@@ -61,6 +61,17 @@ Add to `autorun.sh`:
 
     run autorandr --load atdc
 
+Brightness:
+
+    xrandr --output eDP-1 --brightness 0.6
+
+### DNS
+
+Need to point at Google's DNS server. To make permanent 
+
+    sudo vim /etc/systemd/resolved.conf
+    sudo systemctl restart systemd-resolved
+
 ## Emacs
 
 	$ ln -s /path/to/config_files/files_and_dirs/emacs/init.el ~/.emacs.el
