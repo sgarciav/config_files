@@ -38,6 +38,10 @@ you want to run.
     $ ln -s /path/to/config_files/files_and_dirs/awesome/autorun.sh ~/.config/awesome
     $ ln -s /path/to/config_files/files_and_dirs/awesome/themes ~/.config/awesome
 
+### brightness:
+
+    xrandr --output eDP-1 --brightness 0.6
+
 ### Enable Bluetooth
 
     $ sudo apt-get install bluez blueman
@@ -61,16 +65,21 @@ Add to `autorun.sh`:
 
     run autorandr --load atdc
 
-Brightness:
+## Transparent Terminator
 
-    xrandr --output eDP-1 --brightness 0.6
+The system is already configured to allow for transparency (i.e., the `rc.lua`
+file should have the correct spawn command. Just need to intall `picom` and
+make sure that the transparent setting is set correctly.
 
-### DNS
+## DNS
 
-Need to point at Google's DNS server. To make permanent 
+Need to point at Google's DNS server. To make permanent
 
     sudo vim /etc/systemd/resolved.conf
     sudo systemctl restart systemd-resolved
+
+**NOTE**: Not really permanenet. Better to update via the interface config and
+add `8.8.8.8` to current network.
 
 ## Emacs
 
