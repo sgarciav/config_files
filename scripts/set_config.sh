@@ -76,6 +76,7 @@ function install_dependencies()
          trash-cli \
          gitk \
          pass \
+         picom \
          gnome-tweaks \
          openssh-client \
          openssh-server \

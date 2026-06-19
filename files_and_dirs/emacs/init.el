@@ -3,10 +3,6 @@
 ; https://medium.com/@suvratapte/configuring-emacs-from-scratch-packages-220bbc5e55b7
 ; https://menno.io/posts/use-package/
 
-; Follow instructions below to fix elap gnu keys
-;; See: https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-signature-check-failure
-; (setq package-check-signature nil)
-
 ; Disable the startup message
 (setq inhibit-startup-message t)
 
@@ -98,9 +94,17 @@
 ; Require package and install packages from melpa
 (require 'package)
 (custom-set-variables '(package-archives
-                        '(("marmalade" . "https://marmalade-repo.org/packages/")
-                          ("melpa"     . "https://melpa.org/packages/")
+                        '(("melpa"     . "https://melpa.org/packages/")
                           ("elpa"      . "https://elpa.gnu.org/packages/"))))
+
+
+; Follow instructions below to fix elap gnu keys
+;; See: https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-signature-check-failure
+(setq package-check-signature nil)
+
+;; Automatically download package index if it doesn't exist locally yet
+(unless package-archive-contents
+  (package-refresh-contents))
 
 ;; To activate the Taskjuggler exporter in Org-mode
 (setq taskjuggler-mode "~/git-repos/config_files/files_and_dirs/emacs/taskjuggler-mode.el")
@@ -235,14 +239,27 @@
    )
   )
 
-; helm-ag
-(use-package helm-ag
-  :ensure t
-  :defer nil
-  :bind
-  (("C-c f"     . helm-ag)
-   )
-  )
+;; Note: Not in melpa right now.
+;; Installed via package-vc-install https://github.com/emacsattic/helm-ag
+;; helm-ag
+;(use-package helm-ag
+;  :ensure t
+;  :defer nil
+;  :bind
+;  (("C-c f"     . helm-ag)
+;   )
+;  )
+
+(unless (package-installed-p 'helm)
+  (package-refresh-contents)
+  (package-install 'helm))
+
+;; Use package-vc to safely source helm-ag from GitHub
+(unless (package-installed-p 'helm-ag)
+  (package-vc-install "https://github.com/emacsattic/helm-ag"))
+
+;; ;; Initialize helm-ag settings
+;; (require 'helm-ag)
 
 ; helm-tramp
 (use-package helm-tramp
